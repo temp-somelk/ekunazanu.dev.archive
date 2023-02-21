@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'LatinModernMath';
+    src: url(/static/fonts/latinmodern-math.woff2) format(woff2);
+    font-style: normal;
+    font-display: swap;
+}
+
+.mathin {
+    display: inline;
+    font: 1.2rem LatinModernMath, serif;
+}
+
+math {
+    display: block;
+    font: 1.5rem LatinModernMath, serif;
+    max-width: 95%;
+    height: auto;
+    padding: 0.5rem;
+    margin: 0rem;
+    overflow: auto;
+}

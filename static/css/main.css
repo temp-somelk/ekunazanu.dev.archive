@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url(/static/fonts/SourceSansPro-Regular.woff2) format(woff2);
+    font-style: normal;
+    font-display: swap;
+}
+
+p {
+    font: normal 1rem/1.5rem SourceSansPro, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 1rem 0rem;
+}
+
+p a {
+    font: 0.9rem JetBrainsMono, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 2rem 0rem 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4, h5, h6 {
+    font-size: 1rem;
+}
+
+ul, ol {
+    font: 1rem SourceSansPro, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0rem;
+    margin: 0rem 0rem 0rem 0.5rem;
+    list-style-position: inside;
+}
+
+ul a, ol a {
+    font: 0.9rem JetBrainsMono, monospace;
+}
+
+sub, sup {
+    position: relative;
+    font-size: 0.8rem;
+}
+
+sup {
+    vertical-align: top;
+    top: -0.3rem;
+}
+
+sub {
+    vertical-align: bottom;
+    bottom: -0.3rem;
+}
+
+sup a {
+    font-size: 0.7rem;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+code {
+    display: inline;
+    color: var(--gray4);
+    background-color: var(--gray1);
+    font: normal 0.9rem JetBrainsMono, monospace;
+}
+
+pre code {
+    background: none;
+}
+
+pre {
+    display: block;
+    background-color: var(--gray2);
+    padding: 1rem;
+    margin: 1rem;
+    overflow: auto;
+    white-space: pre;
+}
+
+blockquote {
+    color: var(--gray4);
+    display: block;
+    padding: 0.3rem 1rem;
+    margin: 0rem 1rem;
+    border-left: 5pt solid var(--gray4);
+}
+
+figure {
+    display: block;
+    max-width: 95%;
+    margin: 2rem auto;
+}
+
+figcaption {
+    display: block;
+    color: var(--gray4);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.8rem;
+    margin: 0rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0rem auto;
+}
+
+table {
+    display: table;
+    color: var(--gray4);
+    background-color: var(--gray2);
+    max-width: 100%;
+    padding: 0rem;
+    margin: 0rem auto;
+    border: none;
+    border-collapse: collapse;
+}
+
+tr, td, th {
+    text-align: left;
+    vertical-align: middle;
+    padding: 0.5rem;
+    margin: 0rem;
+    border: 1pt solid var(--bg);
+}
+
+th {
+    color: var(--fg);
+    background-color: var(--dark);
+    font-weight: bold;
+}
