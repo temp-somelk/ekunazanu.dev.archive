@@ -1,0 +1,19 @@
+{{ partial "head" . -}}
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/banner.css">
+<link rel="stylesheet" href="/css/indices.css">
+</head>
+<body>
+{{ partial "header" . -}}
+<main>
+{{ .Content -}}
+<ul>
+{{- range .Pages.ByDate }}
+<li>
+    <time>{{ .Date.Format "2006-01-02" }}</time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</li>
+{{ end -}}
+</ul>
+</main>
+{{ partial "footer" . -}}

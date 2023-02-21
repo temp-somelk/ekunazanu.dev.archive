@@ -1,0 +1,7 @@
+<figure>
+    <picture>
+        <source srcset="{{ .Get `darksrc` }}" media="(prefers-color-scheme: dark)" alt="{{ .Get `alt` }}">
+        <img src="{{ .Get `lightsrc` }}" alt="{{ .Get `alt` }}" loading="lazy" decoding="async">
+    </picture>
+    <figcaption>{{ .Get "caption" }}</figcaption>
+</figure>
