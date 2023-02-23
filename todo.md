@@ -1,0 +1,4 @@
+- [ ] Find a way to switch from KaTeX to server-side MathML rendering now that chrome and blink support MathMLCore.
+    - [ ] https://github.com/gohugoio/hugo/issues/10044
+    - [ ] https://jeroen.dehaas.online/blog/hugo-pandoc-nix-mathml/
+    - [ ] https://misha.brukman.net/blog/2022/04/writing-math-with-hugo/
