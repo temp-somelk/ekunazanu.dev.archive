@@ -8,9 +8,6 @@
     <h2>
         {{- if eq .Type "blog" | and .IsPage -}}
         <time>{{ .Date.Format "2006-01-02" }}</time>
-        {{ range (.GetTerms "categories") }}
-        &middot; <a href="{{ .RelPermalink }}">{{ .LinkTitle -}}</a>
-        {{- end -}}
         {{- else -}}
         ekunazanu
         {{- end -}}

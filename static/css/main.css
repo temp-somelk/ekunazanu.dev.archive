@@ -6,14 +6,10 @@
 }
 
 p {
-    font: normal 1rem/1.5rem SourceSansPro, sans-serif;
+    font: normal 1rem/1.8rem SourceSansPro, sans-serif;
     text-align: justify;
     text-justify: inter-word;
     margin: 1rem 0rem;
-}
-
-p a {
-    font: 0.9rem JetBrainsMono, monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,8 +42,8 @@ ul, ol {
     list-style-position: inside;
 }
 
-ul a, ol a {
-    font: 0.9rem JetBrainsMono, monospace;
+p a, ul a, ol a {
+    font-size: 0.9rem;
 }
 
 sub, sup {
@@ -146,4 +142,22 @@ th {
     color: var(--fg);
     background-color: var(--dark);
     font-weight: bold;
+}
+
+nav {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    margin: 2rem 0rem;
+}
+
+details {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: 0rem;
+    margin: 0rem 0rem 2rem;
+}
+
+details summary {
+    font-style: normal;
 }

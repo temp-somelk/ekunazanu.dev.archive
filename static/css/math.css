@@ -5,14 +5,16 @@
     font-display: swap;
 }
 
-.mathin {
+math {
     display: inline;
-    font: 1.2rem LatinModernMath, serif;
+    font: 1.2rem LatinModernMath, math, serif;
+    padding: 0rem;
+    margin: 0rem;
 }
 
-math {
+.blockmath {
     display: block;
-    font: 1.5rem LatinModernMath, serif;
+    font: 1.5rem LatinModernMath, math, serif;
     max-width: 95%;
     height: auto;
     padding: 0.5rem;

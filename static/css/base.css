@@ -24,21 +24,23 @@
     font-family: 'JetBrainsMono';
     src: url(/fonts/JetBrainsMono-Regular.woff2) format(woff2);
     font-style: normal;
-    font-display: swap;
+    font-display: block;
 }
 
 body {
     color: var(--fg);
     background-color: var(--bg);
-    font: 0.9rem JetBrainsMono, monospace;
-    max-width: 60rem;
+    font: normal 0.9rem JetBrainsMono, monospace;
+    max-width: 50rem;
     padding: 1rem;
     margin: 0rem auto;
 }
 
 a {
     color: var(--fg);
+    font-family: JetBrainsMono, monospace;
     text-decoration: underline;
+    font-style: inherit;
 }
 
 a:hover {
