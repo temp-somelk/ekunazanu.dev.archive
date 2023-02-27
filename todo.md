@@ -1,4 +1,12 @@
-- [ ] Find a way to switch from KaTeX to server-side MathML rendering now that chrome and blink support MathMLCore.
+- [ ] Check libraries for rendering math as SVG graphs and animations
+    - [ ] [Possibility1](https://hackage.haskell.org/package/reanimate-1.1.4.0/docs/Reanimate.html)
+    - [ ] GeoGebra
+    - [ ] manim
+- [ ] ^ Set up templates and CSS for said SVGs
+- [x] ~~Check if Chrome can support MathML (not just MathMLCore)~~ displays as block element, but works good enough for most cases.
+- [ ] Figure out why Blink is not rendering math inline
+- [ ] Find a way to render Tex to MathML server-side
     - [ ] https://github.com/gohugoio/hugo/issues/10044
     - [ ] https://jeroen.dehaas.online/blog/hugo-pandoc-nix-mathml/
     - [ ] https://misha.brukman.net/blog/2022/04/writing-math-with-hugo/
+- [ ] Get started with R. viridis -> magma looks kinda cool
