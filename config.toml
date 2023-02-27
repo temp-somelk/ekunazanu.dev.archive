@@ -1,4 +1,4 @@
-baseURL = 'http://ekunazanu.dev/'
+baseURL = 'https://ekunazanu.dev/'
 languageCode = 'en-in'
 title = 'ekunazanu'
 disableHugoGeneratorInject = true
