@@ -1,7 +1,7 @@
 <figure>
     <picture>
-        <source srcset="{{ .Get `darksrc` }}" media="(prefers-color-scheme: dark)" alt="{{ .Get `alt` }}">
-        <img src="{{ .Get `lightsrc` }}" alt="{{ .Get `alt` }}" loading="lazy" decoding="async">
+        {{ if isset .Params "dsrc" }}<source srcset="{{ .Get `dsrc` -}}" media="(prefers-color-scheme: dark)" alt="{{ .Get `alt` }}">{{ end }}
+        <img src="{{ .Get `lsrc` -}}" alt="{{ .Get `alt` }}" loading="lazy" decoding="async">
     </picture>
-    <figcaption>{{ .Get "caption" }}</figcaption>
+    {{ if isset .Params "caption" }}<figcaption>{{ .Get "caption" }}</figcaption>{{ end }}
 </figure>
