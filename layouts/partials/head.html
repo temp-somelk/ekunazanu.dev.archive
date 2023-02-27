@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <title>{{ .Title }}</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/icons/logo.16px.svg">
-    {{ if in .Params.css "base" }}<link rel="stylesheet" href="/css/base.css">{{ end }}
-    {{- if in .Params.css "banner" }}<link rel="stylesheet" href="/css/banner.css">{{ end }}
-    {{- if in .Params.css "main" }}<link rel="stylesheet" href="/css/main.css">{{ end }}
-    {{- if in .Params.css "math" }}<link rel="stylesheet" href="/css/math.css">{{ end }}
-    {{- if in .Params.css "home" }}<link rel="stylesheet" href="/css/home.css">{{ end }}
-    {{- if in .Params.css "indices" }}<link rel="stylesheet" href="/css/indices.css">{{ end }}
-    {{- if in .Params.css "404" }}<link rel="stylesheet" href="/css/404.css">{{ end }}
+    <meta name="description" content="{{ .Params.pagedescription }}">
+    <meta name="author" content="Anchit Roy">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="icon" href="{{ .Site.BaseURL }}icons/logo.16px.svg">
+    <link rel="stylesheet" href="/css/base.css">
