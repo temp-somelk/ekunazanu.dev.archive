@@ -1,6 +1,8 @@
 {{ partial "head" . -}}
-{{ if .Params.katex }}
-{{ partial "katex.html" . }}
+<link rel="stylesheet" href="/css/banner.css">
+<link rel="stylesheet" href="/css/main.css">
+{{ if .Params.math }}
+{{ partial "math.html" . }}
 {{ end -}}
 </head>
 <body>
