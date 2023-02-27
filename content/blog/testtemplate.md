@@ -1,10 +1,11 @@
 +++
 title = "Test"
+indextitle = "Test: test"
+pagedescription = "This is a test page not meant for publication"
 date = 2020-02-22T00:01:05+05:30
-type = 'blog'
-css = ['base', 'banner', 'main', 'math']
-categories = ['Mathematics', 'Computer Science']
-katex = true
+type = "blog"
+categories = ["Mathematics", "Computer Science", "Geometry"]
+math = true
 draft = true
 +++
 
@@ -16,13 +17,13 @@ This is an example collapsed note
 This is an example open note
 {{< /note >}}
 
-Paragraph with inline math $f(x) = x^{2}$ $y_t = beta_0 + theta_1 x_t + epsilon_t$
-$$e\equiv \lim_{n\to\infty} \biggl( 1 + \frac{1}{n} \biggr)^n = 2.71828$$
+Paragraph with inline math $f(x) = x^{2}$ $y_t = \\beta_0 + \\theta_1 x_t + \\epsilon_t$
+$$and\\ block\\ math, e\\equiv \\lim_{n\\to\\infty} \\left( 1 + \\frac{1}{n}\\right)^n = 2.71828$$
 
 ## Header2
 Paragraph with a [link](linkaddress)
 
-{{< img alt="dragons" caption="Some caption" lightsrc="https://cdn.pixabay.com/photo/2022/11/03/03/05/apples-7566512_960_720.jpg" darksrc="https://cdn.pixabay.com/photo/2021/12/29/08/18/insect-6900940_960_720.jpg" >}}
+{{< img alt="dragons" caption="Some caption" lsrc="https://cdn.pixabay.com/photo/2022/11/03/03/05/apples-7566512_960_720.jpg" dsrc="https://cdn.pixabay.com/photo/2021/12/29/08/18/insect-6900940_960_720.jpg" >}}
 
 ### Header3
 Another paragraph with *emphasis* or **strong emphasis**. ```monospaced string or inline code```. Underline is not supported and discouraged, to reduce confusion with links. ~~Strikethrough~~ is supported though.
@@ -33,9 +34,72 @@ with just
     some lines
     of
 text
+that is very longgggggggggggggggggggggggggggggggggggggggggggggggg
 ```
 
+{{< img alt="dragon" lsrc="/media/test.webp" caption="test" >}}
+
 Another paragraph and a table below:
+
+{{< table >}}
+  <tr>
+    <th>Partitions</th>
+	<th>Windows Readable Partition</th>
+	<th colspan="2"><b>LUKS Container</th>
+	<th>BIOS Grub Partition</th>
+	<th>UEFI Boot Partition</th>
+  </tr>
+  <tr>
+    <th>gdisk hex</th>
+	<td>0700</td>
+	<td colspan="2">8300</td>
+	<td>ef02</td>
+	<td>ef00</td>
+  </tr>
+    <tr>
+    <th rowspan="2">Block Device</td>
+	<td>/dev/sdx1</td>
+	<td colspan="2">/dev/sdx2</td>
+	<td>/dev/sdx3</td>
+	<td>/dev/sdx4</td>
+  </tr>
+    <tr>
+	<td></td>
+    <td>/dev/VolumeGroup/root</td>
+	<td>/dev/VolumeGroup/home</td>
+	<td colspan="2"></td>
+  </tr>
+    <tr>
+    <th>File System</th>
+	<td>FAT32/NTFS</td>
+	<td>ext4</td>
+	<td>ext4</td>
+	<td>Unformatted</td>
+	<td>FAT32</td>
+  </tr>
+    <tr>
+    <th><b>Mountpoint</th>
+	<td>Not Mounted</td>
+	<td>/</td>
+	<td>/home</td>
+	<td>Not Mounted</td>
+	<td>/boot</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Size</b></th>
+	<td rowspan="2">As required</td>
+	<td>At least 8GiB</td>
+	<td>As required</td>
+	<td rowspan="2">2MiB</td>
+	<td rowspan="2">200MiB</td>
+  </tr>
+  <tr>
+    <td colspan="2">(LUKS Container must accomodate size of both Logical volumes)</td>
+  </tr>
+
+{{< /table >}}
+
+Another paragraph
 
 {{< table caption="Table caption" >}}
     <thead>
@@ -92,6 +156,10 @@ Another paragraph and a table below:
 ## Header2
 
 Text with sub{{< subscript "script" >}} and super{{< superscript "script" >}} texts.{{< citation name="Some journal" source="link" >}}
+
+> Sinlequote
+
+something
 
 > Blockquote
 > > Which is nested

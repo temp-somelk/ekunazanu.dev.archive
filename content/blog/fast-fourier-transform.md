@@ -1,10 +1,11 @@
 +++
 title = "Fast Fourier Transform"
+indextitle = "Time Complexity: Fast Fourier Transform"
+pagedescription = "Explaining the importance of algorithmic efficiency using the Fast Fourier Transform"
 date = 2023-02-22T03:22:02+05:30
-type = 'blog'
-css = ['base', 'banner', 'main']
-categories = ['Computer Science']
-katex = false
+type = "blog"
+categories = ["Computer Science"]
+math = false
 draft = true
 +++
 

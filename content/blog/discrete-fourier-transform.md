@@ -1,11 +1,12 @@
 +++
 title = "Discrete Fourier Transform"
-date = 2023-02-22T03:21:57+05:30
-type = 'blog'
-css = ['base', 'banner', 'main']
-categories = ['Mathematics']
-katex = false
-draft = true
+indextitle = "Matrix Operations: Discrete Fourier Transform"
+pagedescription = "Explaining how the discrete version of the Fourier Transform works"
+date = 2023-02-22T03:21:23+05:30
+type = "blog"
+categories = ["Mathematics"]
+math = true
+draft = false
 +++
 
 {{< note summary="Note" open="true" >}}
@@ -15,9 +16,14 @@ This article assumes you have a basic understanding of [Fourier Transforms](/blo
 ## Sampling
 
 ### Shannon-Nyquist Theorem
-
-N sample &gt; 2f
-or
-f &lt; N/2
+The Shannon-Nyquist Theorem states that $N > 2f$ or $f < N/2$
 
 ## Matrix Multiplication
+
+$$
+\\begin{bmatrix}
+x_0 & x_1 & x_2 & x_3 & x_4 & x_5 & x_6 & x_7
+\\end{bmatrix}
+$$
+
+## The DFT Matrix
