@@ -92,14 +92,15 @@ pre {
 blockquote {
     color: var(--gray4);
     display: block;
-    padding: 0.3rem 1rem;
+    padding: 0.1rem 1rem;
     margin: 0rem 1rem;
-    border-left: 5pt solid var(--gray4);
+    border-left: 5pt solid var(--gray2);
 }
 
 figure {
     display: block;
-    max-width: 95%;
+    max-width: 100%;
+    padding: 0rem 1rem;
     margin: 2rem auto;
 }
 

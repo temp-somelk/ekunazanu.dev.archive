@@ -5,15 +5,17 @@
     font-display: swap;
 }
 
-math {
-    display: inline;
+math[display="inline"] {
+    display: inline math;
+    math-style: compact;
     font: 1.2rem LatinModernMath, math, serif;
     padding: 0rem;
     margin: 0rem;
 }
 
-.blockmath {
-    display: block;
+math[display="block"] {
+    display: block math;
+    math-style: normal;
     font: 1.5rem LatinModernMath, math, serif;
     max-width: 95%;
     height: auto;
@@ -21,3 +23,8 @@ math {
     margin: 0rem;
     overflow: auto;
 }
+
+.katex {
+    overflow: auto hidden;
+}
+
