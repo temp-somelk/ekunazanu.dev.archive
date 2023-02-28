@@ -99,7 +99,6 @@ Another paragraph and a table below:
 
 {{< /table >}}
 
-Another paragraph
 
 {{< table caption="Table caption" >}}
     <thead>
@@ -155,7 +154,7 @@ Another paragraph
 
 ## Header2
 
-Text with sub{{< subscript "script" >}} and super{{< superscript "script" >}} texts.{{< citation name="Some journal" source="link" >}}
+Text with sub{{< subscript "script" >}} and super{{< superscript "script" >}} texts {{< citation name="Some journal" source="link" >}}. Another paragraph with a footnote [^1]. And another one [^2]. Also, a third one [^3].
 
 > Sinlequote
 
@@ -167,7 +166,7 @@ something
 An unordered list:
 
 * Something
-    * Something more
+    * Something more [^4]
         * Something even more
 
 And an ordered list:
@@ -175,3 +174,11 @@ And an ordered list:
 1. Somthing else
 2. This too
 3. This three [testlink](/)
+
+Some random words [^5]. And some other random words, to pad out this paragraph. It's not enough text so adding more here. I guess this is enough. Okay it's not, so here I am adding more. It's repetitive, but it is what is is. Okay maybe this is enough. Yeah it is. And then something here to end the article.
+
+[^1]: Test footnote
+[^2]: Another test
+[^3]: Third one with a [link](link) to something
+[^4]: Fourth time's the charm
+[^5]: Fifth one, just in case
