@@ -5,6 +5,7 @@ pagedescription = "This is a test page not meant for publication"
 date = 2020-02-22T00:01:05+05:30
 type = "blog"
 categories = ["Mathematics", "Computer Science", "Geometry"]
+code = true
 math = true
 draft = true
 +++
@@ -99,6 +100,59 @@ Another paragraph and a table below:
 
 {{< /table >}}
 
+Also testing syntax highlight:
+
+``` c
+int main(void){
+    float num1;
+    float num2;
+
+    scanf("%f, %f", &num1, &num2);
+    if (num1 > num2){
+        printf("\033[31;1;4mThe first number is greater\033[0m");
+    }
+    else if (num2 > num1){
+        printf("\033[32;1;4mThe second number is greater\033[0m");
+    }
+    else {
+        printf("\033[34;1;4mBoth are equal\033[0m");
+    }
+
+    return 0;
+}
+```
+
+Some other code too
+
+``` python {linenostart=32,hl_lines=[8,"15-17"]}
+#!/usr/bin/env python3
+
+from fractions import Fraction
+
+def solution(pegs):
+    altDistanceSum = -pegs[0]
+    for i in range(1, len(pegs) - 1):
+        if i % 2 == 0:
+            altDistanceSum -= 2 * pegs[i]
+        else:
+            altDistanceSum += 2 * pegs[i]
+    if len(pegs) % 2 == 0:
+        altDistanceSum += pegs[len(pegs) - 1]
+        r0 = (2 * float(altDistanceSum))/3
+    else:
+        altDistanceSum -= pegs[len(pegs) - 1]
+        r0 = 2 * float(altDistanceSum)
+
+    r = r0
+    for i in range(len(pegs) - 1):
+        if r < 1:
+            return [-1, -1]
+        else:
+            r = (pegs[i + 1] - pegs[i]) - r
+
+    r0 = Fraction(r0).limit_denominator()
+    return [r0.numerator, r0.denominator]
+```
 
 {{< table caption="Table caption" >}}
     <thead>

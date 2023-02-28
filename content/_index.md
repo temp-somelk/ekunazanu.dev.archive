@@ -5,6 +5,7 @@ pagedescription = "Math and computer science and stuff"
 date = 2023-02-22T00:10:23+05:30
 type = ""
 categories = [""]
+code = false
 math = false
 draft = false
 +++

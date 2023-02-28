@@ -5,6 +5,7 @@ pagedescription = "Explaining the weird world of quantum mechanics to break encr
 date = 2023-02-22T03:36:10+05:30
 type = "blog"
 categories = ["Physics", "Mathematics"]
+code = false
 math = true
 draft = true
 +++

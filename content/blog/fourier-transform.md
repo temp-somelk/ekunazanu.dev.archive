@@ -5,12 +5,13 @@ pagedescription = "Explaining how the Fourier Transform converts a time domain s
 date = 2023-02-22T00:01:03+05:30
 type = "blog"
 categories = ["Mathematics", "Computer Science"]
+code = false
 math = true
 draft = true
 +++
 
 {{< note summary="Note" open="true" >}}
-This article assumes you have an understanding of Complex Numbers and [Euler's Identity](/blog/eulers-identity).
+This article assumes you have an understanding of [Complex Numbers and Euler's Identity](/blog/eulers-identity).
 {{< /note >}}
 
 Imagine you are given a function $y = f(x)$. Now what if I asked you to to represent this function as a sum of sine waves? Seems tricky, if not impossible at first. It might look daunting from afar, but the underlying principle behind Fourier transforms is actually relatively simple and really elegant.
@@ -44,7 +45,9 @@ Since the complex coordinates now have a frequency of $2\\pi$, this means we kno
 
 Thus, we end up with
 
-$$X(f)\ \triangleq \ \int _{-\infty }^{\infty }x(t)\ e^{-i2\pi ft}\ {\rm {d}}t$$
+$$X(f)\\ \\triangleq \\ \\int \_{-\\infty }^{\\infty }x(t)\\ e^{-i2\\pi ft}\\ {\\rm {d}}t$$
 
 ## Alternatives
 Why not just use the unit circle and use sin and cos then? We can! We can also use plain vectors to represent the unit circle. We just represent it using.
+
+[^1]:

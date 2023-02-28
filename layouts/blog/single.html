@@ -1,6 +1,9 @@
 {{ partial "head" . -}}
 <link rel="stylesheet" href="/css/banner.css">
 <link rel="stylesheet" href="/css/main.css">
+{{ if .Params.code }}
+<link rel="stylesheet" href="/css/syntaxhighlight.css">
+{{ end -}}
 {{ if .Params.math }}
 {{ partial "math.html" . }}
 {{ end -}}

@@ -5,6 +5,7 @@ pagedescription = "Explaining the elegant Euler's Identity using high school mat
 date = 2023-02-22T00:00:35+05:30
 type = "blog"
 categories = [""]
+code = false
 math = true
 draft = true
 +++

@@ -5,6 +5,7 @@ pagedescription = "Explaining how the discrete version of the Fourier Transform 
 date = 2023-02-22T03:21:23+05:30
 type = "blog"
 categories = ["Mathematics"]
+code = false
 math = true
 draft = true
 +++
