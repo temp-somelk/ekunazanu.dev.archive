@@ -124,7 +124,7 @@ int main(void){
 
 Some other code too
 
-``` python {linenostart=32,hl_lines=[8,"15-17"]}
+``` python
 #!/usr/bin/env python3
 
 from fractions import Fraction

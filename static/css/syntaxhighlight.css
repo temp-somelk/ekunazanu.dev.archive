@@ -24,10 +24,8 @@
     }
 }
 
-/*hl for entire line*/ .chroma .line {display: block;}
 /* Other */ .chroma .x {color: var(--gray4);}
 /* Error */ .chroma .err {color: var(--red);}
-/* LineHighlight */ .chroma .hl {background-color: var(--gray2);}
 /* Keyword */ .chroma .k {color: var(--blue1); font-weight: bold;}
 /* KeywordConstant */ .chroma .kc {color: var(--blue1); font-weight: bold;}
 /* KeywordDeclaration */ .chroma .kd {color: var(--blue1); font-weight: bold;}
