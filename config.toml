@@ -3,3 +3,4 @@ languageCode = 'en-in'
 title = 'ekunazanu'
 disableHugoGeneratorInject = true
 pygmentsUseClasses = true
+publishDir = "docs"

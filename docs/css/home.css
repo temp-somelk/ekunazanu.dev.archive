@@ -1,0 +1,35 @@
+h1, nav {
+    display: block;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    font-size: 0.9rem;
+}
+
+main svg {
+    display: block;
+    fill: var(--fg);
+    width: 10rem;
+    height: 12rem;
+    margin: 8rem auto 1rem;
+}
+
+#rectN {
+    fill: var(--gray4);
+}
+
+#eyes {
+    animation: blink-anim 5s step-start 0s infinite;
+}
+
+@keyframes blink-anim {
+    98% {
+        visibility: hidden;
+    }
+}

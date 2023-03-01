@@ -1,0 +1,56 @@
+header svg {
+    display: block;
+    fill: var(--fg);
+    width: 2.5rem;
+    height: 3rem;
+    margin: 0em 0em 1rem;
+    border: 2pt solid var(--bg);
+}
+
+header svg:hover {
+    fill: var(--bg);
+    background-color: var(--fg);
+    border: 2pt solid var(--fg);
+}
+
+header h1 {
+    color: var(--fg);
+    font-size: 2rem;
+    padding: 0rem 0rem 0.5rem;
+    margin: 0rem 0rem 1.5rem;
+    border-bottom: 2pt solid var(--fg);
+}
+
+header h2 {
+    display: block;
+    color: var(--gray4);
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+header h2 a {
+    display: inline;
+    color: var(--gray4);
+    text-decoration: underline;
+}
+
+header a {
+    display: contents;
+}
+
+footer {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0rem -1rem;
+    border-top: 2pt solid var(--gray4);
+}
+
+footer a {
+    color: inherit;
+    font: inherit;
+    text-decoration: inherit;
+}
