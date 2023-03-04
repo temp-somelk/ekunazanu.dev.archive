@@ -17,8 +17,21 @@ p {
 /* Headers */
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
+    padding: 0.2em 0rem;
     margin: 2rem 0rem 1rem;
+    border-bottom: 2pt solid var(--gray2);
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    display: inline;
+    color: var(--bg);
+    background-color: var(--gray4);
+    font-weight: bold;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    padding: 0rem 0.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 h1 {
@@ -35,6 +48,8 @@ h3 {
 
 h4, h5, h6 {
     font-size: 1rem;
+    padding: 0rem;
+    border-bottom: none;
 }
 
 /* Lists */
@@ -105,7 +120,7 @@ pre code {
 pre {
     display: block;
     background-color: var(--gray1);
-    padding: 1rem;
+    padding: 1rem 1rem 1.5rem;
     margin: 1rem;
     overflow: auto;
     white-space: pre;
