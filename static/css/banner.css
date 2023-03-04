@@ -13,12 +13,23 @@ header svg:hover {
     border: 2pt solid var(--fg);
 }
 
-header h1 {
-    color: var(--fg);
+header h1 span {
+    display: inline;
+    color: var(--bg);
+    background-color: var(--fg);
     font-size: 2rem;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    padding: 0rem 0.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+header h1 {
+    display: block;
     padding: 0rem 0rem 0.5rem;
     margin: 0rem 0rem 1.5rem;
-    border-bottom: 2pt solid var(--fg);
+    border-bottom: 2pt solid var(--gray4);
 }
 
 header h2 {
@@ -28,6 +39,7 @@ header h2 {
     font-weight: normal;
     padding: 0rem;
     margin: 0rem;
+    border: none;
 }
 
 header h2 a {
