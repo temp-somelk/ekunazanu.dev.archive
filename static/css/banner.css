@@ -20,9 +20,7 @@ header h1 span {
     font-size: 2rem;
     line-height: 1.5em;
     text-transform: uppercase;
-    padding: 0rem 0.5rem;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
+    padding: 0rem;
 }
 
 header h1 {
@@ -37,6 +35,7 @@ header h2 {
     color: var(--gray4);
     font-size: 0.8rem;
     font-weight: normal;
+    text-transform: lowercase;
     padding: 0rem;
     margin: 0rem;
     border: none;

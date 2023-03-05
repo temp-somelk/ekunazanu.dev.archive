@@ -17,21 +17,24 @@ p {
 /* Headers */
 
 h1, h2, h3, h4, h5, h6 {
+    display: block;
     padding: 0.2em 0rem;
     margin: 2rem 0rem 1rem;
     border-bottom: 2pt solid var(--gray2);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     display: inline;
-    color: var(--bg);
-    background-color: var(--gray4);
-    font-weight: bold;
-    line-height: 1.5em;
-    text-transform: uppercase;
-    padding: 0rem 0.5rem;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
+    visibility: hidden;
+    padding: 0.2rem;
+    margin: 0rem 0.3rem;
+    text-decoration: none;
+}
+
+h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
+    visibility: visible;
 }
 
 h1 {
@@ -48,8 +51,6 @@ h3 {
 
 h4, h5, h6 {
     font-size: 1rem;
-    padding: 0rem;
-    border-bottom: none;
 }
 
 /* Lists */
