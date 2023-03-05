@@ -38,7 +38,7 @@ text
 that is very longgggggggggggggggggggggggggggggggggggggggggggggggg
 ```
 
-{{< img alt="dragon" lsrc="/media/test.webp" caption="test" >}}
+![dragon](/media/test.webp)
 
 Another paragraph and a table below:
 
