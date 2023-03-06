@@ -10,7 +10,7 @@ math = true
 draft = true
 +++
 
-If you have ever enrolled in any of the STEM disciplines, chances are you would've come across any of Euler's Formula. Now there's a lot of genius things he came up with, but one of the most well known (and also one of the most elegant) has to be the Euler's Identity $e^{i\\pi} = -1$. From quantum physics to signal processing, it comes up very frequently in a lot of areas may not even necessarily be directly under the mathematical domain. Now, even if you've never come across this expression, or even know what any of it means, I'll dissect every term and try to explain why it is the way it is and what it represents, using regular high school math.
+If you have ever enrolled in any of the STEM disciplines, chances are you would've come across Euler. Now there's a lot of genius things he came up with, but one of the most well known (and also one of the most elegant) has to be the Euler's Identity, $e^{i\\pi} = -1$. From quantum physics to signal processing, it comes up very frequently in areas that may not even necessarily be directly under the mathematical domain. Now, even if you've never come across this expression, or even know what any of it means, I'll dissect every term and try to explain why it is the way it is and what it represents, using regular high school math.
 
 ## Imaginary Numbers
 
@@ -36,7 +36,7 @@ $$
 = 6 + 2i \\\\
 $$
 
-We can take more examples, but you can see from this that any real numbers and imaginary numbers can be represented using the form $a + bi$. Another important thing you can notice is that we can represent the the magnitude of the imaginary compenent using real numbers. That is, while $bi$ is an imaginary number, $b$ itself is a real number. $a$ is already a real number. This form $a + bi$, represent a set of real numbers and imaginary numbers, and we call this collective set complex numbers. From the above example, we can also deduce that addition of complex numbers is commutative.
+We can take more examples, but you can see from this that any real numbers and imaginary numbers can be simplified and represented using the form $a + bi$. Another important thing you can notice is that we can represent the the magnitude of the imaginary compenent using real numbers. That is, while $bi$ is an imaginary number, $b$ itself is a real number. $a$ is also already a real number. This form $a + bi$, represent a set of real numbers and imaginary numbers, and we call this collective set complex numbers. From the above example, we can also deduce that addition of complex numbers is commutative.
 
 #### Multiplication
 
@@ -85,27 +85,27 @@ If you observe carefully, the pattern here is obvious. Every time we multiply th
 
 Take a point $(a, b)$ and plot it on the cartesian plane. Now rotate the point 90°, 180° and 270° counter-clockwise with respect to the origin.
 
-{{< img alt="point coordinates at every quadrant" lsrc="/media/geogebra-export.png" caption="Point at (2, -5): Rotated 90°, 180° and 270°" >}}
+![Point at (2, -5): Rotated 90°, 180° and 270°](/media/geogebra-export.png)
 
-Notice, the coordinates of the 90° rotated point is $(-b, a)$, the coordinates for the 180° rotated point is $(-a, -b)$ and the one for the 270° is $(b, -a)$. It is strikingly similar to the pattern we observed earlier before when we multiplied any complex number by $i$. In fact, if we take the real component and the imaginary component of the complex number on different axes which are mutually perpendicular to each other, we have a very elegant system of describing a two dimensional plane where 90° rotation transforms can be described by a single multiplication operation with the imaginary number $i$. So that's what we do. We define our imaginary numbers on an axis that is perpendicular to the real number line, where the imaginary numbers are represented using the vertical axis, and the real numbers are represented using horizontal axis. This is how we end up with the complex plane, where multiplying any complex number by $i$ has the effect of rotating that point counter clockwise by 90°.
+Notice, the coordinates of the 90° rotated point is $(-b, a)$, the coordinates for the 180° rotated point is $(-a, -b)$ and the one for the 270° is $(b, -a)$. It is strikingly similar to the pattern we observed earlier before when we multiplied any complex number by $i$. In fact, if we take the real and imaginary component of a complex number on different axes which are mutually perpendicular to each other, we have a very elegant system of describing a two dimensional plane where 90° rotation transforms can be described by a single multiplication operation with the imaginary number $i$. So that's what we do. We define our imaginary numbers on an axis that is perpendicular to the real number line, where the imaginary numbers are represented on the vertical axis, and the real numbers are represented on horizontal axis. This is how we end up with the complex plane, where multiplying any complex number by $i$ has the effect of rotating that point counter clockwise by 90°.
 
-You might think, "Why go through so much trouble defining new things just to be able to represent a 90° rotation transform?". And it's a fair question. The answer is because we can expand this transform beyond just right angles.
+You might think, "Why go through so much trouble defining new things just to be able to represent a 90° rotation transform?". And it's a fair question. The answer is because we can generalize and expand this transform beyond just right angles.
 
 #### A Different Perspecitve 
 
 There is another way to look at how multiplying by $i$ rotates the complex point by 90°. I would go on to argue this approach can be generalized and is much more intuitive to understand complex number rotations geometrically. Notice what happens when we multiply a complex number by $-1$. Take an example, $(2 + 5i) \\cdot (-1) = (-2 - 5i)$.
 
-{{< img alt="multiplying the point by -1" lsrc="/media/geogebra-export(5).png" caption="Multiplying a complex number by -1" >}}
+![Multiplying a complex number by -1](/media/geogebra-export(5).png)
 
 The new complex number points in the opposite direction, or it has gone through a 180° rotation. Now, what if instead of multiplying by -1 at once, we did it it two steps. What if $(-2 - 5i) \\cdot n \\cdot n = (-2 -5i)$. Since two half step multiplications result in a 180° rotation, this multiplication by a single $n$ would thus result in a 90° rotation.
 
-{{< img alt="rotating by some n twice to get -1" lsrc="/media/geogebra-export(2).png" caption=" Getting to -1 in 2 steps" >}}
+![Getting to -1 in 4 steps](/media/geogebra-export(2).png)
 
 From $(2 + 5i) \\cdot (-1) = (-2 - 5i)$ and $(2 + 5i) \\cdot n \\cdot n = (-2 - 5i)$, we can deduce that $n \\cdot n = -1$, or $n = i$. And multiplying $(2 + 5i)$ by $i$ does indeed give a product, in this case $(-5 + 2i)$, which is a 90° counter clockwise rotation of the original point. Sweet.
 
 We can go even further. What if we took four steps to get to $-1$? In that case we would end up with $n \\cdot n \\cdot n \\cdot n = -1$. Intution tells us that if it took 4 steps to get to $-1$ or a 180° rotation, each one of the steps would equate to a 45° rotation.
 
-{{< img alt="45 degree steps" lsrc="/media/geogebra-export(1).png" caption="Getting to -1 in 4 steps" >}}
+![Getting to -1 in 4 steps](/media/geogebra-export(1).png)
 
 Coming back to the expression, $n \\cdot n \\cdot n \\cdot n = -1$, if we simplify it, we get $n = \\sqrt{i}$. And it makes sense if you think about it. If multiplying by $-1$ rotates the point by 180° and multiplying by $\\sqrt{-1}$ or $i$ rotates that point by 90°, it would seem logical that multiplying by $\\sqrt{\\sqrt{-1}}$ or $\\sqrt{i}$ would result in a 45° rotation. But what in world does $\\sqrt{i}$ even mean? We defined $\\sqrt{-1}$ to be i, but how do we define $\\sqrt{i}$ ? Do we have to now again define what $\\sqrt{i}$ would mean? What about for 22.5° rotations? Do we have to define $\\sqrt{\\sqrt{i}}$ as well? Luckily we don't have to. Turns out we can describe $\\sqrt{i}$ and other angles using $i$ itself.
 
@@ -157,25 +157,27 @@ $$
 = \\left( \\tfrac{1}{\\sqrt2} + \\tfrac{1}{\\sqrt{2}} i \\right) \\\\
 $$
 
-{{< img alt="points if rotated 45 degrees" lsrc="/media/geogebra-export(6).png" caption="1 + 0i rotated 45°" >}}
+![1 + 0i rotated 45°](/media/geogebra-export(6).png)
 
 And sure enough, the point $\\left( \\frac{1}{\\sqrt2} + \\frac{1}{\\sqrt{2}} i \\right)$ lies where $(1 + 0i)$ would have landed if it was rotated 45° with respect to the origin.
 
 Similary getting to $-1$ and $i$ in three steps, or $\\sqrt[3]{-1}$ and $\\sqrt[3]{i}$, should correspond to 60° and 30° rotations respectively.
 
-{{< img alt="three steps to -1" lsrc="/media/geogebra-export(8).png" caption="Getting to -1 in 3 steps" >}}
+![Getting to -1 in 3 steps](/media/geogebra-export(8).png)
 
-{{< img alt="three steps to i" lsrc="/media/geogebra-export(7).png" caption="Getting to i in 3 steps" >}}
+![Getting to i in 3 steps](/media/geogebra-export(7).png)
 
-Solving for $(a + bi) = -1^{3}$, we get $\\sqrt[3]{-1} = \\left( \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i \\right)$. We, of course, also get $(-1 + 0i)$ as a solution, but we'll ignore that since it doesnt help us to represent 60° rotations. But if you are curious as to how the solution $-1$ would map out geometrically, think of it as rotating the plane thrice by 180°. First, we multiply by $-1$ to rotate it 180°, and then multiply it again by $-1$ (which is the same as multiplying by $1$), we rotate a total of 360° and get back the same position. We multiply a final third time to again end up at the 180° rotated position. $(-1 + 0i)$ is indeed a valid solution, but it's not important for us. Similarly, for $i$ we get $\\sqrt[3]{i} = \\left( \\frac{\\sqrt{3}}{2} + \\frac{1}{2} i \\right)$.
+Solving for $(a + bi) = -1^{3}$, we get $\\sqrt[3]{-1} = \\left( \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i \\right)$. We, of course, also get $(-1 + 0i)$ as a solution, but we'll ignore that since it doesnt help us to represent 60° rotations. But if you are curious as to how the solution $-1$ would map out geometrically, think of it as rotating the plane thrice by 180°. First, we multiply by $-1$ to rotate it 180°, and then multiply it again by $-1$ (which is the same as multiplying by $1$), we rotate a total of 360° and get back the same position. We multiply a final third time to again end up at the 180° rotated position. $(-1 + 0i)$ is indeed a valid solution, but it's not important for us. We just take the solution $\\left( \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i \\right)$ for our case. Similarly, for $i$ we get $\\sqrt[3]{i} = \\left( \\frac{\\sqrt{3}}{2} + \\frac{1}{2} i \\right)$.
 
-If further analyze the pattern for the above values, we can see that the complex number multipliers that correspond to a pure rotation, all lie on the unit circle. That is they all the complex numbers are of the form ($\\cos{\\theta} + i\\sin{\\theta})$ for some angle $\\theta$. The rotation complex number multiplier i.e. $i$, $\\sqrt{i}$, etc *has* to lie on the unit circle, because otherwise we would not be just peforming a pure rotation, but also be scaling the plane. Using the same logic, multiplying a complex number by a real number just scales it, without performing any rotation.
+If further analyze the pattern for the above values, we can see that the complex number multipliers that correspond to a pure rotation, all lie on the unit circle. That is they all the complex numbers are of the form ($\\cos{\\theta} + i\\sin{\\theta})$ for some angle $\\theta$. The rotation complex number multiplier i.e. $i$, $\\sqrt{i}$, etc *has* to lie on the unit circle, because otherwise we would not be just peforming a pure rotation, but also be scaling the plane. Using the same logic, multiplying a complex number by a positive real number just scales it, without performing any rotation.
 
-Thus, we can say multiplying any complex number with another complex number *(with a negative real component **or** non-zero imaginary component)* rotates the plane by a certain amount. The angle of rotation is determined by the ratio of the real and imaginary component.
+![All points lie on the unit circle](/media/.png)
+
+Thus, we can say multiplying any complex number with another complex number *(with a negative real component **or** non-zero imaginary component)* rotates the plane by a certain amount. The angle of rotation is determined by the ratio of the real and imaginary component. To be precise, $\\theta = \\tan^{-1} \\left( \\frac{b}{a} \\right)$ for a complex number $(a + bi)$
 
 ## Euler's Number
 
-
+There's
 
 ### Exponential Function
 
