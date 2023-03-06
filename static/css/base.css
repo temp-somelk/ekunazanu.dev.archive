@@ -48,3 +48,8 @@ a:hover {
     background-color: var(--fg);
     text-decoration: none;
 }
+
+::selection {
+    color: var(--fg);
+    background: var(--gray2);
+}

@@ -121,6 +121,7 @@ pre code {
 pre {
     display: block;
     background-color: var(--gray1);
+    max-height: 22rem;
     padding: 1rem 1rem 1.5rem;
     margin: 1rem;
     overflow: auto;
