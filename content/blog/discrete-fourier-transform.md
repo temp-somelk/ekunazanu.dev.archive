@@ -11,7 +11,7 @@ draft = true
 +++
 
 {{< note summary="Note" open="true" >}}
-This article assumes you have a basic understanding of [Fourier Transforms](/blog/fourier-transform).
+This article assumes you have a basic understanding of the [Fourier Transform](/blog/fourier-transform).
 {{< /note >}}
 
 ## Sampling

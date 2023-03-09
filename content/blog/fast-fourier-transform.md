@@ -11,7 +11,7 @@ draft = true
 +++
 
 {{< note open="true" summary="Note" >}}
-This article assumes you have a basic understanding of [Fourier Transforms](/blog/fourier-transform) and [Discrete Fourier Transforms](/blog/discrete-fourier-transform).
+This article assumes you have a basic understanding of the [Discrete Fourier Transform](/blog/discrete-fourier-transform).
 {{< /note >}}
 
 While Dicrete Fourier transforms 

@@ -10,17 +10,17 @@ math = true
 draft = true
 +++
 
-If you have ever enrolled in any of the STEM disciplines, chances are you would've come across Euler. Now there's a lot of genius things he came up with, but one of the most well known (and also one of the most elegant) has to be the Euler's Identity, $e^{i\\pi} = -1$. From quantum physics to signal processing, it comes up very frequently in areas that may not even necessarily be directly under the mathematical domain. Now, even if you've never come across this expression, or even know what any of it means, I'll dissect every term and try to explain why it is the way it is and what it represents, using regular high school math.
+If you have ever enrolled in any of the STEM disciplines, chances are you would've come across Euler. Now there's a lot of genius things he came up with, but one of the most well known (and also one of the most elegant) has to be the Euler's Identity, $e^{i\\pi} + 1 = 0$. From quantum physics to signal processing, it comes up very frequently in areas that may not even necessarily be directly under the mathematical domain. Now, even if you've never come across this expression, or even know what any of it means, I'll dissect every term and try to explain why it is the way it is and what it represents, using regular high school math.
 
 ## Imaginary Numbers
 
-First, let's evaluate the expression $e^{i\\pi} = -1$. Here we have the terms $e$, $i$, $\pi$, which then simplifies to $-1$. We'll come back to $e$ later, but for now let's focus on the letter $i$. I'll assume you have never heard of imaginary numbers, and try to build an intuition, as to why why these numbers can help us represent a two dimensional plane.
+First, let's evaluate the expression $e^{i\\pi} + 1 = 0$. Rearranging it gives us $e^{i\\pi} = -1$. We have the terms $e$, $i$, $\pi$, which then simplifies to $-1$. We'll come back to $e$ later, but for now let's focus on the letter $i$. I'll assume you have never heard of imaginary numbers, and try to build an intuition, as to why why these numbers can help us represent a two dimensional plane.
 
 
-Take the expression $x^{2} = -1$. Assuming you are familiar with integer multiplication, it would seems non-sensical at first, as to, how in the world can we multiply two same numbers with the same signs to get a negative value. And in fact, there is no such real number that multiplies to $-1$. So now what do we do? We make up a new number $n$ and define it such that $n \\times n = -1$, and let's call the imaginary number $i$, since it doesn't exist, at least among the real numbers. So we end up with $i \\times i = -1$. You may now say, "Hey that's cheating! You can just make stuff up and then say, that's the soultion." But in mathematics as long as your definition is consistent with the internal rules, logic and structure of its environmental system, it is a valid theory (but that doesn't mean you can make up your own definitions and expect that to be the standard; it also has to be adopted by the wider population). And in fact, in math, redefining functions so that they are applicable more generally is not uncommon (we'll discuss more about that later).
+Take the expression $x^{2} = -1$. Assuming you are familiar with integer multiplication, it would seems non-sensical at first, as to, how in the world can we multiply two same numbers with the same signs to get a negative value. And in fact, there is no such real number that multiplies to $-1$. So now what do we do? We make up a new number $n$ and define it such that $n \\times n = -1$, and let's call the imaginary number $i$, since it doesn't exist, at least among the real numbers. So we end up with $i \\times i = -1$. You may now say, "Hey that's cheating! You can't just make stuff up and then say, that's the soultion." But in mathematics as long as your definition is consistent with the internal rules, logic and structure of its environmental system, it is a valid theory (but that doesn't mean you can make up your own definitions and expect that to be the standard; it also has to be adopted by the wider population). And in fact, in math, redefining functions so that they are applicable more generally is not uncommon (we'll discuss more about that later).
 
 {{< note summary="Imaginary numbers are real" >}}
-When I say imaginary numbers do not exist, what I am trying to say is they do not exist in the real number line. Imaginary numbers are very much real, and are used extensively in quantum physics, our most accurate theory of reality so far.
+When I say imaginary numbers do not exist, what I am trying to say is they do not exist in the real number line. If you think numbers are real, then so are imaginary numbers. They are used extensively to describe very real effects of quantum physics, our most accurate theory of reality so far.
 {{< /note >}}
 
 ### Operations on Imaginary Numbers
@@ -28,7 +28,7 @@ How do we now fit these imaginary numbers we just created with the existing syst
 
 #### Addition
 
-We will try addition operations with real and imaginary numbers before we move onto with multiplication. Let's try adding $1 + i$, which translate to $1 + 1\\sqrt{-1}$. Imaginary numbers are defined such that they cannot be added to real numbers, in that sense we can't add $1$ and $1i$ to get $2$ or $2i$. This restriction might seem arbritary, but I promise you it would make more sense when we talk about the complex plane and rotations. Let's take the original expression $1 + i$. We cannot simplify it further, and we end up the same expression $1 + i$. Let's try another one with more terms in it: $3 + i + 23 + i + i -20 -i$. Here again, we cannot add real numbers to imaginary numbers. Taking this restriction into account, we end up with:
+We will try addition operations with real and imaginary numbers before we move onto with multiplication. Let's try adding $1 + i$, which translate to $1 + 1\\sqrt{-1}$. Imaginary numbers are defined such that they can be added with each other, but cannot be added to real numbers — we cannot add $1$ and $1i$ to get $2$ or $2i$. This restriction might seem arbritary, but it would make more sense when we talk about the complex plane and rotations. Let's take the original expression $1 + i$. We cannot simplify it further, and we end up the same expression $1 + i$. Let's try another one with more terms in it: $3 + i + 23 + i + i -20 -i$. Here again, we cannot add real numbers to imaginary numbers. Taking this restriction into account, we end up with:
 
 $$
 = 3 + i + 23 + i + i -20 - i \\\\
@@ -99,7 +99,7 @@ There is another way to look at how multiplying by $i$ rotates the complex point
 
 The new complex number points in the opposite direction, or it has gone through a 180° rotation. Now, what if instead of multiplying by -1 at once, we did it it two steps. What if $(-2 - 5i) \\cdot n \\cdot n = (-2 -5i)$. Since two half step multiplications result in a 180° rotation, this multiplication by a single $n$ would thus result in a 90° rotation.
 
-![Getting to -1 in 4 steps](/media/geogebra-export(2).png)
+![Getting to -1 in 2 steps](/media/geogebra-export(2).png)
 
 From $(2 + 5i) \\cdot (-1) = (-2 - 5i)$ and $(2 + 5i) \\cdot n \\cdot n = (-2 - 5i)$, we can deduce that $n \\cdot n = -1$, or $n = i$. And multiplying $(2 + 5i)$ by $i$ does indeed give a product, in this case $(-5 + 2i)$, which is a 90° counter clockwise rotation of the original point. Sweet.
 
@@ -150,34 +150,69 @@ $$
 \\sqrt{i} = (a + bi) = \\left(\\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}}i \\right)
 $$
 
-So by our logic, if we multiply any complex number by $\\sqrt{i}$ or $\\left( \\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}}i \\right)$, we must get a point that is rotated by 45°. Let's try it with a simplex complex numer, $1 + 0i$ :
+So by our logic, if we multiply any complex number by $\\sqrt{i}$ or $\\left( \\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}}i \\right)$, we must get a point that is rotated by 45°. Let's try it with the complex number, $2 + 5i$ :
 
 $$
-(1 + 0i) \\cdot \\left(\\tfrac{1}{\\sqrt{2}} + \\tfrac{1}{\\sqrt{2}} i \\right) \\\\
-= \\left( \\tfrac{1}{\\sqrt2} + \\tfrac{1}{\\sqrt{2}} i \\right) \\\\
+(2 + 5i) \\cdot \\left(\\tfrac{1}{\\sqrt{2}} + \\tfrac{1}{\\sqrt{2}} i \\right) \\\\
+= \\left(2 \\cdot \\tfrac{1}{\\sqrt{2}} + 2 \\cdot \\tfrac{1}{\\sqrt{2}}i \\right) + \\left( 5i \\cdot \\tfrac{1}{\\sqrt{2}} + 5i \\cdot \\tfrac{1}{\\sqrt{2}}i \\right) \\\\
+= \\left( \\tfrac{2}{\\sqrt{2}} + \\tfrac{2}{\\sqrt{2}}i \\right) + \\left( \\tfrac{5}{\\sqrt{2}}i - \\tfrac{5}{\\sqrt{2}} \\right) \\\\
+= \\left( - \\tfrac{3}{\\sqrt{2}} + \\tfrac{7}{\\sqrt{2}} i \\right) \\\\
 $$
 
-![1 + 0i rotated 45°](/media/geogebra-export(6).png)
+![2 + 5i rotated 45°](/media/geogebra-export(6).png)
 
-And sure enough, the point $\\left( \\frac{1}{\\sqrt2} + \\frac{1}{\\sqrt{2}} i \\right)$ lies where $(1 + 0i)$ would have landed if it was rotated 45° with respect to the origin.
+And sure enough, the point $\\left( - \\frac{3}{\\sqrt{2}} + \\frac{7}{\\sqrt{2}} i \\right)$ lies where $(2 + 5i)$ would have landed if it was rotated 45° with respect to the origin.
 
-Similary getting to $-1$ and $i$ in three steps, or $\\sqrt[3]{-1}$ and $\\sqrt[3]{i}$, should correspond to 60° and 30° rotations respectively.
+Similary getting to $-1$ and $i$ in three steps, or $\\sqrt[3]{-1}$ and $\\sqrt[3]{i}$ should correspond to 60° and 30° rotations respectively.
 
 ![Getting to -1 in 3 steps](/media/geogebra-export(8).png)
 
 ![Getting to i in 3 steps](/media/geogebra-export(7).png)
 
-Solving for $(a + bi) = -1^{3}$, we get $\\sqrt[3]{-1} = \\left( \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i \\right)$. We, of course, also get $(-1 + 0i)$ as a solution, but we'll ignore that since it doesnt help us to represent 60° rotations. But if you are curious as to how the solution $-1$ would map out geometrically, think of it as rotating the plane thrice by 180°. First, we multiply by $-1$ to rotate it 180°, and then multiply it again by $-1$ (which is the same as multiplying by $1$), we rotate a total of 360° and get back the same position. We multiply a final third time to again end up at the 180° rotated position. $(-1 + 0i)$ is indeed a valid solution, but it's not important for us. We just take the solution $\\left( \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i \\right)$ for our case. Similarly, for $i$ we get $\\sqrt[3]{i} = \\left( \\frac{\\sqrt{3}}{2} + \\frac{1}{2} i \\right)$.
+Solving for $(a + bi) = -1^{3}$, we get $\\sqrt[3]{-1} = \\left( \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i \\right)$. We, of course, also get $(-1 + 0i)$ as a solution, but we'll ignore that since it doesnt help us to represent 60° rotations. But if you are curious as to how the solution $-1$ would map out geometrically, think of it as rotating the plane thrice by 180°. First, we multiply by $-1$ to rotate it 180°, and then multiply it again by $-1$ (which is the same as multiplying by $1$), we rotate a total of 360° and get back the same position. We multiply a final third time to again end up at the 180° rotated position. $(-1 + 0i)$ is indeed a valid solution, but it's not important for us. We just take the solution $\\left( \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i \\right)$ for our case. Similarly, for $i$ we get $\\sqrt[3]{i} = \\left( \\frac{\\sqrt{3}}{2} + \\frac{1}{2} i \\right)$. You can verify it, but multiplying a complex number by the above values does indeed rotate the plane by 60° and 30°.
 
-If further analyze the pattern for the above values, we can see that the complex number multipliers that correspond to a pure rotation, all lie on the unit circle. That is they all the complex numbers are of the form ($\\cos{\\theta} + i\\sin{\\theta})$ for some angle $\\theta$. The rotation complex number multiplier i.e. $i$, $\\sqrt{i}$, etc *has* to lie on the unit circle, because otherwise we would not be just peforming a pure rotation, but also be scaling the plane. Using the same logic, multiplying a complex number by a positive real number just scales it, without performing any rotation.
+#### Scaling
 
-![All points lie on the unit circle](/media/.png)
+If you're familiar with trigonometry and observe the values for $\\sqrt{i}$, $\\sqrt[3]{i}$, $\\sqrt[3]{-1}$ and $i$, you can see that the complex number multipliers that correspond to a pure rotation, all lie on the unit circle. That is, all the complex numbers are of the form ($\\cos{\\theta} + i\\sin{\\theta})$ for their corresponding angles $\\theta$. The unit circle is of the form $x^{2}+y^{2} = 1$. Substituting the real component $a$ for $x$, and the imaginary component $b$ for $y$, tells us if the sum of the square of the real and imaginary components is $1$, it must lie on the unit circle. That is, for a complex number $(a + bi)$, if $a^{2} + b^{2} = 1$, the point must lie on a circle of radius 1. Similarly using Pythagora's theorem, we can extrapolate that for a complex number $(a+bi)$, where $a^{2} + b^{2} = x$, the radius of the circle it lies on is $\\sqrt{x}$. This *radius* is also the length of the line from the origin to the point, and is called the magnitude of the complex number. The magnitude determines how much a given point is **scaled, not rotated**, if we multiply it with another complex number. It also tells us why $i$, $\\sqrt{i}$, etc *has* to lie on the unit circle, because otherwise we would not be just peforming a pure rotation, but also be scaling the plane. Using the same logic, multiplying a complex number by a positive real number just scales it, without performing any rotation.
 
-Thus, we can say multiplying any complex number with another complex number *(with a negative real component **or** non-zero imaginary component)* rotates the plane by a certain amount. The angle of rotation is determined by the ratio of the real and imaginary component. To be precise, $\\theta = \\tan^{-1} \\left( \\frac{b}{a} \\right)$ for a complex number $(a + bi)$
+![All points lie on the unit circle](/media/geogebra-export(9).png)
+
+![2 + 5i has a magnitude of $\\sqrt{29}$](/media/geogebra-export(11).png)
+
+#### Generalizing for Other Angles
+
+By now, we can recognize that multiplying any complex number with another complex number that makes an angle $\\alpha$ with the origin rotates the plane by a by that angle, and that the angle is determined by the ratio of the real and imaginary component. To be precise, $\\theta = \\tan^{-1} \\left( \\frac{b}{a} \\right)$ for a complex number $(a + bi)$.
+
+![$\\tan \\left( \\theta \\right) = b/a$](/media/geogebra-export(10).png)
+
+### Complex Numbers as Functions
+
+Another way of saying we are rotating a point by multiplying it by a complex number is to say we are adding rotation by multiplying the functions. If we have a complex number that is making an angle $\\alpha$ with the origin. *Mulitplying* it with with another complex number that makes an angle $\\beta$ with respect to the origin gives us a product that makes an angle $\\alpha + \\beta$ with respect to the origin. We can say that:
+
+$$
+f(\\alpha) \\cdot f(\\beta) = f(\\alpha + \\beta) 
+$$
 
 ## Euler's Number
 
-There's
+We've talked enough about imaginary numbers and rotations so let's get back to Euler's Identity. Actually, let's get back to the Euler's number, $e$.
+
+### Compound Interest
+
+While $e$ is called the Euler's number, the constant may have been actually discovered by Jacob Bernoulli while studying about compound interests [^1] . But what does $e$ have to do with interest rates?
+
+For the sake of simplicity, we'll limit the time period we're considering to one year. Now imagine an interest rate of 100% or 1 that compounds every year. If we put in 1.00 units, we'll end up with $1 + (1 \\cdot 1) = 2$ units. However if it was compounded biannually, after six months we will end up with $1 + \\left(\\frac{1}{2} \\cdot 1 \\right) = 1.5$. After another six months, we'll end up with $1.5 + \\left(\\frac{1}{2} \\cdot 1.5 \\right) = 2.25$. Let's calculate our returns if we compounded thrice a year. After four months, we'll have $1 + \\left( \\frac{1}{3} \\cdot 1 \\right) = \\frac{4}{3}$. After another four months, we'll have $\\frac{4}{3} + \\left( \\frac{1}{3} \\cdot \\frac{4}{3} \\right) = \\frac{16}{9}$. By the end of the year we are left with $\\frac{16}{9} + \\left(\\frac{1}{3} \\cdot \\frac{16}{9} \\right) = \\frac{64}{27}$. Let's try to generalize this pattern, if it was compounded $n$ times in a given year with an interest rate $x$ and initial principle $1$.
+
+$$
+For\\ n = 2 \\\\
+r = \\left( 1 + \\left(\\tfrac{x}{2} \\cdot 1 \\right)\\right) + \\left(\\tfrac{x}{2} \\cdot 1 \\right) \\\\
+$$
+
+We magically increase our returns if we just keep increasing the .
+
+$$ e\\equiv \\lim_{n\\to\\infty} \\left( 1 + \\frac{1}{n}\\right)^n$$
+
+Let us dissect this
 
 ### Exponential Function
 
@@ -185,6 +220,14 @@ Redefining the exponential function
 
 ## Putting the Pieces Together
 
+
+
 Since the velocity vector always matches the multiplication rotation vector i, since derivative of $e^{i} = i \\cdot e^{i}$. Therefore, you are going around a circle of radius 1 unit at the speed equal to 1 unit per unit. So after $\\pi$ units, you arrive at position vector $(-1, 0)$ . So, $e^{i\\pi} = - 1$.
 
 I want to make it clear that $a^{i \\cdot t}$ would still trace out a unit circle for a real number $a$, but $t$ would not map to the distance walked on the circle, and instead it would represent $\\ln e something$
+
+## Euler's Formula
+
+This is a little extra in case you're still reading this. Let's try to expand beyond
+
+[^1]: MacTutor History of Mathematics: [The number e](www-history.mcs.st-and.ac.uk/HistTopics/e.html).
