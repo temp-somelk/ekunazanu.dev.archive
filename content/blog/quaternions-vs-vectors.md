@@ -1,7 +1,7 @@
 +++
 title = "Quaternions vs Vectors"
 indextitle = "Gimball Lock: Quaternions vs Vectors"
-pagedescription = "under 160 chars"
+summary = "under 160 chars"
 date = 2023-03-01T00:36:22+05:30
 type = "blog"
 categories = ["Mathematics"]

@@ -1,7 +1,7 @@
 +++
 title = "Public Key Cryptography"
 indextitle = "One Way Functions: Public Key Crptography"
-pagedescription = "Explaining primes and one-way functions using the RSA cryptosystem"
+summary = "Explaining primes and one-way functions using the RSA cryptosystem"
 date = 2023-02-22T03:22:19+05:30
 type = "blog"
 categories = ["Mathematics", "Computer Science"]

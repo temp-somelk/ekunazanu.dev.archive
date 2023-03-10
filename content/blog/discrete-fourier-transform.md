@@ -1,7 +1,7 @@
 +++
 title = "Discrete Fourier Transform"
 indextitle = "Matrix Operations: Discrete Fourier Transform"
-pagedescription = "Explaining how the discrete version of the Fourier Transform works"
+summary = "Explaining how the discrete version of the Fourier Transform works"
 date = 2023-02-22T03:21:23+05:30
 type = "blog"
 categories = ["Computer Science"]

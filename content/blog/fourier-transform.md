@@ -1,7 +1,7 @@
 +++
 title = "Fourier Transform"
 indextitle = "Periodic Functions: Fourier Transform"
-pagedescription = "Explaining how the Fourier Transform converts a time domain signals to a frequency domain signals"
+summary = "Explaining how the Fourier Transform converts a time domain signals to a frequency domain signals"
 date = 2023-02-22T00:01:03+05:30
 type = "blog"
 categories = ["Mathematics"]

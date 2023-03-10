@@ -1,7 +1,7 @@
 +++
 title = "Test"
 indextitle = "Test: test"
-pagedescription = "This is a test page not meant for publication"
+summary = "This is a test page not meant for publication"
 date = 2020-02-22T00:01:05+05:30
 type = "blog"
 categories = ["Mathematics", "Computer Science"]

@@ -7,7 +7,7 @@
     <article>
         <time>{{ .Date.Format "2006-01-02" }}</time>
         <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
-    <p>{{ .Params.Pagedescription }}</p>
+    <p>{{ .Summary }}</p>
     </article>
     {{- end -}}
     {{- end }}

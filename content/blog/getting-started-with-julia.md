@@ -1,7 +1,7 @@
 +++
 title = "Getting Started With Julia"
 indextitle = "Visualizing Data: Getting Started With Julia"
-pagedescription = "Using R to visualize map data"
+summary = "Using R to visualize map data"
 date = 2023-02-22T04:04:41+05:30
 type = "blog"
 categories = ["Data Science"]
