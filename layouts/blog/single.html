@@ -17,11 +17,5 @@
 {{ .Content -}}
 </article>
 </main>
-<nav>
-This article is about
-{{- range (.GetTerms "categories") }}
-<a href="{{ .RelPermalink }}">{{ .LinkTitle -}}</a>
-{{- end -}} <br>
-Browse all <a href="/categories">categories</a>
-</nav>
+{{ partial "nav" . }}
 {{ partial "footer" . -}}

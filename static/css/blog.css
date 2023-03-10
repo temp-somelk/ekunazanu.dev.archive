@@ -153,11 +153,46 @@ details summary {
 
 /* End of page nav */
 
+@media (max-width: 35rem) {
+    nav section {
+        flex-direction: column;
+    }
+}
+
 nav {
     color: var(--gray4);
     font-size: 0.8rem;
     padding: 0rem;
     margin: 3rem 0rem 2rem;
+}
+
+nav section {
+    display: flex;
+    margin: 0rem 0rem 1rem;
+}
+
+nav article {
+    display: block;
+    flex: 1;
+    margin: 0rem 0.5rem;
+}
+
+nav time {
+    display: block;
+    color: var(--gray4);
+}
+
+nav strong {
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav p {
+    color: var(--fg);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 1rem 0rem 2.5rem;
 }
 
 /* Footnotes */
@@ -173,7 +208,6 @@ hr {
     padding: 1rem 0rem;
     margin: 2rem 0rem -1rem;
     border-top: 2pt solid var(--gray2);
-    border-bottom: 2pt solid var(--gray2);
 }
 
 .footnotes p, .footnotes ol {

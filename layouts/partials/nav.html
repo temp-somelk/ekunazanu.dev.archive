@@ -1,0 +1,20 @@
+<nav>
+    <h3>More Stuff</span></h3>
+<section>
+    {{- $related := .Site.RegularPages.Related . | first 3 }}
+    {{ with $related }}
+    {{- range . -}}
+    <article>
+        <time>{{ .Date.Format "2006-01-02" }}</time>
+        <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+    <p>{{ .Params.Pagedescription }}</p>
+    </article>
+    {{- end -}}
+    {{- end }}
+</section>
+This article was about
+{{- range (.GetTerms "categories") }}
+<a href="{{ .RelPermalink }}">{{ .LinkTitle -}}</a>
+{{- end -}} <br>
+Browse all <a href="/categories">categories</a>
+</nav>

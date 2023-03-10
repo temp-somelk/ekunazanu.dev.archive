@@ -4,3 +4,16 @@ title = 'ekunazanu'
 disableHugoGeneratorInject = true
 pygmentsUseClasses = true
 publishDir = "docs"
+[related]
+includeNewer = true
+threshold = 0
+toLower = false
+[[related.indices]]
+name = "title"
+weight = 100
+[[related.indices]]
+name = "categories"
+weight = 90
+[[related.indices]]
+name = "date"
+weight = 50
