@@ -1,3 +1,6 @@
+- [ ] Check ```index.xml``` & ```rss.xml```
+- [ ] Include openring(maybe?)
+- [ ] Re-render all graphs and animations using Julia
 - [ ] Check libraries for rendering math as SVG graphs and animations
     - [ ] [Possibility1](https://hackage.haskell.org/package/reanimate-1.1.4.0/docs/Reanimate.html)
     - [ ] GeoGebra
@@ -9,4 +12,4 @@
     - [ ] https://github.com/gohugoio/hugo/issues/10044
     - [ ] https://jeroen.dehaas.online/blog/hugo-pandoc-nix-mathml/
     - [ ] https://misha.brukman.net/blog/2022/04/writing-math-with-hugo/
-- [ ] Get started with R. viridis -> magma looks kinda cool
+- [ ] Get started with Julia. viridis -> magma looks kinda cool
