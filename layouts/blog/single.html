@@ -1,10 +1,12 @@
 {{ partial "head" . -}}
+<link rel="stylesheet" href="/css/base.css">
 <link rel="stylesheet" href="/css/banner.css">
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/blog.css">
 {{ if .Params.code }}
-<link rel="stylesheet" href="/css/syntaxhighlight.css">
+<link rel="stylesheet" href="/css/code.css">
 {{ end -}}
 {{ if .Params.math }}
+<link rel="stylesheet" href="/css/math.css">
 {{ partial "math.html" . }}
 {{ end -}}
 </head>

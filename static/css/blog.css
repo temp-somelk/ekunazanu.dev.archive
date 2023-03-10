@@ -1,58 +1,3 @@
-@font-face {
-    font-family: 'SourceSansPro';
-    src: url(/fonts/SourceSansPro-Regular.woff2) format(woff2);
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Paragraph */
-
-p {
-    font: normal 1rem/1.8rem SourceSansPro, sans-serif;
-    text-align: justify;
-    text-justify: inter-word;
-    margin: 1rem 0rem;
-}
-
-/* Headers */
-
-h1, h2, h3, h4, h5, h6 {
-    display: block;
-    padding: 0.2em 0rem;
-    margin: 2rem 0rem 1rem;
-    border-bottom: 2pt solid var(--gray2);
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    display: inline;
-    visibility: hidden;
-    padding: 0.2rem;
-    margin: 0rem 0.3rem;
-    text-decoration: none;
-}
-
-h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
-    visibility: visible;
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.6rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-}
-
-h4, h5, h6 {
-    font-size: 1rem;
-}
-
 /* Lists */
 
 ul, ol {
@@ -66,7 +11,7 @@ ul, ol {
 
 /* Same size for links in paras and lists */
 
-p a, ul a, ol a {
+ul a, ol a {
     font-size: 0.9rem;
 }
 
