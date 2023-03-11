@@ -1,5 +1,13 @@
 <nav>
-    <h3>More Stuff</span></h3>
+
+This article is about
+{{- range (.GetTerms "categories") }}
+<a href="{{ .RelPermalink }}">{{ .Title -}}</a>
+{{- end -}} <br>
+Browse all <a href="/categories">categories</a>
+
+<h3>Other Articles</h3>
+
 <section>
     {{- $related := .Site.RegularPages.Related . | first 3 }}
     {{ with $related }}
@@ -12,9 +20,20 @@
     {{- end -}}
     {{- end }}
 </section>
-This article was about
-{{- range (.GetTerms "categories") }}
-<a href="{{ .RelPermalink }}">{{ .LinkTitle -}}</a>
-{{- end -}} <br>
-Browse all <a href="/categories">categories</a>
+
+<div>
+{{ with .NextInSection }}
+<article>
+<a href="{{ .RelPermalink }}">&ShortLeftArrow;&nbsp;{{ .Title }}</a>
+</article>
+{{ end }}
+<article></article>
+{{ with .PrevInSection }}
+<article style="text-align: right;">
+<a href="{{ .RelPermalink }}">{{ .Title }}&nbsp;&ShortRightArrow;</a>
+</article>
+{{ end }}
+</article>
+</div>
+
 </nav>
