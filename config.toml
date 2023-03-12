@@ -25,7 +25,10 @@ name = "title"
 weight = 100
 [[related.indices]]
 name = "categories"
-weight = 90
+weight = 30
+[[related.indices]]
+name = "tags"
+weight = 100
 [[related.indices]]
 name = "date"
-weight = 50
+weight = 10

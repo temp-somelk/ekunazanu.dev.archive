@@ -9,13 +9,13 @@ Browse all <a href="/categories">categories</a>
 <h3>Other Articles</h3>
 
 <section>
-    {{- $related := .Site.RegularPages.Related . | first 3 }}
+    {{ $related := ( where ( .Site.RegularPages.Related . ) "Type" "blog" ) | first 3 }}
     {{ with $related }}
     {{- range . -}}
     <article>
         <time>{{ .Date.Format "2006-01-02" }}</time>
         <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
-    <p>{{ .Summary }}</p>
+    <p>{{ .Summary }}...</p>
     </article>
     {{- end -}}
     {{- end }}
