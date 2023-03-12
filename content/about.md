@@ -1,7 +1,7 @@
 +++
 title = "About"
 indextitle = ""
-summary = "A little info about the blog and me"
+summary = "Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, and progressive rock."
 date = 2023-02-22T00:10:23+05:30
 type = ""
 categories = [""]
