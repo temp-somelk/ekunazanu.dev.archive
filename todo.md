@@ -1,5 +1,6 @@
 - [ ] Check ```index.xml``` & ```rss.xml```
 - [ ] Include openring(maybe?)
+- [ ] Paginate and improve index (maybe?)
 - [ ] Re-render all graphs and animations using Julia
 - [ ] Check libraries for rendering math as SVG graphs and animations
     - [ ] [Possibility1](https://hackage.haskell.org/package/reanimate-1.1.4.0/docs/Reanimate.html)
