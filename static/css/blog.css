@@ -182,7 +182,7 @@ nav article {
 }
 
 nav div article {
-    margin: 0rem;
+    margin: auto 0rem;
 }
 
 nav time {
