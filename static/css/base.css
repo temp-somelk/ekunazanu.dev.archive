@@ -18,11 +18,11 @@ p a {
 
 h1, h2, h3, h4, h5, h6 {
     display: block;
-    padding: 0.2em 0rem;
-    margin: 2rem 0rem 1rem;
-    border-bottom: 2pt solid var(--gray2);
     font-weight: bold;
     text-transform: uppercase;
+    padding: 0.2em 0rem;
+    margin: 2rem 0rem 1rem;
+    border-bottom: 2pt solid var(--gray1);
 }
 
 h1 {
@@ -44,7 +44,7 @@ h4, h5, h6 {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     display: inline;
     visibility: hidden;
-    padding: 0.2rem;
+    padding: 0rem 0.2rem;
     margin: 0rem 0.3rem;
     text-decoration: none;
 }

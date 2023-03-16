@@ -1,4 +1,4 @@
 <details {{ if isset .Params "open" }}open{{ end -}}>
-    <summary>{{ .Get "summary" }}</summary>
+<summary>{{ .Get "summary" }}</summary>
 {{ .Inner | markdownify }}
 </details>

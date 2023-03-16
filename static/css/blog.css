@@ -79,8 +79,8 @@ blockquote {
     display: block;
     color: var(--gray4);
     padding: 0.1rem 1rem;
-    margin: 0rem 1rem;
-    border-left: 5pt solid var(--gray2);
+    margin: 1rem;
+    border-left: 5pt solid var(--gray1);
 }
 
 /* Figures, containers for images and tables */
@@ -163,7 +163,7 @@ hr {
     color: var(--gray4);
     padding: 1rem 0rem;
     margin: 2rem 0rem -1rem;
-    border-top: 2pt solid var(--gray2);
+    border-top: 2pt solid var(--gray1);
 }
 
 .footnotes p, .footnotes ol {
