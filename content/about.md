@@ -17,4 +17,4 @@ Hi! I am Anchit. I am a first year computer science undergraduate student curren
 Lately, I have been reading [Simon Ser's blogs](https://emersion.fr/), after I went down a rabbit hole of Wayland development. Taking inspiration from his blog, I decided to write about stuff that interests me, and hopefully present the fascinating, but rather intimidating topics in a relatively simple manner. Perhaps, someone might find it useful.
 
 ### Contact
-I am available at [me@ekunazanu.dev](mailto:me@ekunazanu.dev). For private communications, you can download my [GPG key](/misc/ekunazanu.public.key).
+I am available at [me@ekunazanu.dev](mailto:me@ekunazanu.dev). For private communications, you can download my [GPG key](/misc/public.ekunazanu.key).
