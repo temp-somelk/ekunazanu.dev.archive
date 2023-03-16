@@ -1,0 +1,50 @@
+nav {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    padding: 0rem;
+    margin: 3rem 0rem 0rem;
+}
+
+nav section, nav div {
+    display: flex;
+    margin: 0rem 0rem 1rem;
+}
+
+nav article {
+    display: block;
+    flex: 1 1 0;
+    margin: 0rem 0.5rem;
+}
+
+nav div article {
+    margin: auto 0rem;
+}
+
+nav time {
+    display: block;
+    color: var(--gray4);
+    margin: 0rem 0rem 0rem;
+}
+
+nav strong {
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav p {
+    color: var(--fg);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 1rem 0rem 2.5rem;
+}
+
+@media (max-width: 40rem) {
+    nav section {
+        flex-direction: column;
+    }
+
+    nav section article {
+        margin: 0rem;
+    }
+}

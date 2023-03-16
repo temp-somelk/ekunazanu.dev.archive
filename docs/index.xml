@@ -6,15 +6,17 @@
     <description>Recent content on ekunazanu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-in</language>
+    <managingEditor>me@ekunazanu.dev (Anchit Roy)</managingEditor>
+    <webMaster>me@ekunazanu.dev (Anchit Roy)</webMaster>
+    <copyright>Creative Commons Attribution-ShareAlike 4.0 International License</copyright>
     <lastBuildDate>Wed, 22 Feb 2023 00:10:23 +0530</lastBuildDate><atom:link href="https://ekunazanu.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://ekunazanu.dev/about/</link>
       <pubDate>Wed, 22 Feb 2023 00:10:23 +0530</pubDate>
-      
+      <author>me@ekunazanu.dev (Anchit Roy)</author>
       <guid>https://ekunazanu.dev/about/</guid>
-      <description>Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, and progressive rock. I am still relatively new to programming, and only have basic knowledge of python, but I am looking forward to learning C and start with competetitve programming in the coming months.
-Blog Lately, I have been reading Simon Ser&amp;rsquo;s blogs, after I went down a rabbit hole of Wayland development.</description>
+      <description>Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, and progressive rock.</description>
     </item>
     
   </channel>
