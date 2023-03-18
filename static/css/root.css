@@ -12,9 +12,9 @@
     :root {
         --fg: #fff;
         --bg: #000;
-        --gray1: #222;
-        --gray2: #333;
-        --gray3: #444;
+        --gray1: #333;
+        --gray2: #444;
+        --gray3: #666;
         --gray4: #bbb;
         --dark: #222;
     }
