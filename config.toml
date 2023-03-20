@@ -5,6 +5,7 @@ copyright = "Creative Commons Attribution-ShareAlike 4.0 International License"
 disableHugoGeneratorInject = true
 pygmentsUseClasses = true
 publishDir = "docs"
+cleanDestinationDir = true
 [author]
 name = "Anchit Roy"
 email = "me@ekunazanu.dev"
