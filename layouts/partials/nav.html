@@ -24,13 +24,13 @@ Browse all <a href="/categories">categories</a>
 <div>
 {{ with .NextInSection }}
 <article>
-<a href="{{ .RelPermalink }}">&ShortLeftArrow;&nbsp;{{ .Title }}</a>
+<a href="{{ .RelPermalink }}">&LongLeftArrow;&nbsp;{{ .Title }}</a>
 </article>
 {{ end }}
 <article style="max-width: 5rem;"></article>
 {{ with .PrevInSection }}
 <article style="text-align: right;">
-<a href="{{ .RelPermalink }}">{{ .Title }}&nbsp;&ShortRightArrow;</a>
+<a href="{{ .RelPermalink }}">{{ .Title }}&nbsp;&LongRightArrow;</a>
 </article>
 {{ end }}
 </article>
