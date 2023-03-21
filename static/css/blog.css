@@ -1,3 +1,9 @@
+@media (prefers-color-scheme: dark) {
+    .invert {
+        filter: invert(1);
+    }
+}
+
 /* Lists */
 
 ul, ol {
