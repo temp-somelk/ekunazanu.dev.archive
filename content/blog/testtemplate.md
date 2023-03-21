@@ -226,6 +226,6 @@ Some random words [^5]. And some other random words, to pad out this paragraph. 
 
 [^1]: Test footnote
 [^2]: Another test
-[^3]: Third one with a [link](link) to something
+[^3]: Third one with an [external link](https://link) to something
 [^4]: Fourth time's the charm
 [^5]: Fifth one, just in case

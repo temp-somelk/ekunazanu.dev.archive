@@ -231,4 +231,4 @@ I want to make it clear that $a^{i \\cdot t}$ would still trace out a unit circl
 
 This is a little extra in case you're still reading this. Let's try to expand beyond
 
-[^1]: MacTutor History of Mathematics: [The number e](www-history.mcs.st-and.ac.uk/HistTopics/e.html).
+[^1]: MacTutor History of Mathematics: [The number e](https://www-history.mcs.st-and.ac.uk/HistTopics/e.html).
