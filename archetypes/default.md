@@ -11,3 +11,5 @@ math = false
 draft = true
 +++
 
+{{< img alt="{{ replace .Name `-` ` ` | title }}" lsrc="/media/{{ .File.BaseFileName }}/header.png" invert=true >}}
+

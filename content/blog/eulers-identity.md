@@ -11,6 +11,8 @@ math = true
 draft = true
 +++
 
+{{< img alt="test header image" lsrc="/media/eulers-identity/header.png" invert=true >}}
+
 If you have ever enrolled in any of the STEM disciplines, chances are you would've come across Euler. Now there's a lot of genius things he came up with, but one of the most well known (and also one of the most elegant) has to be the Euler's Identity, $e^{i\\pi} + 1 = 0$. From quantum physics to signal processing, it comes up very frequently in areas that may not even necessarily be directly under the mathematical domain. Now, even if you've never come across this expression, or even know what any of it means, I'll dissect every term and try to explain why it is the way it is and what it represents, using regular high school math.
 
 ## Imaginary Numbers
