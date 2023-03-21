@@ -203,7 +203,7 @@ def solution(pegs):
 
 ## Header2
 
-Text with sub{{< subscript "script" >}} and super{{< superscript "script" >}} texts {{< citation name="Some journal" source="link" >}}. Another paragraph with a footnote [^1]. And another one [^2]. Also, a third one [^3].
+Text with sub{{< subscript "script" >}} and super{{< superscript "script" >}} texts. Another paragraph with a footnote [^1]. And another one [^2]. Also, a third one [^3].
 
 > Sinlequote
 something
