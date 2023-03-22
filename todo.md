@@ -17,3 +17,4 @@
         - [ ] https://github.com/gohugoio/hugo/issues/10044
         - [ ] https://jeroen.dehaas.online/blog/hugo-pandoc-nix-mathml/
         - [ ] https://misha.brukman.net/blog/2022/04/writing-math-with-hugo/
+- [ ] Improve footnotes (once [#7427](https://github.com/gohugoio/hugo/pull/7427) or [#5087](https://github.com/gohugoio/hugo/issues/5087) is merged)
