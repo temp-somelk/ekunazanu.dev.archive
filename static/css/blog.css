@@ -121,7 +121,7 @@ img {
 table {
     display: table;
     color: var(--gray4);
-    background-color: var(--gray2);
+    background-color: var(--gray1);
     max-width: 100%;
     padding: 0rem;
     margin: 0rem auto;

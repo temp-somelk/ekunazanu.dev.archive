@@ -2,10 +2,8 @@
     --fg: #000;
     --bg: #fff;
     --gray1: #ddd;
-    --gray2: #ccc;
-    --gray3: #aaa;
     --gray4: #444;
-    --dark: #aaa;
+    --dark: #bbb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,8 +11,6 @@
         --fg: #fff;
         --bg: #000;
         --gray1: #333;
-        --gray2: #444;
-        --gray3: #666;
         --gray4: #bbb;
         --dark: #222;
     }
@@ -60,6 +56,6 @@ a[target="_blank"]::after {
 }
 
 ::selection {
-    color: var(--fg);
-    background: var(--gray1);
+    color: var(--bg);
+    background: var(--fg);
 }
