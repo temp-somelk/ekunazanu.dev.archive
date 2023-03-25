@@ -51,8 +51,6 @@ a:hover, a:focus {
 
 a[target="_blank"]::after {
     content: "\a0\2197";
-    font-size: 0.7rem;
-    vertical-align: top;
 }
 
 ::selection {
