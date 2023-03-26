@@ -123,6 +123,8 @@ int main(void){
 }
 ```
 
+{{< inlinesvg lsrc="/static/icons/logo.svg" caption="test" >}}
+
 Some other code too
 
 ``` python
@@ -204,6 +206,8 @@ def solution(pegs):
 {{< /table >}}
 
 ## Header2
+
+{{< inlinesvg lsrc="/static/icons/404.svg" >}}
 
 Text with sub{{< subscript "script" >}} and super{{< superscript "script" >}} texts. Another paragraph with a footnote [^1]. And another one [^2]. Also, a third one [^3].
 
