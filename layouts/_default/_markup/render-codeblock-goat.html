@@ -1,0 +1,19 @@
+<figure>
+<picture>
+{{ $width := .Attributes.width }}
+{{ $caption := .Attributes.caption }}
+{{ with diagrams.Goat .Inner }}
+<svg
+    {{ if $width }}
+    {{ with $width }}width="{{ . }}"{{ end }}
+    {{ else }}
+    width="{{ div .Width 16.0 }}rem"
+    {{ end }}
+    viewBox="0 0 {{ .Width }} {{ .Height }}"
+    font-family="JetBrainsMono, monospace">
+    {{ .Inner }}
+</svg>
+{{ end }}
+</picture>
+{{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
