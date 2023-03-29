@@ -19,5 +19,6 @@ draft = false
 </svg>
 
 <h1>ekunazanu</h1>
+<h2>Hello World.</h2>
 <nav><a href=/blog>Blog</a> &middot; <a href=/about>About</a></nav>
 {{< /raw >}}
