@@ -1,17 +1,18 @@
-baseURL = "https://ekunazanu.dev/"
+baseURL = "https://ekunazanu.dev"
 languageCode = "en-in"
 title = "ekunazanu"
 copyright = "Creative Commons Attribution-ShareAlike 4.0 International License"
 disableHugoGeneratorInject = true
-pygmentsUseClasses = true
 disableKinds = ["RSS"]
 publishDir = "docs"
 cleanDestinationDir = true
+pygmentsUseClasses = true
 [author]
 name = "Anchit Roy"
 email = "me@ekunazanu.dev"
 [sitemap]
 filename = 'sitemap.xml'
+changefreq = "monthly"
 [related]
 includeNewer = true
 threshold = 0
