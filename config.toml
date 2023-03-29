@@ -4,6 +4,7 @@ title = "ekunazanu"
 copyright = "Creative Commons Attribution-ShareAlike 4.0 International License"
 disableHugoGeneratorInject = true
 pygmentsUseClasses = true
+disableKinds = ["RSS"]
 publishDir = "docs"
 cleanDestinationDir = true
 [author]
@@ -11,12 +12,6 @@ name = "Anchit Roy"
 email = "me@ekunazanu.dev"
 [sitemap]
 filename = 'sitemap.xml'
-[outputs]
-home = ["HTML", "RSS"]
-blog = ["HTML", "RSS"]
-[outputFormats.RSS]
-mediaType = "application/rss+xml"
-baseName = "index"
 [related]
 includeNewer = true
 threshold = 0
