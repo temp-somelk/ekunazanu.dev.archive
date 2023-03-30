@@ -11,10 +11,10 @@ math = false
 draft = false
 +++
 
-Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, and progressive rock. I am still relatively new to programming, and only have basic knowledge of python, but I am looking forward to learning C and start with competetitve programming in the coming months.
+Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, and progressive rock. Sometimes, I code.
 
 ### Blog
-Lately, I have been reading [Simon Ser's blogs](https://emersion.fr/), after I went down a rabbit hole of Wayland development. Taking inspiration from his blog, I decided to write about stuff that interests me, and hopefully present the fascinating, but rather intimidating topics in a relatively simple manner. Perhaps, someone might find it useful.
+For most of my life, I've been passively consuming educational content from all over the internet, be it on YouTube or random blogs. I have always wanted to actively contribute back, but never knew how to. Or to be truthful, have enough drive in me to do it. But I've decided now is the perfect time to start, since I enrolled in college and I can just write about the things I am learning (not limited to just course listings either) to help me learn better too. I'll try to mostly write about things that interest me and hopefully present the fascinating, but rather intimidating topics in a relatively simple manner. I am still very much a beginner so I'm not very confident that I'll do a good job, but I am hoping at least someone might find it useful.
 
 ### Contact
-I am available at [me@ekunazanu.dev](mailto:me@ekunazanu.dev). For private communications, you can download my [GPG key](/misc/public.ekunazanu.key).
+I am available at [me@ekunazanu.dev](mailto:me@ekunazanu.dev). For private communications, you can download my [PGP key](/misc/public.ekunazanu.key).
