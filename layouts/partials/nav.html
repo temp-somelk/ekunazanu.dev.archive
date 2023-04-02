@@ -13,8 +13,13 @@ Browse all <a href="/categories">categories</a>
     {{ with $related }}
     {{- range . -}}
     <article>
-        <time>{{ .Date.Format "2006-01-02" }}</time>
-        <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+    <time>{{ .Date.Format "2006-01-02" }}</time>
+    <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+    <figure>
+        <a href="{{ .RelPermalink }}">
+        <img alt="image of {{ .Title }}" src="/media/{{ .File.TranslationBaseName }}/header.svg">
+        </a>
+    </figure>
     <p>{{ .Summary }}...</p>
     </article>
     {{- end -}}
