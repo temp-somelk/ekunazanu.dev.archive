@@ -11,3 +11,4 @@ math = false
 draft = true
 +++
 
+Hashing is magic. Hashing is key to a lot of topics in computer science. But how does this magical function work?

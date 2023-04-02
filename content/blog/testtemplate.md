@@ -19,13 +19,13 @@ This is an example collapsed note
 This is an example open note
 {{< /note >}}
 
-Paragraph with inline math $f(x) = x^{2}$ $y_t = \\beta_0 + \\theta_1 x_t + \\epsilon_t$
-$$and\\ block\\ math, e\\equiv \\lim_{n\\to\\infty} \\left( 1 + \\frac{1}{n}\\right)^n = 2.71828$$
+Paragraph with inline math $f(x) = x^{2}$ $y\_t = \\beta\_0 + \\theta\_1 x\_t + \\epsilon\_t$
+$$and\\ block\\ math, e\\equiv \\lim\_{n\\to\\infty} \\left( 1 + \\frac{1}{n}\\right)^n = 2.71828$$
 
 ## Header2
 Paragraph with a [link](linkaddress)
 
-{{< img alt="dragons" caption="Some caption" lsrc="https://cdn.pixabay.com/photo/2022/11/03/03/05/apples-7566512_960_720.jpg" dsrc="https://cdn.pixabay.com/photo/2021/12/29/08/18/insect-6900940_960_720.jpg" >}}
+{{< img alt="dragons" caption="Some caption" lsrc="https://cdn.pixabay.com/photo/2022/11/03/03/05/apples-7566512\_960\_720.jpg" dsrc="https://cdn.pixabay.com/photo/2021/12/29/08/18/insect-6900940\_960\_720.jpg" >}}
 
 ### Header3
 Another paragraph with *emphasis* or **strong emphasis**. ```monospaced string or inline code```. Underline is not supported and discouraged, to reduce confusion with links. ~~Strikethrough~~ is supported though.

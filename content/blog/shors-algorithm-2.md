@@ -11,3 +11,5 @@ math = true
 draft = true
 +++
 
+``` goat {caption="Bloch Sphere"}
+```
