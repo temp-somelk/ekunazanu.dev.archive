@@ -11,8 +11,6 @@ math = true
 draft = true
 +++
 
-{{< img alt="test header image" lsrc="/media/testtemplate/header.png" invert=true >}}
-
 {{< note summary="Hidden note" >}}
 This is an example collapsed note
 {{< /note >}}
@@ -40,7 +38,6 @@ with just
 text
 that is very longgggggggggggggggggggggggggggggggggggggggggggggggg
 ```
-
 ![dragon](/media/testtemplate/header.png)
 
 Another paragraph and a table below:
