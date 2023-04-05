@@ -1,6 +1,8 @@
 <figure>
     <div style="overflow: auto;">
-        {{ .Inner | markdownify }}
+    <table>
+        {{ .Inner }}
+    </table>
     </div>
     {{ if .IsNamedParams }}{{ if isset .Params "caption" }}<figcaption>{{ .Get "caption" }}</figcaption>{{ end }}{{ end }}
 </figure>

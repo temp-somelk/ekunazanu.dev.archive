@@ -30,6 +30,18 @@ Paragraph with a [link](linkaddress)
 ### Header3
 Another paragraph with *emphasis* or **strong emphasis**. ```monospaced string or inline code```. Underline is not supported and discouraged, to reduce confusion with links. ~~Strikethrough~~ is supported though.
 
+{{< table caption="Some table" >}}
+| left | right | center | YYYYY | gfdhcbfghrdcbvgfhdc | dghyh | ebhd |
+|:-----|------:|:------:|-------|---------------------|-------|------|
+|  1   |   a   |   1    |   1   |  ghelldfigffvbn     |  er   |  ww  |
+|  2   |   a   |   1    | 11987 |  vgnbfhdrjcv b      |   q   | 222  |
+|  3   |   a   |   1    | 23e4r | ftrhdejxncvbgfrhejs |   aa  |  rd  |
+| 4    |   a   |   1    |  22   | fcngthrdjfcnv       |  aa   |  edr |
+|  5   |   a   |   1    | 1215  |     gfyeh ftgrebd   |   a   | erf  |
+|    6 |   a   |   1    | 2333  |   2w3erftg          |  aa   |  dfd |
+|7     |   a   |   1    |  33   |   234 r 43edr 3ewd e|  a    |  vfc |
+{{< /table >}}
+
 ```
 code block
 with just
@@ -42,7 +54,7 @@ that is very longgggggggggggggggggggggggggggggggggggggggggggggggg
 
 Another paragraph and a table below:
 
-{{< table >}}
+{{< rawtable >}}
   <tr>
     <th>Partitions</th>
     <th>Windows Readable Partition</th>
@@ -98,7 +110,7 @@ Another paragraph and a table below:
     <td colspan="2">(LUKS Container must accomodate size of both Logical volumes)</td>
   </tr>
 
-{{< /table >}}
+{{< /rawtable >}}
 
 Also testing syntax highlight:
 
@@ -150,7 +162,7 @@ def solution(pegs):
     return [r0.numerator, r0.denominator]
 ```
 
-{{< table caption="Table caption" >}}
+{{< rawtable caption="Table caption" >}}
     <thead>
         <tr>
             <th>Row/col header</th>
@@ -200,7 +212,7 @@ def solution(pegs):
             <td>cell</td>
         </tr>
     </tbody>
-{{< /table >}}
+{{< /rawtable >}}
 
 ## Header2
 
