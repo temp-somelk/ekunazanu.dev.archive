@@ -64,7 +64,7 @@ footer {
     color: var(--gray4);
     font-size: 0.8rem;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0rem;
     margin: 2rem 0rem -1rem;
     border-top: 2pt solid var(--gray4);
 }
