@@ -1,0 +1,18 @@
+<svg width="1600" height="900" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    :root {
+        --fg: #000;
+        --bg: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+        root: {
+            --fg: #fff;
+            --bg: #000;
+        }
+    }
+</style>
+<circle cx="50" cy="50" r="48" fill="var(--bg)" stroke="var(--fg)" stroke-width="2px"></circle>
+<path d="M50 50V11" stroke="var(--fg)" stroke-width="2px"></path>
+<path d="M50 50H26" stroke="var(--fg)" stroke-width="2px"></path>
+<circle cx="50" cy="50" r="4" fill="var(--bg)" stroke="var(--fg)" stroke-width="2px"></circle>
+</svg>
