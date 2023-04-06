@@ -54,3 +54,35 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     visibility: visible;
 }
+
+figure {
+    display: block;
+    max-width: 100%;
+    padding: 0rem;
+    margin: 1rem auto;
+}
+
+figcaption {
+    display: block;
+    color: var(--gray4);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.8rem;
+    margin: 0rem;
+}
+
+/* Images */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0rem auto;
+}
+
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0rem auto;
+}

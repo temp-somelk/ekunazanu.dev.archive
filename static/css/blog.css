@@ -89,40 +89,6 @@ blockquote {
     border-left: 5pt solid var(--gray1);
 }
 
-/* Figures, containers for images and tables */
-
-figure {
-    display: block;
-    max-width: 100%;
-    padding: 0rem;
-    margin: 1rem auto;
-}
-
-figcaption {
-    display: block;
-    color: var(--gray4);
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 0.8rem;
-    margin: 0rem;
-}
-
-/* Images */
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0rem auto;
-}
-
-svg {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0rem auto;
-}
-
 /* Tables */
 
 table {
