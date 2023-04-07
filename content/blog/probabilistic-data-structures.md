@@ -23,7 +23,7 @@ Bloom filters are one of the most popular probabilistic data structures that hel
 
 ### Hashing
 
-So how do we store information using less information? Hashing. Well, sort of. Assuming an n-bit hashing fuction whose result is perfectly random, . This means we can $m$ bits.
+So how do we store information using less information? Hashing. Well, sort of. Assuming an $n$-bit hashing fuction whose result is perfectly random, we can use it to create an $m = 2^{n}$ bit bitstring and map the output to it. This means for every element, regardless of its size will use just one bit. The value of $m$ is decided based on our tolerance for hash collisions. For now we'll assume about 10 bits per element to keep hash collision below 1%.
 
 ``` goat {caption="m-bit Bitstring"}
 .---+---+---+---+---+---+---+---+   +---.

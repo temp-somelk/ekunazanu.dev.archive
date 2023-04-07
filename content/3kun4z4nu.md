@@ -8,7 +8,9 @@ categories = [""]
 tags = [""]
 code = false
 math = false
-draft = true
+draft = false
 +++
 
 {{< img alt="image of birds" lsrc="/media/dmtx.png" >}}
+
+Good luck.
