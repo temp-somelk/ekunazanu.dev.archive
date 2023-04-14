@@ -33,7 +33,7 @@ header h1 span {
     font-weight: bold;
     line-height: 1.5em;
     text-transform: uppercase;
-    padding: 0rem 0.5rem;
+    padding: 0rem 0.8rem;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
