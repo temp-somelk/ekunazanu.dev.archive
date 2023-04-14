@@ -121,13 +121,8 @@ th {
 details {
     color: var(--gray4);
     font-size: 0.8rem;
-    font-style: italic;
     padding: 0rem;
     margin: 1rem 0rem;
-}
-
-details summary {
-    font-style: normal;
 }
 
 /* Footnotes */
