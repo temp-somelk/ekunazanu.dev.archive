@@ -19,11 +19,11 @@ Probabilistic data structures are, as the name suggests, data structures that ar
 
 ## Bloom Filters
 
-Bloom filters are one of the most popular probabilistic data structures that help us check for membership in a set or multisets. In simpler words, they help us check if an element is present in a set. Bloom filters cannot report with certainty that an element exists in a set, but it can tell us with certainty if it does **not** exist in a set. And they help us do it for big datasets using very little space.
+Bloom filters are one of the most popular probabilistic data structures that help us check for membership in a set or multisets. In simpler words, they help us check if an element is present in a set or not. Bloom filters cannot report with certainty that an element exists in a set, but it can tell us with certainty if it does **not** exist in a set. And they help us do it for big datasets using very little space.
 
 ### Hashmaps
 
-So how do we store information using less information? You can compress the data and store only the unique values, but the space required will still roughly scale linearly with the input data. So what can we do? Hashing comes to the rescue. Well, sort of. We know hashing will always produce a fix length output for any given input. We also know that output is deterministic, i.e. it will produce the exact same output if our input is same. This solves two of our problems. First, we only have to store a fixed amount, even if the size of the element is large. The second is storing only distinct elements. Since hashes produce the same output for a given input, even if an elements occurs multiple times, if we hash it, we'll get the same result, and thus do not need to store it again. Hash collisions still happen, and it's the reason Bloom Filters are probabilistic, but we'll discuss about hash collisions later.
+So how do we store information using less information? You can compress the data and store only the unique values, but the space required will still roughly scale linearly with the number of elements and the size of each element. So what can we do? Hashing comes to the rescue. Well, sort of. We know hashing will always produce a fix length output for any given input. We also know that output is deterministic, i.e. it will produce the exact same output if our input is same. This solves two of our problems. First, we only have to store a fixed amount, even if the size of the element is large. The second is storing only distinct elements. Since hashes produce the same output for a given input, even if an elements occurs multiple times, if we hash it, we'll get the same result, and thus do not need to store it again. Hash collisions still happen, and it's the reason bloom filters are probabilistic, but we'll discuss about hash collisions later.
 
 ```goat {caption="Array size independent of size of individual elements"}
 .--------------------------.                   .--------------.
@@ -56,12 +56,13 @@ So how do we store information using less information? You can compress the data
 | 0xe271dc47fa |
 '--------------'
 ```
-
-So far we've managed to get rid of duplicates and store fixed length strings instead of entire elements, and that's good enough but we can do a lot better.
+Here, we've hashed the contents of the elements and stored only the distinct hashes. And by doing so, we've managed to get rid of duplicates and store fixed length strings instead of entire elements, and that's good enough but we can do a lot better.
 
 ### Mapping to bitstrings
 
-Assuming an $n$-bit hashing fuction whose result is perfectly random, we can use it to create an $m = 2^{n}$ bit bitstring and map the output to it. This means for every element, regardless of its size will use just one bit. The value of $m$ is decided based on our tolerance for hash collisions. For now we'll assume about 10 bits per element to keep hash collision below 1%.
+When we're using a hashing function, we know that the ouput will always be between n bits for a given n-bit hashing function. We can exploit this property to exponentially decrease the amount of storage needed to store the hashes. Also since the hash output has a *(somewhat)* random distribution, we know that for a given long enough hashing function (relative to the number of input elements), hash collisions are rare.
+
+We can take an $n$ bit hashing function and create an $m = 2^{m}$ array and initialize it all to zeroes. For storing data, we can use
 
 ``` goat {caption="m-bit Bitstring"}
 .---+---+---+---+---+---+---+---+   +---.
