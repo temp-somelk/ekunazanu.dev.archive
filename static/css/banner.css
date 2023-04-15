@@ -19,7 +19,7 @@ header svg {
     border: 2pt solid var(--bg);
 }
 
-header svg:hover {
+header a svg:hover {
     fill: var(--bg);
     background-color: var(--fg);
     border-color: var(--fg);
