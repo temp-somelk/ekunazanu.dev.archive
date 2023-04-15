@@ -25,7 +25,6 @@ nav {
 main svg {
     display: block;
     fill: var(--fg);
-    width: 10rem;
     height: 12rem;
     margin: 0rem auto 1rem;
 }
