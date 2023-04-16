@@ -181,30 +181,32 @@ So far we can check if an element *probably* exists in a set or definitely does 
 Take three coins. Keep randomly tossing them until all of them are heads. Repeat.
 
 ``` goat {caption="Probablility of getting three heads"}
-                     .-.   .-.   .-.
-                    | H | | H | | T |
-                     '-'   '-'   '-'
-                     .-.   .-.   .-.
-                    | T | | T | | H |
-                     '-'   '-'   '-'
-                     .-.   .-.   .-.
-                    | T | | H | | H |
-                     '-'   '-'   '-'
-                     .-.   .-.   .-.
-                    | H | | H | | H | <-- All heads occur
-                     '-'   '-'   '-'      every eight set
-                     .-.   .-.   .-.      of tosses
-                    | H | | T | | H |
-                     '-'   '-'   '-'
-                     .-.   .-.   .-.
-                    | T | | H | | H |
-                     '-'   '-'   '-'
-                     .-.   .-.   .-.
-                    | H | | T | | T |
-                     '-'   '-'   '-'
-                     .-.   .-.   .-.
-                    | T | | H | | T |
-                     '-'   '-'   '-'
+   .-.   .-.   .-.
+  | H | | H | | T |
+   '-'   '-'   '-'
+   .-.   .-.   .-.
+  | T | | T | | H |
+   '-'   '-'   '-'
+   .-.   .-.   .-.
+  | T | | H | | H |
+   '-'   '-'   '-'
+.-------------------.
+|  .-.   .-.   .-.  |
+| | H | | H | | H | |
+|  '-'   '-'   '-'  |
+'-------------------'
+   .-.   .-.   .-.
+  | H | | T | | H |
+   '-'   '-'   '-'
+   .-.   .-.   .-.
+  | T | | H | | H |
+   '-'   '-'   '-'
+   .-.   .-.   .-.
+  | H | | T | | T |
+   '-'   '-'   '-'
+   .-.   .-.   .-.
+  | T | | H | | T |
+   '-'   '-'   '-'
 ```
 
 The probability of getting all heads is 1/8. Another way of saying it would be, the combination occurs once on average for every eight sets of tosses.
