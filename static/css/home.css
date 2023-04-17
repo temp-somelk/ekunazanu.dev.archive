@@ -6,27 +6,19 @@ main {
     min-height: 80vh;
 }
 
-h1, nav {
+nav {
     display: block;
     text-align: center;
-}
-
-h1 {
-    font-size: 1.5rem;
-    margin: 0rem 0rem 0.5rem;
-}
-
-nav {
     font-size: 0.9rem;
     font-weight: normal;
-    margin: 0rem;
+    margin: 0.5rem 0rem 0rem;
+    user-select: none;
 }
 
 main svg {
     display: block;
     fill: var(--fg);
-    height: 12rem;
-    margin: 0rem auto 1rem;
+    margin: 0.5rem auto 1rem;
 }
 
 #eyes {
