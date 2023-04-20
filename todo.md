@@ -1,6 +1,12 @@
 - [ ] ~~Include openring~~ The added complexity is not worth it right now.
 - [ ] ~~Paginate index and improve it. Maybe index and home page~~ Later, **if** I update the design of the entire site.
 
+- [ ]
+    - [ ] 16px (blocky - only linear horizontal & vertical interpolation)
+    - [ ] Short logo (e) - decide on using either quadratic or cubic beziers. Maybe closest to quarter arc, but not necessarily, if control points are ugly decimals
+    - [ ] Long logo (ekunazanu) - Same as above
+- [ ] Homepage animations (check comments in static/css/home)
+
 - [ ] Graphs and Charts
     - [ ] Re-render all graphs and animations using one of:
         - [ ] Julia
@@ -16,7 +22,7 @@
         - [ ] https://misha.brukman.net/blog/2022/04/writing-math-with-hugo/
 - [ ] Improve footnotes (once [#7427](https://github.com/gohugoio/hugo/pull/7427) or [#5087](https://github.com/gohugoio/hugo/issues/5087) is merged)
 
-- [ ] Add art page
+- [ ] Add giscus (maybe? adds JS tho)
 
 ## Cleanup git history
 
