@@ -53,6 +53,11 @@ a[target="_blank"]::after {
     content: "\a0\2197";
 }
 
+a:hover::selection {
+    color: var(--fg);
+    background-color: var(--gray1);
+}
+
 ::selection {
     color: var(--bg);
     background: var(--fg);
