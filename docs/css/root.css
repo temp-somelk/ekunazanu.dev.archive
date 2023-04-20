@@ -2,19 +2,15 @@
     --fg: #000;
     --bg: #fff;
     --gray1: #ddd;
-    --gray2: #ccc;
-    --gray3: #aaa;
-    --gray4: #555;
-    --dark: #aaa;
+    --gray4: #444;
+    --dark: #bbb;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --fg: #fff;
         --bg: #000;
-        --gray1: #222;
-        --gray2: #333;
-        --gray3: #444;
+        --gray1: #333;
         --gray4: #bbb;
         --dark: #222;
     }
@@ -22,7 +18,7 @@
 
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url(/fonts/JetBrainsMono-Regular.woff2) format(woff2);
+    src: url(/fonts/JetBrainsMono-Variable.woff2) format(woff2);
     font-style: normal;
     font-display: block;
 }
@@ -53,7 +49,16 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-::selection {
+a[target="_blank"]::after {
+    content: "\a0\2197";
+}
+
+a:hover::selection {
     color: var(--fg);
-    background: var(--gray2);
+    background-color: var(--gray1);
+}
+
+::selection {
+    color: var(--bg);
+    background: var(--fg);
 }

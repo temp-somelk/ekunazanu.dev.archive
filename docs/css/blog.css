@@ -1,12 +1,18 @@
+@media (prefers-color-scheme: dark) {
+    .invert {
+        filter: invert(1);
+    }
+}
+
 /* Lists */
 
 ul, ol {
     font: 1rem SourceSansPro, sans-serif;
     text-align: justify;
     text-justify: inter-word;
-    padding: 0rem;
-    margin: 0rem 0rem 0rem 0.5rem;
-    list-style-position: inside;
+    padding: 0rem 0rem 0rem 1rem;
+    margin: 0rem;
+    list-style-position: outside;
 }
 
 /* Same size for links in paras and lists */
@@ -79,35 +85,8 @@ blockquote {
     display: block;
     color: var(--gray4);
     padding: 0.1rem 1rem;
-    margin: 0rem 1rem;
-    border-left: 5pt solid var(--gray2);
-}
-
-/* Figures, containers for images and tables */
-
-figure {
-    display: block;
-    max-width: 100%;
-    padding: 0rem;
-    margin: 1rem auto;
-}
-
-figcaption {
-    display: block;
-    color: var(--gray4);
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 0.8rem;
-    margin: 0rem;
-}
-
-/* Images */
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0rem auto;
+    margin: 1rem;
+    border-left: 5pt solid var(--gray1);
 }
 
 /* Tables */
@@ -115,7 +94,7 @@ img {
 table {
     display: table;
     color: var(--gray4);
-    background-color: var(--gray2);
+    background-color: var(--gray1);
     max-width: 100%;
     padding: 0rem;
     margin: 0rem auto;
@@ -142,13 +121,8 @@ th {
 details {
     color: var(--gray4);
     font-size: 0.8rem;
-    font-style: italic;
     padding: 0rem;
-    margin: 0rem 0rem 2rem;
-}
-
-details summary {
-    font-style: normal;
+    margin: 1rem 0rem;
 }
 
 /* Footnotes */
@@ -163,13 +137,20 @@ hr {
     color: var(--gray4);
     padding: 1rem 0rem;
     margin: 2rem 0rem -1rem;
-    border-top: 2pt solid var(--gray2);
+    border-top: 2pt solid var(--gray1);
 }
 
 .footnotes p, .footnotes ol {
-    display: inline;
     font: normal 0.8rem JetBrainsMono;
     text-align: left;
+}
+
+.footnotes ol {
+    padding: 0rem 0rem 0rem 2rem;
+    margin: 0rem;
+}
+
+.footnotes p {
     padding: 0rem;
     margin: 0rem;
 }
