@@ -11,4 +11,5 @@ math = false
 draft = false
 +++
 
-Browse by [category](/categories)
+Content ComingSoon™
+<!-- Browse by [category](/categories) -->
