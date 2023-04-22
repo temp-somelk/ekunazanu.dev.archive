@@ -16,32 +16,6 @@ nav {
 svg {
     display: block;
     fill: var(--fg);
-    /* background-color: var(--fg); */
-    height: 3rem;
-    /* padding: 1rem; */
     margin: 0rem;
-    animation: zoomin 1s ease-in-out 9s forwards;
+    cursor: pointer;
 }
-
-@keyframes zoomin {
-    100% {
-        /* fill: var(--fg); */
-        /* background: none; */
-        height: 12rem;
-        /* padding: 0rem; */
-    }
-}
-/*
-
-Try to implement curves animation in CSS instead SMIL of inside SVG
-Will make codebase cleaner, and allows usage of bezier curve timing functions
-Once done, also make background color to fg to go with the rest of the site
-
-<animate attributeName="viewBox" to="0 2 10 12" dur="1s" fill="freeze" begin="9s"/>
-#fige1 path {
-    d: path("M 10 8 L 10 2 C 9 2 6 2 5 2 C 4 2 1 2 0 2 L 0 8 L 2 8 L 2 4 L 4 4 L 4 8 L 6 8 L 6 4 L 8 4 L 8 8 Z");
-}
-#fige2:hover path {
-    d: path("M 0 8 L 0 10 C 0 12.5 1.5 14 4 14 C 6 14 8 14 10 14 L 10 12 C 8 12 6 12 4 12 C 2.5 12 2 11.5 2 10 L 2 10 L 10 10 L 10 8 Z");
-}
-*/
