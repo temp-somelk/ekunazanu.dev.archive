@@ -1,7 +1,7 @@
 - [ ] ~~Include openring~~ The added complexity is not worth it right now.
 - [ ] ~~Paginate index and improve it. Maybe index and home page~~ Later, **if** I update the design of the entire site.
 
-- [ ]
+- [ ] Logo
     - [ ] 16px (blocky - only linear horizontal & vertical interpolation)
     - [ ] Short logo (e) - decide on using either quadratic or cubic beziers. Maybe closest to quarter arc, but not necessarily, if control points are ugly decimals
     - [ ] Long logo (ekunazanu) - Same as above
