@@ -42,19 +42,6 @@ h3 {
 h4, h5, h6 {
     font-size: 1rem;
 }
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    display: inline;
-    visibility: hidden;
-    padding: 0rem 0.2rem;
-    margin: 0rem 0.3rem;
-    text-decoration: none;
-}
-
-h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
-    visibility: visible;
-}
-
 figure {
     display: block;
     max-width: 100%;
