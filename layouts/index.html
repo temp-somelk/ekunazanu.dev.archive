@@ -4,18 +4,26 @@
 <body>
 <main>
 
-<svg id="animlogo" viewBox="0 0 106 16" height="48">
-<animate attributeName="height" dur="2s" begin="animlogo.click" calcMode="spline" keySplines="0.5 0 0 1; 0.5 0 0 1" keyTimes="0; 0.5; 1" values="48; 192; 48"/>
-<animate attributeName="viewBox" dur="2s" begin="animlogo.click" calcMode="spline" keySplines="0.5 0 0 1; 0.5 0 0 1" keyTimes="0; 0.5; 1" values="0 0 106 16; 0 2 10 12; 0 0 106 16"/>
-<g id="longlogo">
-<!-- <path id="fige" d="M 3 10 L 10 10 L 10 7 A 5 5 0 0 0 0 7 L 0 11 A 5 5 0 0 0 10 11 L 7 11 A 2 2 0 0 1 3 11 Z"/> -->
-<path id="fige1" d="M 10 10 L 10 7 C 10 4 8 2 5 2 C 2 2 0 4.5 0 7 L 0 10 L 2 10 L 2 7 L 4 7 L 4 10 L 6 10 L 6 7 L 8 7 L 8 10 Z">
-<animate attributeName="d" dur="2s" begin="animlogo.click" calcMode="spline" keySplines="0.5 0 0 1; 0.5 0 0 1" keyTimes="0; 0.5; 1" values="M 10 10 L 10 7 C 10 4 8 2 5 2 C 2 2 0 4.5 0 7 L 0 10 L 2 10 L 2 7 L 4 7 L 4 10 L 6 10 L 6 7 L 8 7 L 8 10 Z; M 10 8 L 10 2 C 9 2 6 2 5 2 C 4 2 1 2 0 2 L 0 8 L 2 8 L 2 4 L 4 4 L 4 8 L 6 8 L 6 4 L 8 4 L 8 8 Z; M 10 10 L 10 7 C 10 4 8 2 5 2 C 2 2 0 4.5 0 7 L 0 10 L 2 10 L 2 7 L 4 7 L 4 10 L 6 10 L 6 7 L 8 7 L 8 10 Z"/>
+<!-- The 'e' interpolations are not the same as the original logos, but the cubic beziers allow for animations and the curves are very similar anyways -->
+<!-- Also the height values are hardcoded since safari/webkit doesn't support animating rem units -->
+<!-- Nor does it support endEvent, smh Apple -->
+
+<svg id="animlogo" viewBox="0 2 10 12" height="192">
+<animate id="expand" dur="1s" begin="1s; shorten.end+5s" fill="freeze"/>
+<animate id="shorten" dur="1s" begin="expand.end+5s" fill="freeze"/>
+<animate attributeName="height" dur="1s" begin="shorten.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="48" to="192"/>
+<animate attributeName="height" dur="1s" begin="expand.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="192" to="48"/>
+<animate attributeName="viewBox" dur="1s" begin="shorten.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="0 0 106 16" to="0 2 10 12"/>
+<animate attributeName="viewBox" dur="1s" begin="expand.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="0 2 10 12" to="0 0 106 16"/>
+<path id="fige1" d="M 10 8 L 10 2 C 9 2 6 2 5 2 C 4 2 1 2 0 2 L 0 8 L 2 8 L 2 4 L 4 4 L 4 8 L 6 8 L 6 4 L 8 4 L 8 8 Z">
+<animate attributeName="d" dur="1s" begin="expand.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="M 10 8 L 10 2 C 9 2 6 2 5 2 C 4 2 1 2 0 2 L 0 8 L 2 8 L 2 4 L 4 4 L 4 8 L 6 8 L 6 4 L 8 4 L 8 8 Z" to="M 10 10 L 10 7 C 10 4 8 2 5 2 C 2 2 0 4.5 0 7 L 0 10 L 2 10 L 2 7 L 4 7 L 4 10 L 6 10 L 6 7 L 8 7 L 8 10 Z"/>
+<animate attributeName="d" dur="1s" begin="shorten.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="M 10 10 L 10 7 C 10 4 8 2 5 2 C 2 2 0 4.5 0 7 L 0 10 L 2 10 L 2 7 L 4 7 L 4 10 L 6 10 L 6 7 L 8 7 L 8 10 Z" to="M 10 8 L 10 2 C 9 2 6 2 5 2 C 4 2 1 2 0 2 L 0 8 L 2 8 L 2 4 L 4 4 L 4 8 L 6 8 L 6 4 L 8 4 L 8 8 Z"/>
 </path>
-<path id="fige2" d="M 0 7 L 0 11 C 0 14 2 16 5 16 C 8 16 10 14 10 11 L 7 11 C 7 12 6.5 13 5 13 C 3.5 13 3 12 3 11 L 3 10 L 10 10 L 10 7 Z">
-<animate attributeName="d" dur="2s" begin="animlogo.click" calcMode="spline" keySplines="0.5 0 0 1; 0.5 0 0 1" keyTimes="0; 0.5; 1" values="M 0 7 L 0 11 C 0 14 2 16 5 16 C 8 16 10 14 10 11 L 7 11 C 7 12 6.5 13 5 13 C 3.5 13 3 12 3 11 L 3 10 L 10 10 L 10 7 Z; M 0 8 L 0 10 C 0 12.5 1.5 14 4 14 C 6 14 8 14 10 14 L 10 12 C 8 12 6 12 4 12 C 2.5 12 2 11.5 2 10 L 2 10 L 10 10 L 10 8 Z; M 0 7 L 0 11 C 0 14 2 16 5 16 C 8 16 10 14 10 11 L 7 11 C 7 12 6.5 13 5 13 C 3.5 13 3 12 3 11 L 3 10 L 10 10 L 10 7 Z"/>
+<path id="fige2" d="M 0 8 L 0 10 C 0 12.5 1.5 14 4 14 C 6 14 8 14 10 14 L 10 12 C 8 12 6 12 4 12 C 2.5 12 2 11.5 2 10 L 2 10 L 10 10 L 10 8 Z">
+<animate attributeName="d" dur="1s" begin="expand.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="M 0 8 L 0 10 C 0 12.5 1.5 14 4 14 C 6 14 8 14 10 14 L 10 12 C 8 12 6 12 4 12 C 2.5 12 2 11.5 2 10 L 2 10 L 10 10 L 10 8 Z" to="M 0 7 L 0 11 C 0 14 2 16 5 16 C 8 16 10 14 10 11 L 7 11 C 7 12 6.5 13 5 13 C 3.5 13 3 12 3 11 L 3 10 L 10 10 L 10 7 Z"/>
+<animate attributeName="d" dur="1s" begin="shorten.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="M 0 7 L 0 11 C 0 14 2 16 5 16 C 8 16 10 14 10 11 L 7 11 C 7 12 6.5 13 5 13 C 3.5 13 3 12 3 11 L 3 10 L 10 10 L 10 7 Z" to="M 0 8 L 0 10 C 0 12.5 1.5 14 4 14 C 6 14 8 14 10 14 L 10 12 C 8 12 6 12 4 12 C 2.5 12 2 11.5 2 10 L 2 10 L 10 10 L 10 8 Z"/>
 </path>
-<path id="figk" d="M 12 0 L 12 16 L 15 16 L 15 10 L 16.5 10 L 20 16 L 23 16 L 19 8.5 L 23 0 L 20 0 L 16.5 7 L 15 7 L 15 0 Z"/>
+<path id="figk1" d="M 12 0 L 12 16 L 15 16 L 15 10 L 16.5 10 L 20 16 L 23 16 L 19 8.5 L 23 0 L 20 0 L 16.5 7 L 15 7 L 15 0 Z"/>
 <path id="figu1" d="M 24 0 L 24 11 A 5 5 0 0 0 34 11 L 34 0 L 31 0 L 31 11 A 2 2 0 0 1 27 11 L 27 0 Z"/>
 <path id="fign1" d="M 36 16 L 36 5 A 5 5 0 0 1 46 5 L 46 16 L 43 16 L 43 5 A 2 2 0 0 0 39 5 L 39 16 Z"/>
 <path id="figa1" d="M 48 16 L 48 5 A 5 5 0 0 1 58 5 L 58 16 L 55 16 L 55 5 A 2 2 0 0 0 51 5 L 51 7 L 55 7 L 55 10 L 51 10 L 51 16 Z"/>
@@ -23,7 +31,6 @@
 <path id="figa2" d="M 72 16 L 72 5 A 5 5 0 0 1 82 5 L 82 16 L 79 16 L 79 5 A 2 2 0 0 0 75 5 L 75 7 L 79 7 L 79 10 L 75 10 L 75 16 Z"/>
 <path id="fign2" d="M 84 16 L 84 5 A 5 5 0 0 1 94 5 L 94 16 L 91 16 L 91 5 A 2 2 0 0 0 87 5 L 87 16 Z"/>
 <path id="figu2" d="M 96 0 L 96 11 A 5 5 0 0 0 106 11 L 106 0 L 103 0 L 103 11 A 2 2 0 0 1 99 11 L 99 0 Z"/>
-</g>
 </svg>
 
 <nav><a href="/blog">Blog</a> &middot; <a href="/about">About</a></nav>
