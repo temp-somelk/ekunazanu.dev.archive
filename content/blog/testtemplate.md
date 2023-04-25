@@ -373,7 +373,7 @@ Plain Text ---->+ AES +---> Cipher Text
         '----+----'   '----'
 ```
 
-[External site](https://ivanceras.github.io/svgbob-editor) for converting ASCII to SVG, since circle fill is hard-coded to ```#fff``` in GoAT.
+[External site](https://ivanceras.github.io/svgbob-editor) for converting ASCII to SVG, since circle fill is hard-coded to ```#fff``` in GoAT. Use this (external images) most of the time, keeps main html page organized. Use GoAT mostly/only for testing and prototyping.
 
 An unordered list:
 
