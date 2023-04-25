@@ -5,10 +5,11 @@
     - [x] 16px (blocky - only linear horizontal & vertical interpolation)
     - [x] Short logo (e) - decide on using either quadratic or cubic beziers. Maybe closest to quarter arc, but not necessarily, if control points are ugly decimals
     - [x] Long logo (ekunazanu) - Same as above
-- [ ] Homepage animations (check comments in static/css/home)
-- [ ] Custom font?
-- [ ] Improve header
-- [ ] Select a link hover design
+- [x] Homepage animations (check comments in static/css/home)
+- [x] ~~Custom font?~~ No, too much effort
+- [x] Improve header
+- [x] Select a link hover design
+    - [x] Select accent color
 
 - [ ] Graphs and Charts
     - [ ] Re-render all graphs and animations using one of:
@@ -25,7 +26,7 @@
         - [ ] https://misha.brukman.net/blog/2022/04/writing-math-with-hugo/
 - [ ] Improve footnotes (once [#7427](https://github.com/gohugoio/hugo/pull/7427) or [#5087](https://github.com/gohugoio/hugo/issues/5087) is merged)
 
-- [ ] Add giscus (maybe? adds JS tho)
+- [ ] ~~Add giscus~~ No additional JS
 
 ## Cleanup git history
 
@@ -42,7 +43,6 @@ Add in order:
 - [ ] static/icons
 - [ ] static/misc + cname
 - [ ] base content
-    - [ ] blog index page: "Site under construction."
 ### "Test" branch -> "Content" branch
 - [ ] content
     - [ ] blog index: old
