@@ -3,7 +3,9 @@
     --bg: #fff;
     --gray1: #ddd;
     --gray4: #444;
+    --light: #fff;
     --dark: #bbb;
+    --accent: #58858d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,7 +14,9 @@
         --bg: #000;
         --gray1: #333;
         --gray4: #bbb;
+        --light: #fff;
         --dark: #222;
+        --accent: #58858d;
     }
 }
 
@@ -45,21 +49,14 @@ a {
 }
 
 a:hover, a:focus {
-    color: var(--bg);
-    background-color: var(--fg);
-    text-decoration: none;
+    color: var(--accent);
 }
 
 a[target="_blank"]::after {
     content: "\a0\2197";
 }
 
-a:hover::selection {
-    color: var(--fg);
-    background-color: var(--gray1);
-}
-
 ::selection {
-    color: var(--bg);
-    background: var(--fg);
+    color: var(--light);
+    background-color: var(--accent);
 }

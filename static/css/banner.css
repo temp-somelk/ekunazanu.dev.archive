@@ -16,13 +16,10 @@ header svg {
     fill: var(--fg);
     height: 3rem;
     margin: 0rem;
-    border: 2pt solid var(--bg);
 }
 
 header a svg:hover {
-    fill: var(--bg);
-    background-color: var(--fg);
-    border-color: var(--fg);
+    fill: var(--accent);
 }
 
 header h1 {
