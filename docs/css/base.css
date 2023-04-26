@@ -20,8 +20,8 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 0.2em 0rem;
-    margin: 2rem 0rem 1rem;
+    padding: 0.5rem 0rem;
+    margin: 1.5rem 0rem 1rem;
     border-bottom: 2pt solid var(--gray1);
     overflow: wrap;
     overflow-wrap: break-word;
@@ -43,18 +43,6 @@ h4, h5, h6 {
     font-size: 1rem;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    display: inline;
-    visibility: hidden;
-    padding: 0rem 0.2rem;
-    margin: 0rem 0.3rem;
-    text-decoration: none;
-}
-
-h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
-    visibility: visible;
-}
-
 figure {
     display: block;
     max-width: 100%;
@@ -67,8 +55,8 @@ figcaption {
     color: var(--gray4);
     font-size: 0.8rem;
     text-align: center;
-    padding: 0.8rem;
-    margin: 0rem;
+    padding: 0rem;
+    margin: 1rem;
 }
 
 /* Images */
