@@ -11,5 +11,6 @@ math = false
 draft = false
 +++
 
-Content ComingSoon™
-<!-- Browse by [category](/categories) -->
+Site construction shall continue after endsem exams\
+Content ComingSoon™ ofc >:)
+<!-- &Colon; Browse by [category](/categories) -->
