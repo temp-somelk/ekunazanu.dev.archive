@@ -2,5 +2,5 @@
     <picture>
         <img src="{{ .Destination | safeURL -}}" alt="{{ .Text }}" loading="lazy" decoding="async">
     </picture>
-    <figcaption>{{ .Text }}</figcaption>
+    {{ with .Title }}<figcaption>{{ . }}</figcaption>{{ end }}
 </figure>
