@@ -25,7 +25,13 @@ $$and\\ block\\ math, e\\equiv \\lim\_{n\\to\\infty} \\left( 1 + \\frac{1}{n}\\r
 ## Header2
 Paragraph with a [link](linkaddress)
 
-{{< img alt="dragons" caption="Some caption" lsrc="https://cdn.pixabay.com/photo/2022/11/03/03/05/apples-7566512\_960\_720.jpg" dsrc="https://cdn.pixabay.com/photo/2021/12/29/08/18/insect-6900940\_960\_720.jpg" >}}
+Huge fan of photos of [echevarrio.io](https://www.echevarria.io/).
+
+{{< img alt="image of factory" lsrc="https://www.echevarria.io/img/photos/v1/01.jpg" dsrc="https://www.echevarria.io/img/photos/v1/04.jpg" >}}
+![Traffic Lights](https://www.echevarria.io/img/photos/v1/02.jpg)
+![Architecture](https://www.echevarria.io/img/photos/v1/05.jpg)
+![Parking Lot](https://www.echevarria.io/img/photos/v1/08.jpg)
+![Tree](https://www.echevarria.io/img/photos/v1/09.jpg)
 
 ### Header3
 Another paragraph with *emphasis* or **strong emphasis**. ```monospaced string or inline code```. Underline is not supported and discouraged, to reduce confusion with links. ~~Strikethrough~~ is supported though.
@@ -50,7 +56,12 @@ with just
 text
 that is very longgggggggggggggggggggggggggggggggggggggggggggggggg
 ```
-![dragon](/media/testtemplate/header.png)
+
+This is some sample text again. I don't know what to say other than that this is tedious. Okay, maybe not, but at least this is a waste of time. At least on the bright side I get to practice my typing skills and frankly I am not surprised I'm this slow. Worse, I am making too many mistakes. Good thing my typing won't be a bottleneck. My brain will. Anyways I think this is enough text for a paragraph to check how images look between paragraphs.
+
+![Cherry trees](https://www.echevarria.io/img/photos/v1/03.jpg "Cherry trees by the road")
+
+This is some sample text again. I don't know what to say other than that this is tedious. Okay, maybe not, but at least this is a waste of time. At least on the bright side I get to practice my typing skills and frankly I am not surprised I'm this slow. Worse, I am making too many mistakes. Good thing my typing won't be a bottleneck. My brain will. Anyways I think this is enough text for a paragraph to check how images look between paragraphs.
 
 Another paragraph and a table below:
 
@@ -374,6 +385,8 @@ Plain Text ---->+ AES +---> Cipher Text
 ```
 
 [External site](https://ivanceras.github.io/svgbob-editor) for converting ASCII to SVG, since circle fill is hard-coded to ```#fff``` in GoAT. Use this (external images) most of the time, keeps main html page organized. Use GoAT mostly/only for testing and prototyping.
+
+![mojave](https://www.echevarria.io/img/photos/v1/12.jpg)
 
 An unordered list:
 
