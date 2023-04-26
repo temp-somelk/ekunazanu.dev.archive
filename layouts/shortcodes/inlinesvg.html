@@ -1,6 +1,0 @@
-<figure>
-    <picture>
-    {{ readFile (.Get "lsrc") | safeHTML }}
-    </picture>
-    {{ if isset .Params "caption" }}<figcaption>{{ .Get "caption" }}</figcaption>{{ end }}
-</figure>
