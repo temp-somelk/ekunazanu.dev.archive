@@ -6,7 +6,6 @@ disableHugoGeneratorInject = true
 disableKinds = ["RSS"]
 publishDir = "docs"
 cleanDestinationDir = true
-pygmentsUseClasses = true
 [author]
 name = "Anchit Roy"
 email = "me@ekunazanu.dev"

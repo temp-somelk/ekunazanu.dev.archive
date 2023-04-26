@@ -125,7 +125,7 @@ Another paragraph and a table below:
 
 Also testing syntax highlight:
 
-``` c
+```
 int main(void){
     float num1;
     float num2;
@@ -145,7 +145,7 @@ int main(void){
 
 Some other code too
 
-``` python
+```
 #!/usr/bin/env python3
 from fractions import Fraction
 def solution(pegs):
