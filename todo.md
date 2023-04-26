@@ -1,21 +1,15 @@
+## Long term
+
 - [ ] ~~Include openring~~ The added complexity is not worth it right now.
 - [ ] ~~Paginate index and improve it. Maybe index and home page~~ Later, **if** I update the design of the entire site.
-
-- [x] Logo
-    - [x] 16px (blocky - only linear horizontal & vertical interpolation)
-    - [x] Short logo (e) - decide on using either quadratic or cubic beziers. Maybe closest to quarter arc, but not necessarily, if control points are ugly decimals
-    - [x] Long logo (ekunazanu) - Same as above
-- [x] Homepage animations (check comments in static/css/home)
-- [x] ~~Custom font?~~ No, too much effort
-- [x] Improve header
-- [x] Select a link hover design
-    - [x] Select accent color
 
 - [ ] Graphs and Charts
     - [ ] Re-render all graphs and animations using one of:
         - [ ] Julia
         - [ ] GeoGebra
         - [ ] manim
+
+- [ ] New category separate from blog (name it "Labs" maybe?) - High quality less frequent posts, design similar to [MIT Technology Review](https://www.technologyreview.com/). Use NimbusSansBold as an alternative to Helvetica.
 
 - [ ] Move to MathML, eliminate JS
     - [x] ~~Check if Chrome can support MathML (not just MathMLCore)~~ displays as block element, but works good enough for most cases.
@@ -28,10 +22,37 @@
 
 - [ ] ~~Add giscus~~ No additional JS
 
+## Now
+- [x] Logo
+    - [x] 16px (blocky - only linear horizontal & vertical interpolation)
+    - [x] Short logo (e) - decide on using either quadratic or cubic beziers. Maybe closest to quarter arc, but not necessarily, if control points are ugly decimals
+    - [x] Long logo (ekunazanu) - Same as above
+- [x] Homepage animations (check comments in static/css/home)
+- [x] ~~Custom font?~~ No, too much effort
+- [x] Improve header
+- [x] Select a link hover design
+    - [x] Select accent color
+- [x] Image caption margins
+- [ ] Safari img svg dark mode (header image)
+    - [ ] Fix Safari SVG dark mode (use currentColor?)
+- [ ] Design elements
+    - [ ] Header
+    - [ ] Footer
+    - [ ] Figures
+        - [ ] Captions
+        - [ ] Images, SVGs
+        - [ ] Tables
+    - [ ] Code Block
+    - [ ] Blockquotes
+    - [ ] Headings
+    - [ ] Lists
+    - [ ] Paragraphs
+    - [ ] End of page nav
+    - [ ] Footers as shortcodes, instead of goldmark
+
 ## Cleanup git history
 
 Add in order:
-
 - [ ] shortcodes
 - [ ] \_default/\_markup/
 - [ ] partials
@@ -45,7 +66,6 @@ Add in order:
 - [ ] base content
 ### "Test" branch -> "Content" branch
 - [ ] content
-    - [ ] blog index: old
     - [ ] articles
     - [ ] media
         - [ ] header images
