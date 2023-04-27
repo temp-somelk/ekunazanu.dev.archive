@@ -47,7 +47,7 @@
     - [ ] Headings
     - [ ] Lists
     - [ ] Paragraphs
-    - [ ] End of page nav
+    - [ ] Simplify end of page nav
     - [ ] Footers as shortcodes, instead of goldmark
 
 ## Cleanup git history
