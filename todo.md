@@ -35,7 +35,7 @@
 - [x] Image caption margins
 - [ ] Safari img svg dark mode (header image)
     - [ ] Fix Safari SVG dark mode (use currentColor?)
-- [ ] Design elements
+- [ ] Go through code
     - [ ] Header
     - [ ] Footer
     - [ ] Figures
@@ -47,6 +47,7 @@
     - [ ] Headings
     - [ ] Lists
     - [ ] Paragraphs
+    - [ ] Unify css?
     - [ ] Simplify end of page nav
     - [ ] Footers as shortcodes, instead of goldmark
 
