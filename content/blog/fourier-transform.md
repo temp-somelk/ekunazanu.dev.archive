@@ -11,10 +11,6 @@ math = true
 draft = true
 +++
 
-{{< note summary="Note" open="true" >}}
-This article assumes you have a basic understanding of the [Euler's Formula](/blog/eulers-identity#eulers-formula).
-{{< /note >}}
-
 Imagine you are given a function $y = f(x)$. Now what if I asked you to to represent this function as a sum of sine waves? Seems tricky, if not impossible at first. It might look daunting from afar, but the underlying principle behind Fourier transforms is actually relatively simple and really elegant.
 
 ## Time vs Frequency

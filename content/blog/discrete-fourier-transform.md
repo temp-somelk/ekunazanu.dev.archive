@@ -11,10 +11,6 @@ math = true
 draft = true
 +++
 
-{{< note summary="Note" open="true" >}}
-This article assumes you have a basic understanding of the [Fourier Transform](/blog/fourier-transform).
-{{< /note >}}
-
 ## Sampling
 
 ### Shannon-Nyquist Theorem
@@ -24,7 +20,7 @@ The Shannon-Nyquist Theorem states that $N > 2f$ or $f < N/2$
 
 $$
 \\begin{bmatrix}
-x_0 & x_1 & x_2 & x_3 & x_4 & x_5 & x_6 & x_7
+x\_0 & x\_1 & x\_2 & x\_3 & x\_4 & x\_5 & x\_6 & x\_7
 \\end{bmatrix}
 $$
 

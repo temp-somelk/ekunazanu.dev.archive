@@ -7,13 +7,9 @@ type = "blog"
 categories = ["Computer Science"]
 tags = ["Signal Processing"]
 code = false
-math = false
+math = true
 draft = true
 +++
-
-{{< note open="true" summary="Note" >}}
-This article assumes you have a basic understanding of the [Discrete Fourier Transform](/blog/discrete-fourier-transform).
-{{< /note >}}
 
 While Dicrete Fourier transforms
 
@@ -21,6 +17,6 @@ While Dicrete Fourier transforms
 
 ## Efficiency
 
-In computer science, we use a term called [Time Complexity](https://en.wikipedia.org/wiki/Time_complexity) to represent how an algorithm scales, with regards to the time needed to perform the computation, with respect to the size of the given input data. By removing the redundant calculations in FFT, we reduce the number of operations need to perform from the square of the number of the inputs to just . So formally we can say, the time complexity of the algorithm has been reduced from <span class="mathin">O(n<sup>2</sup>)</span> to <span class="mathin">O(nlog<sub>2</sub>n)</span>.
+In computer science, we use a term called [Time Complexity](https://en.wikipedia.org/wiki/Time_complexity) to represent how an algorithm scales, with regards to the time needed to perform the computation, with respect to the size of the given input data. By removing the redundant calculations in FFT, we reduce the number of operations need to perform from the square of the number of the inputs to just . So formally we can say, the time complexity of the algorithm has been reduced from $O(n^{2})$ to $O(n \\cdot logn)$.
 
 ## Implementation
