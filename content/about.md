@@ -1,7 +1,7 @@
 +++
 title = "About"
 indextitle = ""
-summary = "Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, and progressive rock."
+summary = "Hi, I am Anchit Roy. I write stuff about math and computer science and stuff."
 date = 2023-02-22T00:10:23+05:30
 type = "other"
 categories = [""]
@@ -11,10 +11,19 @@ math = false
 draft = false
 +++
 
-Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, and progressive rock. Sometimes, I code.
+Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology. I like math, statistics, progressive rock, and coding. One of them is a lie.
+
+{{< img alt="code works but why meme" lsrc="/media/me.png" invert="true" >}}
 
 ### Blog
-For most of my life, I've been passively consuming educational content from all over the internet, be it on YouTube or random blogs. I have always wanted to actively contribute back, but never knew how to. Or to be truthful, have enough drive in me to do it. But I've decided now is the perfect time to start, since I enrolled in college and I can just write about the things I am learning (not limited to just course listings either) to help me learn better too. I'll try to mostly write about things that interest me and hopefully present the fascinating, but rather intimidating topics in a relatively simple manner. I am still very much a beginner so I'm not very confident that I'll do a good job, but I am hoping at least someone might find it useful.
+
+Most smart people I know have a blog, and I want to *appear* smart too, so here we are. Okay no, my goal is to be able to become competent enough to write high-quality-production-grade-hyper-fast-efficient-readable-code™ within the next two years. And what better way to learn, than ~~to document what I learn~~ by trying to teach others too. Just kidding; I will be surprised if someone actually finds this useful. But hey, if someone does, I can just pretend it was my goal all along.
+
+If you get bored by my blog (how dare you), here's some people and blogs I personally follow and love and learnt a lot from:
+* [Mike Bostock](https://bost.ocks.org/mike/), if [pudding.cool](https://pudding.cool/) was one person. He posts [here](https://observablehq.com/@mbostock) now, at the company he founded.
+* [Drew DeVault](https://drewdevault.com), made the software I am using to type this blog right now. Fairly opinionated some might say.
+* [Simor Ser](https://emersion.fr), primary maintainer of above said software.
+* [Mike Blumenkratz](https://www.supergoodcode.com/), smart and funny.
 
 ### Contact
-I am available at [me@ekunazanu.dev](mailto:me@ekunazanu.dev). For private communications, you can download my [PGP key](/misc/public.ekunazanu.key).
+You can say hello, or send ideas or memes to me at [me@ekunazanu.dev](mailto:me@ekunazanu.dev). I am spending real money to have a cool looking email address and I refuse to believe I am a victim of the sunk cost fallacy, so don't hesitate to hit my inbox. In case you need to send nudes or you need to rigorously verify that all the cringe stuff I send to you is indeed from me, you can download my [PGP key](/misc/public.ekunazanu.key).
