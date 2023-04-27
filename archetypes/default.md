@@ -11,4 +11,4 @@ math = false
 draft = true
 +++
 
-
+![Image of {{ replace .Name "-" " " | title }}](/media/{{ .File.TranslationBaseName }}/header.png)

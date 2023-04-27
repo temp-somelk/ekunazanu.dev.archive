@@ -11,9 +11,7 @@ math = true
 draft = true
 +++
 
-{{< note summary="Note" open="true" >}}
-This article assumes you have a basic understanding of [Hashing](/blog/hashing). You do not need to know how they work, you just need to know what they do.
-{{< /note >}}
+![truck and wall](https://www.echevarria.io/img/photos/v1/04.jpg)
 
 Probabilistic data structures are, as the name suggests, data structures that are probabilistic in nature. What it means is that these data structures cannot give us exact answers, and only give us probable answers to queries on datasets. You might wonder, "Why even bother with these if they give us imprecise answers?!" Well, because what we sacrifice in precision, we gain in space and/or time efficiency. When we don't need exact answers, these data structures help us store and compute information, in sublinear space/time complexity, sometimes in $O(1)$ space and time.
 
