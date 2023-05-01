@@ -1,46 +1,53 @@
-nav {
+.categories {
     color: var(--gray4);
     font-size: 0.8rem;
     padding: 0rem;
     margin: 3rem 0rem 1rem;
 }
 
-nav section, nav div {
+.related h3 {
+    color: var(--gray4);
+}
+
+.relatedarticles, .nextprev {
     display: flex;
     margin: 1rem 0rem;
 }
 
-nav article {
+.relatedarticles div, .nextprev div {
     display: block;
     flex: 1 1 0;
 }
 
-nav section article {
+.relatedarticles div {
     margin: 0rem 0.5rem;
 }
 
-nav div article {
+.nextprev div {
+    font-size: 0.8rem;
+    padding: 0rem;
     margin: auto 0rem;
 }
 
-nav time {
+.related time {
     display: block;
     color: var(--gray4);
     font-size: 0.8rem;
     margin: 0rem;
 }
 
-nav strong {
+.related strong {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
+    margin: 0rem;
 }
 
-nav p {
+.related p {
     color: var(--fg);
     font-size: 0.9rem;
     line-height: 1.5rem;
-    margin: 1rem 0rem 2.5rem;
+    margin: 1rem 0rem 2rem;
 }
 
 @media (max-width: 40rem) {

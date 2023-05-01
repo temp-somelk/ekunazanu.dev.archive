@@ -1,38 +1,38 @@
-<nav>
-
+<div class="categories">
 This article is about
 {{- range (.GetTerms "categories") }}
 <a href="{{ .RelPermalink }}">{{ .Title -}}</a>
 {{- end -}} <br>
 Browse all <a href="/categories">categories</a>
-
-<h3>Other Articles</h3>
-
-<section>
-    {{ $related := ( where ( .Site.RegularPages.Related . ) "Type" "blog" ) | first 3 }}
-    {{ with $related }}
-    {{- range . -}}
-    <article>
-    <time>{{ .Date.Format "2006-01-02" }}</time>
-    <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
-    <p>{{ .Summary }}...</p>
-    </article>
-    {{- end -}}
-    {{- end }}
-</section>
-
-<div>
-{{ with .NextInSection }}
-<article>
-<a href="{{ .RelPermalink }}">&LongLeftArrow;&nbsp;{{ .Title }}</a>
-</article>
-{{ end }}
-<article style="max-width: 5rem;"></article>
-{{ with .PrevInSection }}
-<article style="text-align: right;">
-<a href="{{ .RelPermalink }}">{{ .Title }}&nbsp;&LongRightArrow;</a>
-</article>
-{{ end }}
 </div>
 
-</nav>
+<section class="related">
+<h3>Other Articles</h3>
+    <div class="relatedarticles">
+    {{ $related := ( where ( .Site.RegularPages.Related . ) "Section" .Section ) | first 3 }}
+    {{ with $related }}
+    {{- range . -}}
+    <div>
+    <time>{{ .Date.Format "2006-01-02" }}</time>
+    <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+    <p>{{ .Summary }}</p>
+    </div>
+    {{- end -}}
+    {{- end }}
+    </div>
+</section>
+
+<section class="nextprev">
+{{ with .NextInSection }}
+<div>
+<a href="{{ .RelPermalink }}">&LongLeftArrow;&nbsp;{{ .Title }}</a>
+</div>
+{{ end }}
+<div style="max-width: 5rem;"></article>
+{{ with .PrevInSection }}
+<div style="text-align: right;">
+<a href="{{ .RelPermalink }}">{{ .Title }}&nbsp;&LongRightArrow;</a>
+</div>
+{{ end }}
+</div>
+</section>
