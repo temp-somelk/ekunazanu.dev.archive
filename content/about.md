@@ -11,13 +11,17 @@ math = false
 draft = false
 +++
 
-Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology. I like math, statistics, progressive rock, and coding. One of them is a lie.
+Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, progressive rock, and coding. One of them is a lie.
 
-{{< img alt="code works but why meme" lsrc="/media/me.png" invert="true" >}}
+![doodle of myself]()
+
+I also like doodling I guess.
 
 ### Blog
 
-Most smart people I know have a blog, and I want to *appear* smart too, so here we are. Okay no, my goal is to be able to become competent enough to write high-quality-production-grade-hyper-fast-efficient-readable-code™ within the next two years. And what better way to learn, than ~~to document what I learn~~ by trying to teach others too. Just kidding; I will be surprised if someone actually finds this useful. But hey, if someone does, I can just pretend it was my goal all along.
+Most smart people I know have their own blog, and I want to *appear* smart too, so here we are. Okay no, my goal is to be able to become competent enough to write high-quality-production-grade-hyper-fast-efficient-readable-code™ within the next two years. And what better way to learn, than ~~to document what I learn~~ by trying to teach others too. Just kidding; I will be surprised if someone actually finds this useful. But hey, if someone does, I can just pretend it was my goal all along.
+
+![doodle of other things]()
 
 If you get bored by my blog (how dare you), here's some people and blogs I personally follow and love and learnt a lot from:
 * [Mike Bostock](https://bost.ocks.org/mike/), if [pudding.cool](https://pudding.cool/) was one person. He posts [here](https://observablehq.com/@mbostock) now, at the company he founded.
