@@ -47,9 +47,13 @@
     - [ ] Headings
     - [ ] Lists
     - [ ] Paragraphs
-    - [ ] Unify css?
     - [ ] Simplify end of page nav
     - [ ] Footers as shortcodes, instead of goldmark
+        - [ ] https://discourse.gohugo.io/t/footnote-html-customization/40026
+        - [ ] https://github.com/gj52/HugoSample/blob/master/themes/photon/layouts/shortcodes/footnotelist.html
+        - [ ] https://github.com/gj52/HugoSample/blob/master/themes/photon/layouts/shortcodes/footnoteset.html
+    - [ ] Unify css?
+    - [ ] Add content to "About"
 
 ## Cleanup git history
 
