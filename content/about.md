@@ -13,7 +13,7 @@ draft = false
 
 Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, progressive rock, and coding. One of them is a lie.
 
-![doodle of myself]()
+![doodle of myself](/media/icons/qr.svg)
 
 I also like doodling I guess.
 
