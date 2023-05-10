@@ -6,7 +6,6 @@ date = 2023-03-03T03:36:10+05:30
 type = "blog"
 categories = ["Physics", "Mathematics"]
 tags = ["Cryptography"]
-code = false
 math = true
 draft = true
 +++

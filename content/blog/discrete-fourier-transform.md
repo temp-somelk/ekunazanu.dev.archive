@@ -6,7 +6,6 @@ date = 2023-02-22T03:21:23+05:30
 type = "blog"
 categories = ["Computer Science"]
 tags = ["Signal Processing"]
-code = false
 math = true
 draft = true
 +++

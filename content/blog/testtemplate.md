@@ -6,7 +6,6 @@ date = 2020-02-22T00:01:05+05:30
 type = "blog"
 categories = ["Mathematics", "Computer Science"]
 tags = ["Test"]
-code = true
 math = true
 draft = true
 +++

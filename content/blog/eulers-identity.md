@@ -6,7 +6,6 @@ date = 2023-02-22T00:00:35+05:30
 type = "blog"
 categories = ["Mathematics"]
 tags = ["Signal Processing", "Coordinate Geometry"]
-code = false
 math = true
 draft = true
 +++

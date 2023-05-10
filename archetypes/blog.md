@@ -6,7 +6,6 @@ date = {{ .Date }}
 type = "blog"
 categories = [""]
 tags = [""]
-code = false
 math = false
 draft = true
 +++

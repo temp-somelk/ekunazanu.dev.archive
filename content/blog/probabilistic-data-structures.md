@@ -6,7 +6,6 @@ date = 2023-02-25T09:11:12+05:30
 type = "blog"
 categories = ["Computer Science"]
 tags = ["Cryptography"]
-code = false
 math = true
 draft = true
 +++
