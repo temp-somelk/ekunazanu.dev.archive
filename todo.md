@@ -32,6 +32,7 @@
 - [x] Improve header
 - [x] Select a link hover design
     - [x] Select accent color
+- [ ] Use Sass instead of statics CSS
 - [x] Image caption margins
 - [ ] Safari img svg dark mode (header image)
     - [ ] Fix Safari SVG dark mode (use currentColor?)
