@@ -21,10 +21,11 @@ Most smart people I know have their own blog, and I want to *appear* smart too, 
 ![doodle of myself](/media/me.svg "das me")
 
 If you get bored by my blog (how dare you), here's some people and blogs I personally follow and love and learnt a lot from:
-* [Mike Bostock](https://bost.ocks.org/mike/), if [pudding.cool](https://pudding.cool/) was one person. He posts [here](https://observablehq.com/@mbostock) now, at the company he founded.
-* [Drew DeVault](https://drewdevault.com), made the software I am using to type this blog right now. Fairly opinionated some might say.
-* [Simor Ser](https://emersion.fr), primary maintainer of above said software.
-* [Mike Blumenkratz](https://www.supergoodcode.com/), smart and funny.
+* [Mike Bostock](https://bost.ocks.org/mike/) — If [pudding.cool](https://pudding.cool/) was one person. He posts [here](https://observablehq.com/@mbostock) now, at the company he founded.
+* [Tom MacWright](https://macwright.com/) — I didn't even know doing this much stuff was humanly possible.
+* [Drew DeVault](https://drewdevault.com) — Made the software I am using to type this blog right now. Fairly opinionated some might say.
+* [Simor Ser](https://emersion.fr) and [Isaac Freund](https://isaacfreund.com/) — Maintainers of above software. Design of this site is ~~copied~~ heavily influenced by theirs.
+* [Mike Blumenkratz](https://www.supergoodcode.com/) — smart and funny.
 
 ## Contact
 You can say hello, or send ideas or memes to me at [me@ekunazanu.dev](mailto:me@ekunazanu.dev). I am spending real money to have a cool looking email address and I refuse to believe I am a victim of the sunk cost fallacy, so don't hesitate to hit my inbox. In case you need to send nudes or you need to rigorously verify that all the cringe stuff I send to you is indeed from me, you can download my [PGP key](/misc/public.ekunazanu.key).
