@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    width="160px"
+    height="192px"
+    viewBox="0 2 10 12"
+    version="1.1"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg">
+<path
+    id="AnimLogoBG"
+    stroke-width="0"
+    fill="#000000"
+    d="M 0 0 V 16 H 106 V 0 Z"/>
+
+<animate
+    id="expand"
+    dur="1.5s"
+    begin="1s; shorten.end+8s"
+    fill="freeze"/>
+<animate
+    id="shorten"
+    dur="1.5s"
+    begin="expand.end+8s"
+    fill="freeze"/>
+
+<animate
+    attributeName="height"
+    dur="1.5s"
+    begin="expand.begin"
+    fill="freeze"
+    calcMode="spline"
+    keySplines="0.5 0 0 1"
+    keyTimes="0; 1"
+    from="192"
+    to="48"/>
+<animate
+    attributeName="height"
+    dur="1.5s"
+    begin="shorten.begin"
+    fill="freeze"
+    calcMode="spline"
+    keySplines="0.5 0 0 1"
+    keyTimes="0; 1"
+    from="48"
+    to="192"/>
+
+<animate
+    attributeName="viewBox"
+    dur="1.5s"
+    begin="expand.begin"
+    fill="freeze"
+    calcMode="spline"
+    keySplines="0.5 0 0 1"
+    keyTimes="0; 1"
+    from="0 2 10 12"
+    to="0 0 106 16"/>
+<animate
+    attributeName="viewBox"
+    dur="1.5s"
+    begin="shorten.begin"
+    fill="freeze"
+    calcMode="spline"
+    keySplines="0.5 0 0 1"
+    keyTimes="0; 1"
+    from="0 0 106 16"
+    to="0 2 10 12"/>
+
+<path
+    id="fige1"
+    stroke-width="0"
+    fill="#ffffff"
+    d="M 10 8 V 2 C 9 2 6 2 5 2 C 4 2 1 2 0 2 V 8 H 2 V 4 H 4 V 8 H 6 V 4 H 8 V 8 Z">
+    <animate
+        attributeName="d"
+        dur="1.5s"
+        begin="expand.begin"
+        fill="freeze"
+        calcMode="spline"
+        keySplines="0.5 0 0 1"
+        keyTimes="0; 1"
+        from="M 10 8 V 2 C 9 2 6 2 5 2 C 4 2 1 2 0 2 V 8 H 2 V 4 H 4 V 8 H 6 V 4 H 8 V 8 Z"
+        to="M 10 10 V 7 C 10 4 8 2 5 2 C 2 2 0 4 0 7 V 10 H 2 V 8 H 4 V 10 H 6 V 8 H 8 V 10 Z"/>
+    <animate
+        attributeName="d"
+        dur="1.5s"
+        begin="shorten.begin"
+        fill="freeze"
+        calcMode="spline"
+        keySplines="0.5 0 0 1"
+        keyTimes="0; 1"
+        from="M 10 10 V 7 C 10 4 8 2 5 2 C 2 2 0 4 0 7 V 10 H 2 V 8 H 4 V 10 H 6 V 8 H 8 V 10 Z"
+        to="M 10 8 V 2 C 9 2 6 2 5 2 C 4 2 1 2 0 2 V 8 H 2 V 4 H 4 V 8 H 6 V 4 H 8 V 8 Z"/>
+</path>
+
+<path
+    id="fige2"
+    stroke-width="0"
+    fill="#ffffff"
+    d="M 0 8 V 10 C 0 12.5 1.5 14 4 14 C 6 14 8 14 10 14 L 10 12 C 8 12 6 12 4 12 C 2.5 12 2 11.5 2 10 V 10 H 10 V 8 Z">
+    <animate
+        attributeName="d"
+        dur="1.5s"
+        begin="expand.begin"
+        fill="freeze"
+        calcMode="spline"
+        keySplines="0.5 0 0 1"
+        keyTimes="0; 1"
+        from="M 0 8 V 10 C 0 12.5 1.5 14 4 14 C 6 14 8 14 10 14 L 10 12 C 8 12 6 12 4 12 C 2.5 12 2 11.5 2 10 V 10 H 10 V 8 Z"
+        to="M 0 7 V 11 C 0 14 2 16 5 16 C 8 16 10 14 10 11 L 7 11 C 7 12 6.5 13 5 13 C 3.5 13 3 12 3 11 V 10 H 10 V 7 Z"/>
+    <animate
+        attributeName="d"
+        dur="1.5s"
+        begin="shorten.begin"
+        fill="freeze"
+        calcMode="spline"
+        keySplines="0.5 0 0 1"
+        keyTimes="0; 1"
+        from="M 0 7 V 11 C 0 14 2 16 5 16 C 8 16 10 14 10 11 L 7 11 C 7 12 6.5 13 5 13 C 3.5 13 3 12 3 11 V 10 H 10 V 7 Z"
+        to="M 0 8 V 10 C 0 12.5 1.5 14 4 14 C 6 14 8 14 10 14 L 10 12 C 8 12 6 12 4 12 C 2.5 12 2 11.5 2 10 V 10 H 10 V 8 Z"/>
+</path>
+
+<path
+    id="LongLogoK1"
+    stroke-width="0"
+    fill="#ffffff"
+    d="M 12 0 V 16 H 15 V 9.5 H 16.5 L 20 16 H 23 L 19 8 L 23 0 H 20 L 16.5 6.5 H 15 V 0 Z"/>
+<path
+    id="LongLogoU1"
+    stroke-width="0"
+    fill="#ffffff"
+    d="M 24 0 V 11 A 5 5 0 0 0 34 11 V 0 H 31 V 11 A 2 2 0 0 1 27 11 V 0 Z"/>
+<path
+    id="LongLogoN1"
+    stroke-width="0"
+    fill="#ffffff"
+    d="M 36 16 V 5 A 5 5 0 0 1 46 5 V 16 H 43 V 5 A 2 2 0 0 0 39 5 V 16 Z"/>
+<path
+    id="LongLogoA1"
+    stroke-width="0"
+    fill="#ffffff"
+    d="M 48 16 V 5 A 5 5 0 0 1 58 5 V 16 H 55 V 5 A 2 2 0 0 0 51 5 V 7 H 55 V 10 H 51 V 16 Z"/>
+<path
+    id="LongLogoZ1"
+    stroke-width="0"
+    fill="#ffffff"
+    d="M 60 0 H 70 V 3 L 63.5 13 H 70 V 16 H 60 V 13 L 66.5 3 H 60 Z"/>
+<path
+    id="LongLogoA2"
+    stroke-width="0"
+    fill="#ffffff"
+    d="M 72 16 V 5 A 5 5 0 0 1 82 5 V 16 H 79 V 5 A 2 2 0 0 0 75 5 V 7 H 79 V 10 H 75 V 16 Z"/>
+<path
+    id="LongLogoN2"
+    stroke-width="0"
+    fill="#ffffff"
+    d="M 84 16 V 5 A 5 5 0 0 1 94 5 V 16 H 91 V 5 A 2 2 0 0 0 87 5 V 16 Z"/>
+<path
+    id="LongLogoU2"
+    stroke-width="0"
+    fill="#ffffff"
+    d="M 96 0 V 11 A 5 5 0 0 0 106 11 V 0 H 103 V 11 A 2 2 0 0 1 99 11 V 0 Z"/>
+</svg>
