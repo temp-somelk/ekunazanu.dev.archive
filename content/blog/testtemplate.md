@@ -144,7 +144,7 @@ int main(void){
 
 Some other code too
 
-```
+``` {caption="foobar"}
 #!/usr/bin/env python3
 from fractions import Fraction
 def solution(pegs):
