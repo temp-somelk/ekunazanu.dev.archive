@@ -8,4 +8,8 @@
     <meta name="author" content="{{ .Site.Author.name }}">
     <link rel="canonical" href="{{ .Permalink }}">
     <link rel="icon" href="/icons/logo.16px.png">
-    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/{{ .Kind }}.{{ .Type }}.css">
+    {{ if .Params.math }}
+    {{ partial "math.html" . }}
+    {{ end }}
+</head>
