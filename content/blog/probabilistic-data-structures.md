@@ -10,7 +10,7 @@ math = true
 draft = true
 +++
 
-![truck and wall](https://www.echevarria.io/img/photos/v1/04.jpg)
+![Header Image](https://www.echevarria.io/img/photos/v1/04.jpg)
 
 Probabilistic data structures are, as the name suggests, data structures that are probabilistic in nature. What it means is that these data structures cannot give us exact answers, and only give us probable answers to queries on datasets. You might wonder, "Why even bother with these if they give us imprecise answers?!" Well, because what we sacrifice in precision, we gain in space and/or time efficiency. When we don't need exact answers, these data structures help us store and compute information, in sublinear space/time complexity, sometimes in $O(1)$ space and time.
 
@@ -18,7 +18,7 @@ Probabilistic data structures are, as the name suggests, data structures that ar
 
 Bloom filters are one of the most popular probabilistic data structures that help us check for membership in a set or multisets. In simpler words, they help us check if an element is present in a set or not. Bloom filters cannot report with certainty that an element exists in a set, but it can tell us with certainty if it does **not** exist in a set. And they help us do it for big datasets using very little space.
 
-### Hashmaps
+### Hash Tables
 
 So how do we store information using less information? You can compress the data and store only the unique values, but the space required will still roughly scale linearly with the number of elements and the size of each element. So what can we do? Hashing comes to the rescue. Well, sort of. We know hashing will always produce a fix length output for any given input. We also know that output is deterministic, i.e. it will produce the exact same output if our input is same. This solves two of our problems. First, we only have to store a fixed amount, even if the size of the element is large. The second is storing only distinct elements. Since hashes produce the same output for a given input, even if an elements occurs multiple times, if we hash it, we'll get the same result, and thus do not need to store it again. Hash collisions still happen, and it's the reason bloom filters are probabilistic, but we'll discuss about hash collisions later.
 
@@ -154,18 +154,109 @@ To check for membership, we do the same thing.
 
 ## Count-Min Sketch
 
-``` goat {caption="A Sketch"}
+``` goat {caption="A Sketch of m length and d depth"}
           .---+---+---+---+---+---+---+---+   +---.  -.
-          | 0 |   |   |   |   |   |   |   | … | 0 |   |
+          | 0 | 2 | 0 | 1 | 2 | 6 | 3 | 0 | … | 0 |   |
           +---+---+---+---+---+---+---+---+   +---+   |
-          |   |   |   |   |   |   |   |   | … | 0 |   |
+          | 0 | 3 | 6 | 1 | 0 | 0 | 0 | 2 | … | 1 |   |
           +---+---+---+---+---+---+---+---+   +---+   +- d
-          |   |   |   |   |   |   |   |   | … | 0 |   |
+          | 0 | 1 | 2 | 2 | 0 | 1 | 0 | 6 | … | 0 |   |
           +---+---+---+---+---+---+---+---+   +---+   |
-          |   |   |   |   |   |   |   |   | … | 0 |   |
+          | 1 | 0 | 3 | 6 | 1 | 1 | 0 | 0 | … | 2 |   |
           '---+---+---+---+---+---+---+---+   +---'  -'
             1   2   3   4   5   6   7   8       m
 ```
+
+Count min sketch is an modified form of Bloom Filters which allow us to calculate the minimum occurences of elements in a set.
+
+It's kinda similar to Bloom Filters. Well, sort of. Instead of storing a bit for an element, we instead assign it more bits for it to be able to store a number, which we'll utilize as a counter. We do the same thing — create a hash table. Instead of creating a one-dimesnional array which stores the state of membership, we instead create a two dimesnional array each storing the cardinality of element. So what's in the other arrays?
+
+Well here's the thing. Hash collisions can be prevented not just by expanding horizontally, i.e., by increasing the size of the array, but we can also increase it vertically, i.e. by adding an extra dimension to the array. Each array store the cardinality of the elements too, but using a different hashing function. Now you might ask "Why would you hash the elements multiple times and increase computational operations idiot?". Well because I'm a genius and I said so. Okay not really, but is genius indeed. Instead of just taking the cardinality of the element from one array, we take the minimum of the count-min-sketch. The probability of the two distinct elements having the same hashing function is already rare, depending on how big we chose our array. But using more hashing functions and looking at the intersection of the hash tables decreases the probability of hash collisions exponentially. This allows us to use **MUCH** smaller arrays.
+
+Of course you might now say, "Well that's great, then lets just increase ```d``` and reduce ```m```, it'll reduce our sketch massively!" Well hold your horses there, you were partially right when you we talking about unnecessarily computing hashes multiple times. While it's not redundant, calculating hashes surely is costly, computationally speaking of course. After a point you hit a point of diminishing returns, so you need to find the sweet spot where the right tradeoffs are made.
+
+Let's take an example. Here we'll take this set:
+
+```
+A = {
+    Elem1,
+    Elem2,
+    Elem1,
+    Elem3,
+    Elem5,
+    Elem5,
+    Elem5,
+    Elem1,
+    Elem2,
+    Elem5,
+    Elem6,
+    Elem3,
+}
+```
+
+Let's start. We initialize a two dimensional array of ```m = 8``` breadth and ```d = 4``` depth. We'll discuss how the dimensions are decided later, for now let's just assume $m$ and $d$ are what they are.
+
+``` goat {caption="Initial 2D Array"}
+.---+---+---+---+---+---+---+---.
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+'---+---+---+---+---+---+---+---'
+  1   2   3   4   5   6   7   8
+```
+
+First, we hash the first element in the set using 4 hashing functions and add 1 to the position denoted by the respective hash.
+
+``` goat {caption="Hashing an element using multiple functions"}
+Hash1(elem1) --> 3
+.---+---+---+---+---+---+---+---.   -.
+| 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1  | 
+'---+---+---+---+---+---+---+---'    |
+                                     |
+Hash2(elem1) --> 2                   |
+.---+---+---+---+---+---+---+---.    |
+| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2  |
+'---+---+---+---+---+---+---+---'    |
+                                     +--- d
+Hash3(elem1) --> 8                   |
+.---+---+---+---+---+---+---+---.    |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 3  |
+'---+---+---+---+---+---+---+---'    |
+                                     |
+Hash4(elem1) --> 6                   |
+.---+---+---+---+---+---+---+---.    |
+| 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 4  |
+'---+---+---+---+---+---+---+---'   -'
+  1   2   3   4   5   6   7   8
+```
+
+So we get the resulting 2D array:
+
+``` goat
+.---+---+---+---+---+---+---+---.
+| 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+
+| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
++---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+'---+---+---+---+---+---+---+---'
+  1   2   3   4   5   6   7   8
+```
+
+The given set had a frequency distribution as follows:
+
+* Elem1: 3
+* Elem2: 1
+* Elem3: 2
+* Elem4: 1
+* Elem5: 6
+* Elem6: 0
 
 ## HyperLogLog
 
