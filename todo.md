@@ -36,6 +36,7 @@
 - [x] Image caption margins
 - [ ] Safari img svg dark mode (header image)
     - [ ] Fix Safari SVG dark mode (use currentColor?)
+- [ ] Index, category and tags pages -> list only child directories/objects, i.e. list categories of only blog pages, or only *insert similar thing* pages. (https://gohugo.io/templates/taxonomy-templates/)
 - [ ] Go through code
     - [ ] Header
     - [ ] Footer
