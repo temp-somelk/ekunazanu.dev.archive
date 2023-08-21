@@ -9,7 +9,7 @@
         - [ ] GeoGebra
         - [ ] manim
 
-- [ ] New category separate from blog (name it "Labs" maybe?) - High quality less frequent posts, design similar to [MIT Technology Review](https://www.technologyreview.com/). Use NimbusSansBold as an alternative to Helvetica.
+- [x] New category separate from blog (name it "Labs" maybe?) - High quality less frequent posts, ~~design similar to [MIT Technology Review](https://www.technologyreview.com/). Use NimbusSansBold as an alternative to Helvetica.~~ Design overhaul is too much effort, maybe in the future.
 
 - [ ] Move to MathML, eliminate JS
     - [x] ~~Check if Chrome can support MathML (not just MathMLCore)~~ displays as block element, but works good enough for most cases.
