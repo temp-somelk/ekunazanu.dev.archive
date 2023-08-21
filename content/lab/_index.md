@@ -8,4 +8,4 @@ tags = [""]
 draft = false
 +++
 
-Quality >= quantity.
+Quality >= Quantity.
