@@ -8,9 +8,9 @@ tags = [""]
 draft = false
 +++
 
-Hi! I am Anchit. I am a first year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, progressive rock, and coding. One of them is a lie.
+Hi! I am Anchit. I am a second year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, progressive rock, and coding. One of them is a lie.
 
-![doodle of frustration](/media/no.svg)
+![doodle of frustration](/media/about/no.svg)
 
 I also like doodling I guess.
 
@@ -18,7 +18,9 @@ I also like doodling I guess.
 
 Most smart people I know have their own blog, and I want to *appear* smart too, so here we are. Okay no, my goal is to be able to become competent enough to write high-quality-production-grade-hyper-fast-efficient-readable-code™ within the next two years. And what better way to learn, than ~~to document what I learn~~ by trying to teach others too. Just kidding; I will be surprised if someone actually finds this useful. But hey, if someone does, I can just pretend it was my goal all along.
 
-![doodle of myself](/media/me.svg "das me")
+![doodle of myself](/media/about/me.svg "das me")
+
+### Other Blogs
 
 If you get bored by my blog (how dare you), here's some people and blogs I personally follow and love and learnt a lot from:
 * [Mike Bostock](https://bost.ocks.org/mike/) — If [pudding.cool](https://pudding.cool/) was one person. He posts [here](https://observablehq.com/@mbostock) now, at the company he founded.
@@ -35,4 +37,4 @@ If you get bored by my blog (how dare you), here's some people and blogs I perso
 * [GlorifiedGluer](https://gluer.org/blrogroll)
 
 ## Contact
-You can say hello, or send ideas or memes to me at [me@ekunazanu.dev](mailto:me@ekunazanu.dev). I am spending real money to have a cool looking email address and I refuse to believe I am a victim of the sunk cost fallacy, so don't hesitate to hit my inbox. In case you need to send nudes or you need to rigorously verify that all the cringe stuff I send to you is indeed from me, you can download my [PGP key](/misc/public.ekunazanu.key).
+You can say hello, or send ideas or memes to me at [ekunazanu@tutanota.com](mailto:ekunazanu@tutanota.com). In case you need to send nudes or you need to rigorously verify that all the cringe stuff I send to you is indeed from me, you can download my [PGP key](/misc/public.ekunazanu.key).
