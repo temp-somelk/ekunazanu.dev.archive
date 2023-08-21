@@ -1,7 +1,7 @@
 {{ partial "head" . -}}
 <body>
 <main>
-
+<a href="/about">
 <svg id="AnimLogo" viewBox="0 2 10 12" height="192">
 <animate id="expand" dur="1.5s" begin="1s; shorten.end+8s" fill="freeze"/>
 <animate id="shorten" dur="1.5s" begin="expand.end+8s" fill="freeze"/>
@@ -26,12 +26,13 @@
 <path id="LongLogoN2" d="M 84 16 V 5 A 5 5 0 0 1 94 5 V 16 H 91 V 5 A 2 2 0 0 0 87 5 V 16 Z"/>
 <path id="LongLogoU2" d="M 96 0 V 11 A 5 5 0 0 0 106 11 V 0 H 103 V 11 A 2 2 0 0 1 99 11 V 0 Z"/>
 </svg>
+</a>
 
-<!-- The 'e' interpolations are not the same as the original logos, but the cubic beziers allow for animations and the curves are very similar anyways -->
+<!-- The 'e' interpolations are not the same as the original logos, but the cubic beziers allow for animations and the curves are very similar anyway -->
 <!-- Also the height values are hardcoded since safari/webkit doesn't support animating rem units -->
 <!-- Nor does it support endEvent, smh Apple -->
 
-<nav><a href="/blog">Blog</a> &middot; <a href="/about">About</a></nav>
+<nav><a href="/lab">Lab</a> &middot; <a href="/log">Log</a></nav>
 
 </main>
 </body>
