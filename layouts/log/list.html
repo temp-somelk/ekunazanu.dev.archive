@@ -1,0 +1,16 @@
+{{ partial "head" . -}}
+<body>
+{{ partial "header" . -}}
+<main>
+{{ .Content -}}
+<ul>
+{{- range .Pages.ByDate.Reverse }}
+<li>
+    <time>{{ .Date.Format "2006-01-02" }}</time>
+    <a href="{{ .RelPermalink }}">{{ .Params.indextitle }}</a>
+</li>
+{{- end -}}
+</ul>
+</main>
+{{ partial "footer" . }}
+{{ partial "foot" . -}}

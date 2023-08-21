@@ -1,0 +1,11 @@
+{{ partial "head" . -}}
+<body>
+{{ partial "header" . -}}
+<main>
+<article>
+{{ .Content -}}
+</article>
+{{ partial "nav" . }}
+</main>
+{{ partial "footer" . }}
+{{ partial "foot" . -}}
