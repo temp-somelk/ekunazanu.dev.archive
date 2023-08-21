@@ -3,14 +3,14 @@ title = "The Euler's Identity"
 indextitle = "The Complex Plane: The Euler's Identity"
 summary = "If you have ever enrolled in any of the STEM disciplines, chances are you would've come across Euler. Now there's a lot of genius things he came up with, but one of the most well known (and also one of the most elegant) has to be the Euler's Identity."
 date = 2023-02-22T00:00:35+05:30
-type = "blog"
+type = "lab"
 categories = ["Mathematics"]
 tags = ["Signal Processing", "Coordinate Geometry"]
 math = true
 draft = true
 +++
 
-![Header image]()
+![Header image](/media/lab/eulers-identity/1.png)
 
 If you have ever enrolled in any of the STEM disciplines, chances are you would've come across Euler. Now there's a lot of genius things he came up with, but one of the most well known (and also one of the most elegant) has to be the Euler's Identity, $e^{i\\pi} + 1 = 0$. From quantum physics to signal processing, it comes up very frequently in areas that may not even necessarily be directly under the mathematical domain. Now, even if you've never come across this expression, or even know what any of it means, I'll dissect every term and try to explain why it is the way it is and what it represents, using regular high school math.
 
