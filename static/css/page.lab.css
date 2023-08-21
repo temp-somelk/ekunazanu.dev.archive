@@ -1,0 +1,380 @@
+:root {
+    --fg: #000;
+    --bg: #fff;
+    --gray1: #ddd;
+    --gray4: #444;
+    --light: #fff;
+    --dark: #bbb;
+    --accent: #58858d;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fg: #fff;
+        --bg: #000;
+        --gray1: #333;
+        --gray4: #bbb;
+        --light: #fff;
+        --dark: #222;
+        --accent: #58858d;
+    }
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url(/fonts/JetBrainsMono-Variable.woff2) format(woff2);
+    font-style: normal;
+    font-display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--fg);
+    background-color: var(--bg);
+    font: normal 0.9rem JetBrainsMono, monospace;
+    max-width: 50rem;
+    padding: 1rem;
+    margin: 0rem auto;
+}
+
+a {
+    color: var(--fg);
+    font-family: JetBrainsMono, monospace;
+    text-decoration: underline;
+    font-style: inherit;
+}
+
+a:hover, a:focus {
+    color: var(--accent);
+}
+
+a[target="_blank"]::after {
+    content: "\a0\2197";
+}
+
+::selection {
+    color: var(--light);
+    background-color: var(--accent);
+}
+header {
+    display: block;
+    padding: 0rem 0rem 0.5rem;
+    margin: 0rem 0rem 1rem;
+    border-bottom: 2pt solid var(--gray4);
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 0rem 1rem;
+}
+
+header svg {
+    display: block;
+    fill: var(--fg);
+    height: 3rem;
+    margin: 0rem;
+}
+
+header a svg:hover {
+    fill: var(--accent);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    padding: 0rem;
+    margin: 0rem;
+    border: none;
+}
+
+header h2 {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-transform: none;
+    padding: 0rem;
+    margin: 0rem;
+    border: none;
+}
+
+header h2 a {
+    color: var(--gray4);
+}
+footer {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    margin: 2rem 0rem -1rem;
+    border-top: 2pt solid var(--gray4);
+}
+
+footer a {
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url(/fonts/SourceSans-Variable.woff2) format(woff2);
+    font-style: normal;
+    font-display: swap;
+}
+
+p {
+    font: normal 1rem/2rem SourceSansPro, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 1rem 0rem;
+}
+
+p a {
+    font-size: 0.9rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.3rem 0rem;
+    margin: 1.5rem 0rem 1rem;
+    border-bottom: 2pt solid var(--gray1);
+    overflow: wrap;
+    overflow-wrap: break-word;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4, h5, h6 {
+    font-size: 1rem;
+}
+
+ul, ol {
+    font: 1rem SourceSansPro, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0rem 0rem 0rem 1rem;
+    margin: 0rem;
+    list-style-position: outside;
+}
+
+ul a, ol a {
+    font-size: 0.9rem;
+}
+
+sub, sup {
+    position: relative;
+    font-size: 0.8rem;
+}
+
+sup {
+    vertical-align: top;
+    top: -0.3rem;
+}
+
+sub {
+    vertical-align: bottom;
+    bottom: -0.3rem;
+}
+
+sup a, sub a {
+    font-size: 0.7rem;
+}
+
+del {
+    text-decoration: line-through;
+}
+@media (prefers-color-scheme: dark) {
+    .invert {
+        filter: invert(1);
+    }
+}
+
+figure {
+    display: block;
+    max-width: 100%;
+    padding: 0rem;
+    margin: 1rem auto;
+}
+
+figcaption {
+    display: block;
+    color: var(--gray4);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0rem;
+    margin: 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0rem auto;
+}
+
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0rem auto;
+}
+
+table {
+    display: table;
+    color: var(--gray4);
+    background-color: var(--gray1);
+    max-width: 100%;
+    padding: 0rem;
+    margin: 0rem auto;
+    border: none;
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    text-align: left;
+    vertical-align: middle;
+    padding: 0.5rem;
+    margin: 0rem;
+    border: 1pt solid var(--bg);
+}
+
+th {
+    color: var(--fg);
+    background-color: var(--dark);
+    font-weight: bold;
+}
+code {
+    display: inline;
+    color: var(--gray4);
+    background-color: var(--gray1);
+    font: normal 0.9rem JetBrainsMono, monospace;
+}
+
+pre {
+    display: block;
+    background-color: var(--gray1);
+    max-height: 22rem;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    overflow: auto;
+    white-space: pre;
+}
+
+pre code {
+    background: none;
+}
+.nav {
+    margin: 2rem 0rem;
+    padding: 0rem;
+}
+
+.taxonomy {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    padding: 0rem;
+    margin: 1rem 0rem;
+}
+
+.pagination {
+    display: flex;
+    padding: 0rem;
+    margin: 1rem 0rem;
+}
+
+.pagination div {
+    flex: 1 1 0;
+    font-size: 0.8rem;
+    margin: auto 0rem;
+}
+
+.related h3 {
+    color: var(--gray4);
+}
+
+.related-article-container {
+    display: flex;
+    margin: 1rem 0rem;
+}
+
+.related-article {
+    display: block;
+    flex: 1 1 0;
+    margin: 0rem 0.5rem;
+}
+
+.related-article:first-child {
+	margin-left: 0;
+}
+
+.related-article:last-child {
+	margin-right: 0;
+}
+
+.related-article time {
+    display: block;
+    color: var(--gray4);
+    font-size: 0.8rem;
+    margin: 0rem;
+}
+
+.related-article h4 {
+    font-size: 1rem;
+    padding: 0rem;
+    margin: 0.5rem 0rem;
+    border: none;
+}
+
+.related-article p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 0.5rem 0rem 2rem;
+}
+
+@media (max-width: 40rem) {
+    .related-article-container {
+        flex-direction: column;
+    }
+
+    .related-article {
+        margin: 0rem;
+    }
+}
+blockquote {
+    display: block;
+    color: var(--gray4);
+    padding: 0.1rem 1rem;
+    margin: 1rem;
+    border-left: 5pt solid var(--gray1);
+}
+details {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    padding: 0rem;
+    margin: 1rem 0rem;
+}
+
+details summary {
+    cursor: pointer;
+}
+.footnotes {
+    color: var(--gray4);
+    font: normal 0.8rem JetBrainsMono;
+    padding: 1rem 0rem 0rem;
+    margin: 2rem 0rem;
+    border-top: 2pt solid var(--gray1);
+}

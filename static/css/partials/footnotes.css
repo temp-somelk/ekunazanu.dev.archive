@@ -1,0 +1,7 @@
+.footnotes {
+    color: var(--gray4);
+    font: normal 0.8rem JetBrainsMono;
+    padding: 1rem 0rem 0rem;
+    margin: 2rem 0rem;
+    border-top: 2pt solid var(--gray1);
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url(/fonts/JetBrainsMono-Variable.woff2) format(woff2);
+    font-style: normal;
+    font-display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--fg);
+    background-color: var(--bg);
+    font: normal 0.9rem JetBrainsMono, monospace;
+    max-width: 50rem;
+    padding: 1rem;
+    margin: 0rem auto;
+}
+
+a {
+    color: var(--fg);
+    font-family: JetBrainsMono, monospace;
+    text-decoration: underline;
+    font-style: inherit;
+}
+
+a:hover, a:focus {
+    color: var(--accent);
+}
+
+a[target="_blank"]::after {
+    content: "\a0\2197";
+}
+
+::selection {
+    color: var(--light);
+    background-color: var(--accent);
+}

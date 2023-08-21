@@ -1,0 +1,7 @@
+blockquote {
+    display: block;
+    color: var(--gray4);
+    padding: 0.1rem 1rem;
+    margin: 1rem;
+    border-left: 5pt solid var(--gray1);
+}

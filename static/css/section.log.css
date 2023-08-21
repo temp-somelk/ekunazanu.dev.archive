@@ -1,0 +1,142 @@
+:root {
+    --fg: #000;
+    --bg: #fff;
+    --gray1: #ddd;
+    --gray4: #444;
+    --light: #fff;
+    --dark: #bbb;
+    --accent: #58858d;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fg: #fff;
+        --bg: #000;
+        --gray1: #333;
+        --gray4: #bbb;
+        --light: #fff;
+        --dark: #222;
+        --accent: #58858d;
+    }
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url(/fonts/JetBrainsMono-Variable.woff2) format(woff2);
+    font-style: normal;
+    font-display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--fg);
+    background-color: var(--bg);
+    font: normal 0.9rem JetBrainsMono, monospace;
+    max-width: 50rem;
+    padding: 1rem;
+    margin: 0rem auto;
+}
+
+a {
+    color: var(--fg);
+    font-family: JetBrainsMono, monospace;
+    text-decoration: underline;
+    font-style: inherit;
+}
+
+a:hover, a:focus {
+    color: var(--accent);
+}
+
+a[target="_blank"]::after {
+    content: "\a0\2197";
+}
+
+::selection {
+    color: var(--light);
+    background-color: var(--accent);
+}
+header {
+    display: block;
+    padding: 0rem 0rem 0.5rem;
+    margin: 0rem 0rem 1rem;
+    border-bottom: 2pt solid var(--gray4);
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 0rem 1rem;
+}
+
+header svg {
+    display: block;
+    fill: var(--fg);
+    height: 3rem;
+    margin: 0rem;
+}
+
+header a svg:hover {
+    fill: var(--accent);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    padding: 0rem;
+    margin: 0rem;
+    border: none;
+}
+
+header h2 {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-transform: none;
+    padding: 0rem;
+    margin: 0rem;
+    border: none;
+}
+
+header h2 a {
+    color: var(--gray4);
+}
+footer {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    margin: 2rem 0rem -1rem;
+    border-top: 2pt solid var(--gray4);
+}
+
+footer a {
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+}
+ul {
+    padding: 0rem;
+    margin: 0rem;
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0rem;
+    margin: 1.5rem 0rem;
+}
+
+li time {
+    display: block;
+    color: var(--gray4);
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding: 0rem;
+    margin: 0rem;
+}

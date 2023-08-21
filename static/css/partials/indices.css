@@ -11,10 +11,11 @@ li {
     margin: 1.5rem 0rem;
 }
 
-time {
+li time {
     display: block;
     color: var(--gray4);
     font-size: 0.8rem;
     font-weight: normal;
+    padding: 0rem;
     margin: 0rem;
 }
