@@ -11,7 +11,7 @@
     </svg>
     </div>
     <h2>
-        {{- if eq .Type "blog" | and .IsPage -}}
+        {{- if or (eq .Type "lab") (eq .Type "log") | and .IsPage -}}
         <a href="/{{ .Type }}">{{ .Type | title }}</a> &middot; <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
         {{- else -}}
         ekunazanu
