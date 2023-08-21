@@ -224,7 +224,7 @@ def solution(pegs):
 
 ## Header2
 
-Text with sub{{< subscript "script" >}} and super{{< superscript "script" >}} texts. Another paragraph with a footnote [^1]. And another one [^2]. Also, a third one [^3].
+Text with sub{{< subscript "script" >}} and super{{< superscript "script" >}} texts. Another paragraph with a footnote {{< footnoteset "1" "Sample footnote." >}}. And another one {{< footnoteset "2" "Another one, just in case." >}}. Also, a third one. {{< footnoteset "3" "Footnote with a [link](https://something.com)." >}}
 
 > Sinlequote
 something
@@ -386,7 +386,7 @@ Plain Text ---->+ AES +---> Cipher Text
 An unordered list:
 
 * Something
-    * Something more [^4]
+    * Something more
         * Something even more
 
 And an ordered list:
@@ -395,10 +395,6 @@ And an ordered list:
 2. This too
 3. This three [testlink](/)
 
-Some random words [^5]. And some other random words, to pad out this paragraph. It's not enough text so adding more here. I guess this is enough. Okay it's not, so here I am adding more. It's repetitive, but it is what is is. Okay maybe this is enough. Yeah it is. And then something here to end the article.
+Some random words. And some other random words, to pad out this paragraph. It's not enough text so adding more here. I guess this is enough. Okay it's not, so here I am adding more. It's repetitive, but it is what is is. Okay maybe this is enough. Yeah it is. And then something here to end the article.
 
-[^1]: Test footnote
-[^2]: Another test
-[^3]: Third one with an [external link](https://link) to something
-[^4]: Fourth time's the charm
-[^5]: Fifth one, just in case
+{{< footnotelist >}}

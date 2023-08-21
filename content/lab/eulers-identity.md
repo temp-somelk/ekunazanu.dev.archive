@@ -201,7 +201,7 @@ We've talked enough about imaginary numbers and rotations so let's get back to E
 
 ### Compound Interest
 
-While $e$ is called the Euler's number, the constant may have been actually discovered by Jacob Bernoulli while studying about compound interests [^1] . But what does $e$ have to do with interest rates?
+While $e$ is called the Euler's number, the constant may have been actually discovered by Jacob Bernoulli while studying about compound interests {{< footnoteset "1" "MacTutor History of Mathematics: [The number e](https://www-history.mcs.st-and.ac.uk/HistTopics/e.html)." >}}. But what does $e$ have to do with interest rates?
 
 For the sake of simplicity, we'll limit the time period we're considering to one year. Now imagine an interest rate of 100% or 1 that compounds every year. If we put in 1.00 units, we'll end up with $1 + (1 \\cdot 1) = 2$ units. However if it was compounded biannually, after six months we will end up with $1 + \\left(\\frac{1}{2} \\cdot 1 \\right) = 1.5$. After another six months, we'll end up with $1.5 + \\left(\\frac{1}{2} \\cdot 1.5 \\right) = 2.25$. Let's calculate our returns if we compounded thrice a year. After four months, we'll have $1 + \\left( \\frac{1}{3} \\cdot 1 \\right) = \\frac{4}{3}$. After another four months, we'll have $\\frac{4}{3} + \\left( \\frac{1}{3} \\cdot \\frac{4}{3} \\right) = \\frac{16}{9}$. By the end of the year we are left with $\\frac{16}{9} + \\left(\\frac{1}{3} \\cdot \\frac{16}{9} \\right) = \\frac{64}{27}$. Let's try to generalize this pattern, if it was compounded $n$ times in a given year with an interest rate $x$ and initial principle $1$.
 
@@ -232,4 +232,4 @@ I want to make it clear that $a^{i \\cdot t}$ would still trace out a unit circl
 
 This is a little extra in case you're still reading this. Let's try to expand beyond
 
-[^1]: MacTutor History of Mathematics: [The number e](https://www-history.mcs.st-and.ac.uk/HistTopics/e.html).
+{{< footnotelist >}}

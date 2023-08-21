@@ -1,0 +1,2 @@
+{{ $id := .Get 0 }}{{ $val := .Get 1 | markdownify }}{{ .Page.Store.SetInMap "footnotes" $id $val }}
+<sup><a id="footnote-{{ $id }}" href="#footnote-ref-{{ $id }}">[{{ $id }}]</a></sup>
