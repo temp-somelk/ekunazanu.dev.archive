@@ -2,23 +2,25 @@
 title = "Probabilistic Data Structures"
 indextitle = "Utizlizng Hashes: Probabilistic Data Structures"
 summary = "Probabilistic data structures are, as the name suggests, data structures that are probabilistic in nature. What it means is that these data structures cannot give us exact answers, and only give us probable answers to queries on datasets."
-date = 2023-02-25T09:11:12+05:30
+date = 2023-08-22T09:11:12+05:30
 type = "lab"
 categories = ["Computer Science"]
 tags = ["Cryptography"]
-math = true
-draft = true
+math = false
+draft = false
 +++
 
-![Header Image](https://www.echevarria.io/img/photos/v1/04.jpg)
+![Header Image](https://upload.wikimedia.org/wikipedia/commons/c/c4/2-Dice-Icon.svg)
 
-Probabilistic data structures are, as the name suggests, data structures that are probabilistic in nature. What it means is that these data structures cannot give us exact answers, and only give us probable answers to queries on datasets. You might wonder, "Why even bother with these if they give us imprecise answers?!" Well, because what we sacrifice in precision, we gain in space and/or time efficiency. When we don't need exact answers, these data structures help us store and compute information, in sublinear space/time complexity, sometimes in $O(1)$ space and time.
+Probabilistic data structures are, as the name suggests, data structures that are probabilistic in nature. What it means is that these data structures cannot give us exact answers, and only give us probable answers to queries on datasets. You might wonder, "Why even bother with these if they give us imprecise answers?!" Well, because what we sacrifice in precision, we gain in space and/or time efficiency. When we don't need exact answers, these data structures help us store and compute information, in sublinear space/time complexity, sometimes in ```O(1)``` space and time.
 
 ## Bloom Filters
 
 Bloom filters are one of the most popular probabilistic data structures that help us check for membership in a set or multisets. In simpler words, they help us check if an element is present in a set or not. Bloom filters cannot report with certainty that an element exists in a set, but it can tell us with certainty if it does **not** exist in a set. And they help us do it for big datasets using very little space.
 
 ### Hash Tables
+
+{{< img lsrc="https://i.scdn.co/image/ab67616d0000b2739bce7409f1fd24101e611603" caption="something" >}}
 
 So how do we store information using less information? You can compress the data and store only the unique values, but the space required will still roughly scale linearly with the number of elements and the size of each element. So what can we do? Hashing comes to the rescue. Well, sort of. We know hashing will always produce a fix length output for any given input. We also know that output is deterministic, i.e. it will produce the exact same output if our input is same. This solves two of our problems. First, we only have to store a fixed amount, even if the size of the element is large. The second is storing only distinct elements. Since hashes produce the same output for a given input, even if an elements occurs multiple times, if we hash it, we'll get the same result, and thus do not need to store it again. Hash collisions still happen, and it's the reason bloom filters are probabilistic, but we'll discuss about hash collisions later.
 
@@ -59,7 +61,7 @@ Here, we've hashed the contents of the elements and stored only the distinct has
 
 When we're using a hashing function, we know that the ouput will always be between n bits for a given n-bit hashing function. We can exploit this property to exponentially decrease the amount of storage needed to store the hashes. Also since the hash output has a *(somewhat)* random distribution, we know that for a given long enough hashing function (relative to the number of input elements), hash collisions are rare.
 
-We can take an $n$ bit hashing function and create an $m = 2^{m}$ array and initialize it all to zeroes. For storing data, we can use
+We can take an **n** bit hashing function and create an **m = 2{{< superscript "m" >}}** array and initialize it all to zeroes. For storing data, we can use
 
 ``` goat {caption="m-bit Bitstring"}
 .---+---+---+---+---+---+---+---+   +---.
@@ -194,7 +196,7 @@ A = {
 }
 ```
 
-Let's start. We initialize a two dimensional array of ```m = 8``` breadth and ```d = 4``` depth. We'll discuss how the dimensions are decided later, for now let's just assume $m$ and $d$ are what they are.
+Let's start. We initialize a two dimensional array of ```m = 8``` breadth and ```d = 4``` depth. We'll discuss how the dimensions are decided later, for now let's just assume ```m``` and ```d``` are what they are.
 
 ``` goat {caption="Initial 2D Array"}
 .---+---+---+---+---+---+---+---.
@@ -325,3 +327,5 @@ being 0                   |   |
 '---+---+---+---+---+---+---+---'
   1   2   3   4   5   6   7   8
 ```
+
+{{< footnotelist >}}

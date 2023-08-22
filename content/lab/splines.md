@@ -7,7 +7,7 @@ type = "lab"
 categories = ["Mathematics"]
 tags = ["Geometry"]
 math = false
-draft = true
+draft = false
 +++
 
 While making the logo for this site
