@@ -10,4 +10,4 @@ math = false
 draft = true
 +++
 
-![Image of {{ replace .Name "-" " " | title }}](/media/{{ .File.TranslationBaseName }}/header.png)
+![Image of {{ replace .Name "-" " " | title }}](/media/log/{{ .File.TranslationBaseName }}/header.png)
