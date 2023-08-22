@@ -2,7 +2,7 @@
 title = "The Euler's Identity"
 indextitle = "The Complex Plane: The Euler's Identity"
 summary = "If you have ever enrolled in any of the STEM disciplines, chances are you would've come across Euler. Now there's a lot of genius things he came up with, but one of the most well known (and also one of the most elegant) has to be the Euler's Identity."
-date = 2023-02-22T00:00:35+05:30
+date = 2023-08-17T00:00:35+05:30
 type = "lab"
 categories = ["Mathematics"]
 tags = ["Signal Processing", "Coordinate Geometry"]
