@@ -3,6 +3,7 @@ code {
     color: var(--gray4);
     background-color: var(--gray1);
     font: normal 0.9rem JetBrainsMono, monospace;
+    padding: 0rem 0.3rem;
 }
 
 pre {
@@ -17,4 +18,5 @@ pre {
 
 pre code {
     background: none;
+    padding: 0rem;
 }
