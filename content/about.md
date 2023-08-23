@@ -14,9 +14,9 @@ Hi! I am Anchit. I am a second year computer science undergraduate student curre
 
 I also like doodling I guess.
 
-## Blog
+## Log
 
-Most smart people I know have their own blog, and I want to *appear* smart too, so here we are. Okay no, my goal is to be able to become competent enough to write high-quality-production-grade-hyper-fast-efficient-readable-code™ within the next two years. And what better way to learn, than ~~to document what I learn~~ by trying to teach others too. Just kidding; I will be surprised if someone actually finds this useful. But hey, if someone does, I can just pretend it was my goal all along.
+Most smart people I know have their own blogs, and I want to *appear* smart too, so here we are. Okay no, my goal is to be able to become competent enough to write high-quality-production-grade-hyper-fast-efficient-readable-code™ within the next two years. And what better way to learn, than ~~to document what I learn~~ by trying to teach others too. Just kidding; I will be surprised if someone actually finds this useful. But hey, if someone does, I can just pretend it was my goal all along.
 
 ![doodle of myself](/media/about/me.svg "das me")
 

@@ -12,7 +12,7 @@ draft = true
 
 ![Image of Colour Theory](/media/lab/colour-theory/header.png)
 
-If you noticed by now, there is a surprising lack of color in this website (except for the boring and dull blue accents I guess). While that's intentional to keep focus on the content, I must admit I am a huge fan of colours and colour theory, and how colours can play tricks on our subconcious. It's been used by brands to convey their . But one thing is certain.
+If you noticed by now, there is a surprising lack of color in this website (except for the boring and dull blue accents I guess). While that's intentional to make look like a simple paper document and keep focus on the content, I must admit I am a huge fan of colours and colour theory, and how colours can play tricks on our subconcious. It's been used by brands to convey their . But one thing is certain.
 
 ## The Language of Colours
 

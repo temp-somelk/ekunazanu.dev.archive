@@ -22,18 +22,34 @@ Paragraph with inline math $f(x) = x^{2}$ $y\_t = \\beta\_0 + \\theta\_1 x\_t + 
 $$and\\ block\\ math, e\\equiv \\lim\_{n\\to\\infty} \\left( 1 + \\frac{1}{n}\\right)^n = 2.71828$$
 
 ## Header2
+
 Paragraph with a [link](linkaddress)
+
+### Header3
+
+Another paragraph with *emphasis* or **strong emphasis**. ```monospaced string or inline code```. Underline is not supported and discouraged, to reduce confusion with links. ~~Strikethrough~~ is supported though.
+
+#### Header4
+
+Text with sub{{< subscript "script" >}} and super{{< superscript "script" >}} texts. Another paragraph with a footnote {{< footnoteset "1" "Sample footnote." >}}. And another one {{< footnoteset "2" "Another one, just in case." >}}. Also, a third one. {{< footnoteset "3" "Footnote with a [link](https://something.com)." >}}
+
+> Sinlequote
+something
+
+> Blockquote
+> > Which is nested
+
 
 Huge fan of photos of [echevarrio.io](https://www.echevarria.io/).
 
 {{< img alt="image of factory" lsrc="https://www.echevarria.io/img/photos/v1/01.jpg" dsrc="https://www.echevarria.io/img/photos/v1/04.jpg" >}}
 ![Traffic Lights](https://www.echevarria.io/img/photos/v1/02.jpg)
-![Architecture](https://www.echevarria.io/img/photos/v1/05.jpg)
-![Parking Lot](https://www.echevarria.io/img/photos/v1/08.jpg)
-![Tree](https://www.echevarria.io/img/photos/v1/09.jpg)
 
-### Header3
-Another paragraph with *emphasis* or **strong emphasis**. ```monospaced string or inline code```. Underline is not supported and discouraged, to reduce confusion with links. ~~Strikethrough~~ is supported though.
+![Architecture](https://www.echevarria.io/img/photos/v1/05.jpg)
+
+![Parking Lot](https://www.echevarria.io/img/photos/v1/08.jpg)
+
+![Tree](https://www.echevarria.io/img/photos/v1/09.jpg)
 
 {{< table caption="Some table" >}}
 | left | right | center | YYYYY | gfdhcbfghrdcbvgfhdc | dghyh | ebhd |
@@ -122,26 +138,6 @@ Another paragraph and a table below:
 
 {{< /rawtable >}}
 
-Also testing syntax highlight:
-
-```
-int main(void){
-    float num1;
-    float num2;
-    scanf("%f, %f", &num1, &num2);
-    if (num1 > num2){
-        printf("\033[31;1;4mThe first number is greater\033[0m");
-    }
-    else if (num2 > num1){
-        printf("\033[32;1;4mThe second number is greater\033[0m");
-    }
-    else {
-        printf("\033[34;1;4mBoth are equal\033[0m");
-    }
-    return 0;
-}
-```
-
 Some other code too
 
 ``` {caption="foobar"}
@@ -221,16 +217,6 @@ def solution(pegs):
         </tr>
     </tbody>
 {{< /rawtable >}}
-
-## Header2
-
-Text with sub{{< subscript "script" >}} and super{{< superscript "script" >}} texts. Another paragraph with a footnote {{< footnoteset "1" "Sample footnote." >}}. And another one {{< footnoteset "2" "Another one, just in case." >}}. Also, a third one. {{< footnoteset "3" "Footnote with a [link](https://something.com)." >}}
-
-> Sinlequote
-something
-
-> Blockquote
-> > Which is nested
 
 Testing ```GoAT``` diagrams
 
