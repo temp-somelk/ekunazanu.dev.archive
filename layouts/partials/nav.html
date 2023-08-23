@@ -9,14 +9,14 @@ Browse all <a href="/categories">categories</a>
 </div>
 
 <div class="related">
-<h3>Other Posts</h3>
+<h2>Other Posts</h2>
     <div class="related-article-container">
         {{ $related := ( where ( .Site.RegularPages.Related . ) "Section" .Section ) | first 3 }}
         {{ with $related }}
         {{- range . -}}
         <div class="related-article">
             <time>{{ .Date.Format "2006-01-02" }}</time>
-            <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
             <p>{{ .Summary }}</p>
         </div>
         {{- end -}}

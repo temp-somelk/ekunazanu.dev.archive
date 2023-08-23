@@ -305,8 +305,9 @@ pre code {
     margin: auto 0rem;
 }
 
-.related h3 {
+.related h2 {
     color: var(--gray4);
+    font-size: 1.2rem;
 }
 
 .related-article-container {
@@ -335,7 +336,7 @@ pre code {
     margin: 0rem;
 }
 
-.related-article h4 {
+.related-article h3 {
     font-size: 1rem;
     padding: 0rem;
     margin: 0.5rem 0rem;
