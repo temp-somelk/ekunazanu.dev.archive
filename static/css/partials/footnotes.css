@@ -1,9 +1,8 @@
 .footnotes {
     color: var(--gray4);
     font-size: 0.8rem;
-    padding: 1rem 0rem 0rem;
+    padding: 0rem;
     margin: 2rem 0rem;
-    border-top: 2pt solid var(--gray1);
 }
 
 .footnotes h2 {
