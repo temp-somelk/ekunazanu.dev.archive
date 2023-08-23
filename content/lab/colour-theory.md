@@ -17,3 +17,5 @@ If you noticed by now, there is a surprising lack of color in this website (exce
 ## The Language of Colours
 
 I cannot go and talk about language or colors without talking about how colours are used in languages itself.
+
+{{< footnotelist >}}

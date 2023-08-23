@@ -11,3 +11,5 @@ draft = true
 +++
 
 ![Image of {{ replace .Name "-" " " | title }}](/media/lab/{{ .File.TranslationBaseName }}/header.png)
+
+{{< footnotelist >}}

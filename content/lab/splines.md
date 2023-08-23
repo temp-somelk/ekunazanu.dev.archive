@@ -13,3 +13,5 @@ draft = true
 While making the logo for this site
 
 ## Interpolation
+
+{{< footnotelist >}}
