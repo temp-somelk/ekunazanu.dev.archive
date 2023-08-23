@@ -1,7 +1,12 @@
 .footnotes {
     color: var(--gray4);
-    font: normal 0.8rem JetBrainsMono;
+    font-size: 0.8rem;
     padding: 1rem 0rem 0rem;
     margin: 2rem 0rem;
     border-top: 2pt solid var(--gray1);
+}
+
+.footnotes h2 {
+    color: var(--gray4);
+    font-size: 1.2rem;
 }
