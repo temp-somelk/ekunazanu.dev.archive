@@ -1,6 +1,6 @@
 <div class="footnotes">
 <h2>References</h2>
 {{ $list := .Page.Store.Get "footnotes" }} {{ range $key, $value := $list }}
-<span id="footnote-ref-{{ $key }}">{{ $key }}</span>: {{ $value }}&nbsp;<a href="#footnote-{{ $key }}">&#8624;</a><br>
+<span id="footnote-ref-{{ $key }}">{{ $key }}</span>: {{ $value }}&nbsp;<a href="#footnote-{{ $key }}">&#9650;</a><br>
 {{ end }} {{ .Page.Scratch.Delete "footnotes" }}
 </div>
