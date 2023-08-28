@@ -23,6 +23,7 @@ a {
     color: var(--fg);
     font-family: JetBrainsMono, monospace;
     text-decoration: underline;
+    text-underline-offset: 2px;
     font-style: inherit;
 }
 
