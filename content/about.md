@@ -35,6 +35,8 @@ If you get bored by my blog (how dare you), here's some people and blogs I perso
 * [Jose M Sallan](https://jmsallan.netlify.app/)
 * [a3nm](https://a3nm.net/blog/archives.html)
 * [GlorifiedGluer](https://gluer.org/blrogroll)
+* [Neal Agarwal](https://neal.fun)
+* [Nick Casey](https://ncase.me)
 
 ## Contact
 You can say hello, or send ideas or memes to me at [ekunazanu@tutanota.com](mailto:ekunazanu@tutanota.com). In case you need to send nudes or you need to rigorously verify that all the cringe stuff I send to you is indeed from me, you can download my [PGP key](/misc/public.ekunazanu.key).
