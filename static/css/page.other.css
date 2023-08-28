@@ -63,7 +63,7 @@ header {
     display: block;
     padding: 0rem 0rem 0.5rem;
     margin: 0rem 0rem 1rem;
-    border-bottom: 2pt solid var(--gray4);
+    border-bottom: 2px solid var(--gray4);
 }
 
 header div {
@@ -112,7 +112,7 @@ footer {
     text-align: center;
     padding: 1rem 0rem;
     margin: 2rem 0rem -1rem;
-    border-top: 2pt solid var(--gray4);
+    border-top: 2px solid var(--gray4);
 }
 
 footer a {
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     padding: 0.3rem 0rem;
     margin: 1.5rem 0rem 1rem;
-    border-bottom: 2pt solid var(--gray1);
+    border-bottom: 2px solid var(--gray1);
     overflow: wrap;
     overflow-wrap: break-word;
 }
@@ -251,7 +251,7 @@ th, tr, td {
     vertical-align: middle;
     padding: 0.5rem;
     margin: 0rem;
-    border: 1pt solid var(--bg);
+    border: 1px solid var(--bg);
 }
 
 th {

@@ -4,7 +4,7 @@ footer {
     text-align: center;
     padding: 1rem 0rem;
     margin: 2rem 0rem -1rem;
-    border-top: 2pt solid var(--gray4);
+    border-top: 2px solid var(--gray4);
 }
 
 footer a {

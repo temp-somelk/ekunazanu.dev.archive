@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     padding: 0.3rem 0rem;
     margin: 1.5rem 0rem 1rem;
-    border-bottom: 2pt solid var(--gray1);
+    border-bottom: 2px solid var(--gray1);
     overflow: wrap;
     overflow-wrap: break-word;
 }
