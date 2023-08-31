@@ -10,7 +10,7 @@ math = false
 draft = true
 +++
 
-![Header image](https://i.scdn.co/image/ab67616d0000b2739bce7409f1fd24101e611603)
+![Header image](/media/lab/probabilistic-data-structures/1.png)
 
 Probabilistic data structures are, as the name suggests, data structures that are probabilistic in nature. What it means is that these data structures cannot give us exact answers, and only give us probable answers to queries on datasets. You might wonder, "Why even bother with these if they give us imprecise answers?!" Well, because what we sacrifice in precision, we gain in space and/or time efficiency. When we don't need exact answers, these data structures help us store and compute information, in sublinear space/time complexity, sometimes in ```O(1)``` space and time.
 
@@ -19,8 +19,6 @@ Probabilistic data structures are, as the name suggests, data structures that ar
 Bloom filters are one of the most popular probabilistic data structures that help us check for membership in a set or multisets. In simpler words, they help us check if an element is present in a set or not. Bloom filters cannot report with certainty that an element exists in a set, but it can tell us with certainty if it does **not** exist in a set. And they help us do it for big datasets using very little space.
 
 ### Hash Tables
-
-![Header Image](https://upload.wikimedia.org/wikipedia/commons/c/c4/2-Dice-Icon.svg)
 
 So how do we store information using less information? You can compress the data and store only the unique values, but the space required will still roughly scale linearly with the number of elements and the size of each element. So what can we do? Hashing comes to the rescue. Well, sort of. We know hashing will always produce a fix length output for any given input. We also know that output is deterministic, i.e. it will produce the exact same output if our input is same. This solves two of our problems. First, we only have to store a fixed amount, even if the size of the element is large. The second is storing only distinct elements. Since hashes produce the same output for a given input, even if an elements occurs multiple times, if we hash it, we'll get the same result, and thus do not need to store it again. Hash collisions still happen, and it's the reason bloom filters are probabilistic, but we'll discuss about hash collisions later.
 
