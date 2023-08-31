@@ -3,6 +3,14 @@
 - [ ] ~~Include openring~~ The added complexity is not worth it right now.
 - [ ] ~~Paginate index and improve it. Maybe index and home page~~ Later, **if** I update the design of the entire site.
 
+- [ ] header image, possible solutions:
+    - [x] ~~Dithered 1bit art~~
+    - [ ] Custom 1bit art
+    - [ ] Custin B&W art
+    - [ ] Generative pixel art (initial seed being the filename)
+    - [ ] Animated SVG with Conoway's Game of Life (seed being the filename)
+    - [ ] Artsy numbers (that has the week number on it)
+
 - [ ] Graphs and Charts
     - [ ] Re-render all graphs and animations using one of:
         - [ ] Julia
