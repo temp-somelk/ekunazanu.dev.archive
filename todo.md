@@ -3,6 +3,8 @@
 - [ ] ~~Include openring~~ The added complexity is not worth it right now.
 - [ ] ~~Paginate index and improve it. Maybe index and home page~~ Later, **if** I update the design of the entire site.
 
+- [ ] Update PGP keys
+
 - [ ] header image, possible solutions:
     - [x] ~~Dithered 1bit art~~
     - [ ] Custom 1bit art
