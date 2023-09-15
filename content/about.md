@@ -16,9 +16,13 @@ I also like doodling I guess.
 
 ## Log
 
-Most smart people I know have their own blogs, and I want to *appear* smart too, so here we are. Okay no, my goal is to be able to become competent enough to write high-quality-production-grade-hyper-fast-efficient-readable-code™ within the next two years. And what better way to learn, than ~~to document what I learn~~ by trying to teach others too. Just kidding; I will be surprised if someone actually finds this useful. But hey, if someone does, I can just pretend it was my goal all along.
+Most smart people I know have their own blogs, and I want to *appear* smart too, so here we are. Okay no, my goal is to be able to become competent enough to write high-quality-production-grade-hyper-fast-efficient-readable-code™ within the next two years. And what better way to learn, than ~~to document what I learn~~ by trying to teach others too, with an added xkcd twist(?) Just kidding; I will be surprised if someone actually finds this useful. But hey, if someone does, I can just pretend it was my goal all along.
 
 ![doodle of myself](/media/about/me.svg "das me")
+
+## Lab
+
+This is where I shitpost slightly less shitty posts. Hopefully you can expect ~~higher quality~~ more tolerable stuff here. Most of the things here either topics that I find interesting, or the outcome of me experimenting with different stuff.
 
 ### Other Blogs
 
@@ -39,4 +43,4 @@ If you get bored by my blog (how dare you), here's some people and blogs I perso
 * [Nick Casey](https://ncase.me)
 
 ## Contact
-You can say hello, or send ideas or memes to me at [ekunazanu@tutanota.com](mailto:ekunazanu@tutanota.com). In case you need to send nudes or you need to rigorously verify that all the cringe stuff I send to you is indeed from me, you can download my [PGP key](/misc/public.ekunazanu.key).
+If you want to complain about my lousy writing, point out mistakes in my writing, or send ideas or memes to me, you can at [ekunazanu@tutanota.com](mailto:ekunazanu@tutanota.com). In case you need to send nudes or you need to rigorously verify that all the cringe stuff I send to you is indeed from me, you can download my [PGP key](/misc/public.ekunazanu.key).
