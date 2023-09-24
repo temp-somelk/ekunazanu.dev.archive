@@ -18,7 +18,7 @@ There is no analaytics on this website because I'm already aware of my target de
 
 I am not affiliated with any entity. In fact if my college discovers I write this, I'll probably be rusitcated. . I also do not take any responsibility for the damage I may or may not have done to your computer. I think it's kind of your fault anyway if you decided to follow the advice of a guy who is writing the legal pages of a blog as a joke.
 
-## Terms and Conditions
+## Terms of Use
 
 Do not use
 
