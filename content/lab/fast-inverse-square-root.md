@@ -1,6 +1,6 @@
 +++
 title = "Fast Inverse Square Root"
-indextitle = "Video Games Genius: Fast Inverse Square Root"
+indextitle = "Low Level Hacks: Fast Inverse Square Root"
 summary = "under 160 chars"
 date = 2023-09-11T02:40:52+05:30
 type = "lab"
