@@ -1,0 +1,47 @@
+header {
+    display: block;
+    padding: 0rem 0rem 0.5rem;
+    margin: 0rem 0rem 1rem;
+    border-bottom: 2px solid var(--gray4);
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 0rem 1rem;
+}
+
+header svg {
+    display: block;
+    fill: var(--fg);
+    height: 3rem;
+    margin: 0rem;
+}
+
+header a svg:hover {
+    fill: var(--accent);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    padding: 0rem;
+    margin: 0rem;
+    border: none;
+}
+
+header h2 {
+    color: var(--gray4);
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-transform: none;
+    padding: 0rem;
+    margin: 0rem;
+    border: none;
+}
+
+header h2 a {
+    color: var(--gray4);
+}

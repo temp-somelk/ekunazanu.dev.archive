@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explaining the importance of algorithmic efficiency using the Fast Fourier Transform">
+    <meta name="author" content="Anchit Roy">
+    <title>Fast Fourier Transform</title>
+    <link rel="canonical" href="https://ekunazanu.dev/lab/fast-fourier-transform/">
+    <link rel="icon" href="/icons/logo.16px.png">
+    <link rel="stylesheet" href="/css/page.lab.css">
+    
+</head>
+<body>
+<header>
+    <div>
+    <a aria-label="home" href="/">
+    <svg viewBox="0 0 5 6">
+    <path id="ShortLogoE" d="M 0 0 V 3 H 1 V 1 H 2 V 3 H 3 V 1 H 4 V 3 H 5 V 0 Z"/>
+    <path id="ShortLogoU" d="M 0 3 V 4 Q 0 6 2 6 H 5 V 5 H 2 Q 1 5 1 4 H 5 V 3 Z"/>
+    </svg>
+    </a>
+    <svg viewBox="0 0 16 16">
+    <path id="DataMatrix" d="M 0 0 V 16 H 16 V 15 H 15 V 14 H 14 V 15 H 13 V 14 H 14 V 13 H 15 V 14 H 16 V 13 H 15 V 12 H 16 V 11 H 14 V 12 H 13 V 9 H 12 V 10 H 11 V 11 H 10 V 10 H 11 V 9 H 10 V 8 H 11 V 9 H 12 V 8 H 13 V 9 H 15 V 10 H 16 V 9 H 15 V 8 H 16 V 7 H 14 V 6 H 16 V 5 H 13 V 6 H 11 V 5 H 13 V 4 H 12 V 3 H 13 V 4 H 16 V 3 H 14 V 2 H 16 V 1 H 15 V 0 H 14 V 1 H 13 V 0 H 12 V 1 H 11 V 0 H 10 V 1 H 9 V 0 H 8 V 2 H 7 V 0 H 6 V 1 H 5 V 0 H 4 V 2 H 7 V 3 H 5 V 4 H 8 V 3 H 10 V 2 H 11 V 3 H 10 V 5 H 9 V 4 H 8 V 6 H 7 V 5 H 4 V 4 H 3 V 7 H 2 V 3 H 3 V 0 H 2 V 2 H 1 V 0 Z M 4 7 H 6 V 9 H 5 V 10 H 8 V 9 H 7 V 8 H 8 V 7 H 9 V 10 H 8 V 12 H 6 V 11 H 5 V 12 H 4 V 14 H 3 V 15 H 2 V 13 H 3 V 12 H 4 V 11 H 5 V 10 H 3 V 11 H 2 V 12 H 1 V 9 H 3 V 8 H 4 Z M 9 12 H 10 V 14 H 11 V 12 H 12 V 15 H 9 V 14 H 8 V 15 H 6 V 14 H 5 V 13 H 6 V 14 H 7 V 13 H 9 Z"/>
+    </svg>
+    </div>
+    <h2><a href="/lab">Lab</a> &middot; <time datetime="2023-08-19">2023-08-19</time></h2>
+    <h1>Fast Fourier Transform</h1>
+</header>
+<main>
+<article>
+<p>While Dicrete Fourier transforms</p>
+<h2 id="including">Including</h2>
+<h2 id="efficiency">Efficiency</h2>
+<p>In computer science, we use a term called <a target="_blank" rel="noopener noreferrer nofollow" href="https://en.wikipedia.org/wiki/Time_complexity">Time Complexity</a> to represent how an algorithm scales, with regards to the time needed to perform the computation, with respect to the size of the given input data. By removing the redundant calculations in FFT, we reduce the number of operations need to perform from the square of the number of the inputs to just . So formally we can say, the time complexity of the algorithm has been reduced from $O(n^{2})$ to $O(n \cdot logn)$.</p>
+<h2 id="implementation">Implementation</h2>
+<section class="footnotes">
+<h2>References</h2>
+  
+</section>
+
+</article>
+<section class="nav">
+
+<div class="taxonomy">
+This article is about
+<a href="/categories/computer-science/">Computer Science</a><br>
+Browse all <a href="/categories">categories</a>
+</div>
+
+<div class="related">
+<h2>Other Posts</h2>
+    <div class="related-article-container">
+        
+        <div class="related-article">
+            <time>2023-08-17</time>
+            <h3><a href="/lab/eulers-identity/">The Euler&#39;s Identity</a></h3>
+            <p>If you have ever enrolled in any of the STEM disciplines, chances are you would&rsquo;ve come across Euler. Now there&rsquo;s a lot of genius things he came up with, but one of the most well known (and also one of the most elegant) has to be the Euler&rsquo;s Identity.</p>
+        </div><div class="related-article">
+            <time>2023-08-15</time>
+            <h3><a href="/lab/probabilistic-data-structures/">Probabilistic Data Structures</a></h3>
+            <p>Probabilistic data structures are, as the name suggests, data structures that are probabilistic in nature. What it means is that these data structures cannot give us exact answers, and only give us probable answers to queries on datasets.</p>
+        </div><div class="related-article">
+            <time>2020-02-22</time>
+            <h3><a href="/lab/testtemplate/">Test Template That Has Very Long Words SoThatItHasToWrap Around the Container</a></h3>
+            <p>This is a test page not meant for publication</p>
+        </div>
+    </div>
+</div>
+
+<div class="pagination">
+
+    <div>
+    <a href="/lab/fast-inverse-square-root/">&LongLeftArrow;&nbsp;Fast Inverse Square Root</a>
+    </div>
+
+    <div style="max-width: 5rem; min-width: 2rem;"></div>
+
+    <div style="text-align: right;">
+    <a href="/lab/splines/">Splines&nbsp;&LongRightArrow;</a>
+    </div>
+
+</div>
+
+</section>
+
+</main>
+<footer>
+    <a href="/legal">&copy; 2023 Anchit Roy</a> &middot;
+    <a target="_blank" rel="license noopener noreferrer nofollow" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+</footer>
+</body>
+</html>
+
+<!-- This code has been published under the MIT License - https://opensource.org/licenses/MIT#LicenseText -->
+<!-- The source is available at https://github.com/ekunazanu/ekunazanu.dev -->

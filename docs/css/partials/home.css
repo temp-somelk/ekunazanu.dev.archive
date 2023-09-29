@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    overflow-x: hidden;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    margin: 1.5rem 0rem 0rem;
+    user-select: none;
+}
+
+svg {
+    display: block;
+    fill: var(--fg);
+    margin: 0rem;
+}
+
+a svg:hover {
+    fill: var(--accent);
+}
