@@ -8,7 +8,7 @@ tags = [""]
 draft = false
 +++
 
-Hi! I am Anchit. You probably know me as nezdezwez on the internet. I am a second year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, progressive rock, and coding. One of them is a lie.
+Hi! I am Anchit. I am a second year computer science undergraduate student currently studying at Manipal Institute of Technology, Bengaluru. I like math, statistics, progressive rock, and coding. One of them is a lie.
 
 <!-- ![doodle of frustration](/media/about/no.svg) -->
 {{< img invert=true lsrc="/media/about/no.png" >}}
@@ -25,7 +25,7 @@ This is where I shitpost slightly less shitty posts. Hopefully you can expect ~~
 
 ## Contact
 
-If you want to complain about my lousy writing, point out mistakes in my writing, or send ideas or memes to me, you can at [nezdezwez@tutanota.com](mailto:nezdezwez@tutanota.com). In case you need to send nudes or you need to rigorously verify that all the cringe stuff I send to you is indeed from me, you can download my [minisign key](/misc/public.nezdezwez.key).
+If you want to complain about my lousy writing, point out factual inaccuracies, or send ideas or memes to me, you can at [me@ekunazanu.dev](mailto:me@ekunazanu.dev). In case you need to rigorously verify that all the cringe stuff I send to you is indeed from me, you can download my [minisign key](/misc/ekunazanu.pub).
 
 <!-- ![me dabbing](/media/about/dab.svg)
 
